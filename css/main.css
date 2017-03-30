@@ -95,8 +95,8 @@ a {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-top: 35px;
 }
 
 #content a {
@@ -111,6 +111,13 @@ a {
 #authors {
   font-size: 20px;
   padding-bottom: 20px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+#authors a {
+  color: #43731F;
+  opacity: 0.8;
 }
 
 #info-table {
