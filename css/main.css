@@ -110,7 +110,7 @@ a {
 
 #authors {
   font-size: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   color: #4d4d4d;
 }
 
@@ -130,19 +130,28 @@ a {
   line-height: 35px;
 }
 
+.left-align {
+  float: left;
+}
+
+.right-align {
+  float: right;
+}
+
 .text {
   text-align: justify;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-right: 0;
-  margin-top: 0;
+  padding: 15px 0 15px 0;
+  margin: 0;
 }
 
 .image {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-right: 0;
-  margin-top: 0;
+  padding: 15px 0 15px 0;
+  margin: 0;
+}
+
+.buttons {
+  padding: 15px 0 15px 0;
+  margin: 0;
 }
 
 .force-scroll {
