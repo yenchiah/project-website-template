@@ -4,7 +4,7 @@
  * GitHub: https://github.com/yenchiah/project-website-template
  * Contact: hsu.yenchia@gmail.com
  * License: GNU General Public License v2
- * Version: v1.1
+ * Version: v1.2
  *************************************************************************/
 
 html, body {
@@ -12,7 +12,7 @@ html, body {
   padding: 0;
   background-color: white;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  min-width: 840px;
+  min-width: 940px;
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 .menu {
   position: relative;
   margin: 0 auto;
-  max-width: 840px;
+  max-width: 940px;
 }
 
 .menu-table {
@@ -60,7 +60,7 @@ a {
 }
 
 .menu-items a {
-  margin-left: 40px;
+  margin-left: 30px;
   text-decoration: none;
   font-weight: 500;
   color: rgb(255, 255, 255);
@@ -94,15 +94,15 @@ a {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  max-width: 840px;
+  max-width: 940px;
 }
 
-.content a {
+.content p a {
   text-decoration: none;
   color: #9a2328;
 }
 
-.content a:hover {
+.content p a:hover {
   text-decoration: underline;
 }
 
@@ -124,22 +124,32 @@ h2 {
   font-size: 24px;
   margin: 10px 0 10px 0;
   padding: 0;
+  vertical-align: middle;
 }
 
 .text {
-  margin: 10px 0 10px 0;
+  margin: 15px 0 15px 0;
   padding: 0;
+  vertical-align: middle;
+}
+
+.text-large-margin {
+  margin: 25px 0 25px 0;
+  padding: 0;
+  vertical-align: middle;
 }
 
 .image {
   margin: 15px 0 15px 0;
   padding: 0;
   border: 1px solid #666666;
+  vertical-align: middle;
 }
 
-.buttons {
-  margin: 10px 0 10px 0;
+.video {
+  margin: 15px 0 15px 0;
   padding: 0;
+  vertical-align: middle;
 }
 
 .image-button {
@@ -219,6 +229,14 @@ h2 {
   font-size: 20px;
 }
 
+.text-small {
+  font-size: 12px;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -234,7 +252,7 @@ h2 {
   left: 0;
   height: auto;
   width: 100%;
-  min-width: 840px;
+  min-width: 940px;
 }
 
 .iframe {
@@ -249,4 +267,8 @@ h2 {
 
 .force-scroll {
   overflow-y: scroll;
+}
+
+.highlight-text {
+  font-weight: bold;
 }
