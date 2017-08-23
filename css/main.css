@@ -142,7 +142,6 @@ h2 {
 .image {
   margin: 15px 0 15px 0;
   padding: 0;
-  border: 1px solid #666666;
   vertical-align: middle;
 }
 
@@ -157,17 +156,17 @@ h2 {
   background-position: center;
   position: relative;
   display: block;
-  border: 1px solid #666666;
+  border: 0;
   margin: 10px 0 5px 0;
   padding: 0;
-  transition: border 0.2s, box-shadow 0.2s;
+  transition: border 0.1s, box-shadow 0.2s;
   width: 100%;
   box-sizing: border-box;
 }
 
 .image-button:hover {
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
-  border: 1px solid #222222;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #7d7d7d;
 }
 
 .image-button-caption {
