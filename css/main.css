@@ -65,9 +65,9 @@ a {
   font-weight: 500;
   color: rgb(255, 255, 255);
   opacity: 0.7;
-  transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out;
 }
 
 .menu-items a:hover {
@@ -159,7 +159,7 @@ h2 {
   border: 0;
   margin: 10px 0 5px 0;
   padding: 0;
-  transition: border 0.1s, box-shadow 0.2s;
+  transition: border 0.1s, box-shadow 0.1s;
   width: 100%;
   box-sizing: border-box;
 }
@@ -191,7 +191,7 @@ h2 {
   border-radius: 2px;
   cursor: pointer;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-  transition: background-color 0.2s, box-shadow 0.2s;
+  transition: background-color 0.1s, box-shadow 0.1s;
 }
 
 .custom-button:hover {
