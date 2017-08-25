@@ -11,3 +11,15 @@
   height: 270px;
   width: 430px;
 }
+
+#download-ios img {
+  width: 180px;
+}
+
+#download-android img {
+  width: 180px;
+}
+
+#download-ios {
+  padding-right: 30px;
+}
