@@ -172,7 +172,6 @@ h2 {
 
 .image-button:active {
   box-shadow: none;
-  border: 0;
 }
 
 .image-button-caption {
@@ -185,18 +184,21 @@ h2 {
 }
 
 .custom-button {
-  padding: 10px 25px;
+  padding: 12px 25px;
   text-align: center;
   background-color: #7d7d7d;
   color: white;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 14px;
+  line-height: 14px;
   outline: none;
   border: 0;
   border-radius: 2px;
   cursor: pointer;
   box-shadow: none;
   transition: background-color 0.1s, box-shadow 0.1s;
+  text-decoration: none;
+  display: block;
 }
 
 .custom-button:hover {
