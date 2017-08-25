@@ -3,8 +3,7 @@
  * Copyright Yen-Chia Hsu.
  * GitHub: https://github.com/yenchiah/project-website-template
  * Contact: hsu.yenchia@gmail.com
- * License: GNU General Public License v2
- * Version: v1.2
+ * Version: v1.3
  *************************************************************************/
 
 html, body {
@@ -125,6 +124,7 @@ h2 {
   margin: 10px 0 10px 0;
   padding: 0;
   vertical-align: middle;
+  font-weight: bold;
 }
 
 .text {
