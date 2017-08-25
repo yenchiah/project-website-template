@@ -166,7 +166,7 @@ h2 {
 }
 
 .image-button:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   border: 1px solid #4d4d4d;
 }
 
@@ -200,7 +200,7 @@ h2 {
 }
 
 .custom-button:hover {
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
   background-color: #4d4d4d;
 }
 
