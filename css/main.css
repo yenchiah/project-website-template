@@ -162,11 +162,17 @@ h2 {
   transition: border 0.1s, box-shadow 0.1s;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: none;
 }
 
 .image-button:hover {
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
-  border: 1px solid #7d7d7d;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+  border: 1px solid #4d4d4d;
+}
+
+.image-button:active {
+  box-shadow: none;
+  border: 0;
 }
 
 .image-button-caption {
@@ -180,7 +186,6 @@ h2 {
 
 .custom-button {
   padding: 10px 25px;
-  display: table;
   text-align: center;
   background-color: #7d7d7d;
   color: white;
@@ -190,11 +195,12 @@ h2 {
   border: 0;
   border-radius: 2px;
   cursor: pointer;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   transition: background-color 0.1s, box-shadow 0.1s;
 }
 
 .custom-button:hover {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
   background-color: #4d4d4d;
 }
 
