@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v1.3
+ * Version: v1.4
  *************************************************************************/
 
 html, body {
@@ -128,6 +128,7 @@ h2 {
   margin: 15px 0 15px 0;
   padding: 0;
   vertical-align: middle;
+  font-weight: normal;
 }
 
 .text-large-margin {
@@ -148,12 +149,24 @@ h2 {
   vertical-align: middle;
 }
 
+.image-link {
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: inline-block;
+  border: 0;
+  margin: 10px 0 10px 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .image-button {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   display: block;
-  border: 0;
+  border: 1px solid white;
   margin: 10px 0 5px 0;
   padding: 0;
   transition: border 0.1s, box-shadow 0.1s;
