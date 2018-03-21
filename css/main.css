@@ -1,13 +1,13 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v1.4
+ * Version: v1.5
  *************************************************************************/
 
 html, body {
   margin: 0;
   padding: 0;
   background-color: white;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   min-width: 940px;
 }
 
@@ -21,7 +21,6 @@ a {
   position: relative;
   width: 100%;
   background-color: #212121;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .menu {
@@ -34,12 +33,12 @@ a {
   padding: 0 20px;
   width: 100%;
   margin: 0;
-  height: 50px;
+  height: 60px;
 }
 
 .logo {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 30px;
+  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  font-size: 35px;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -51,19 +50,20 @@ a {
 
 .menu-items {
   float: right;
-  font-size: 17px;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .menu-items a {
-  margin-left: 30px;
+  margin-left: 25px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 18px;
   color: rgb(255, 255, 255);
   opacity: 0.7;
   transition: opacity 0.1s ease-in-out;
   -moz-transition: opacity 0.1s ease-in-out;
   -webkit-transition: opacity 0.1s ease-in-out;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .menu-items a:hover {
@@ -87,7 +87,9 @@ a {
   position: relative;
   margin: 0 auto;
   font-size: 16px;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  /*font-family: Verdana, Geneva, sans-serif;*/
+  /*font-family: Georgia, Times, "Times New Roman", serif;*/
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
   max-width: 940px;
@@ -118,14 +120,15 @@ a {
 
 h2 {
   font-size: 24px;
-  margin: 10px 0 10px 0;
+  margin: 15px 0 7px 0;
   padding: 0;
   vertical-align: middle;
   font-weight: bold;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .text {
-  margin: 15px 0 15px 0;
+  margin: 10px 0 10px 0;
   padding: 0;
   vertical-align: middle;
 }
@@ -137,13 +140,13 @@ h2 {
 }
 
 .image {
-  margin: 15px 0 15px 0;
+  margin: 10px 0 10px 0;
   padding: 0;
   vertical-align: middle;
 }
 
 .video {
-  margin: 15px 0 15px 0;
+  margin: 10px 0 10px 0;
   padding: 0;
   vertical-align: middle;
 }
@@ -197,7 +200,7 @@ h2 {
   text-align: center;
   background-color: #7d7d7d;
   color: white;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 14px;
   outline: none;
@@ -263,7 +266,7 @@ h2 {
 
 .iframe-container {
   position: absolute;
-  top: 50px;
+  top: 60px;
   bottom: 0;
   left: 0;
   height: auto;
@@ -287,4 +290,10 @@ h2 {
 
 .highlight-text {
   font-weight: bold;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
 }

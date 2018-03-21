@@ -13,10 +13,12 @@
 }
 
 #download-ios img {
+  margin-top: 5px;
   width: 180px;
 }
 
 #download-android img {
+  margin-top: 5px;
   width: 180px;
 }
 
