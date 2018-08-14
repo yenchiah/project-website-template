@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Fancy Project Title</title>
+  <title>Project Title</title>
   <link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="css/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -15,7 +15,7 @@
       <tr>
         <td>
           <div class="logo">
-            <a href="javascript:void(0)">Fancy Project Title</a>
+            <a href="javascript:void(0)">Project Title</a>
           </div>
         </td>
         <td>
@@ -37,7 +37,7 @@
           <img class="left-align image noselect" src="img/dummay-img.png" width="430">
         </td>
         <td>
-          <p class="text text-large" style="margin-left: 80px;">
+          <p class="text text-large add-top-margin" style="margin-left: 80px;">
             <a target="_blank" href="javascript:void(0)">Author 1</a>, author1 (at) cs.cmu.edu
             <br>
             <a target="_blank" href="javascript:void(0)">Author 2</a>, author2 (at) cs.cmu.edu
@@ -58,7 +58,7 @@
       </tr>
       <tr>
         <td colspan="2">
-          <p class="text">
+          <p class="text add-top-margin">
             Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
             augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
             condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
@@ -68,49 +68,18 @@
         </td>
       </tr>
       <tr>
-        <td colspan="2">
-          <h2>Text with Buttons and App Badges</h2>
-          <hr>
-          <p class="text">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            dolores eos
-          </p>
-        </td>
-      </tr>
-      <tr>
         <td width="50%">
-          <p class="text left-align" style="font-size: 35px; font-weight: 700;">Large Badge Caption!</p>
+          <p class="text left-align badge-text">Large Badge Caption!</p>
         </td>
         <td width="50%">
-          <div class="noselect" style="float: right;">
-            <a id="download-ios" target="_blank" href="javascript:void(0)"><img src="img/app-store-badge.png"/></a>
-            <a id="download-android" target="_blank" href="javascript:void(0)"><img src="img/google-play-badge.png"/></a>
+          <div class="button-group noselect right-align">
+            <a href="javascript:void(0)" target="_blank" style="margin-right: 15px;"><img src="img/app-store-badge.png" width="180"></a>
+            <a href="javascript:void(0)" target="_blank" ><img src="img/google-play-badge.png" width="180"></a>
           </div>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-          <p class="text">
-            Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-            sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="left-align-content">
-            <div class="custom-button noselect" style="margin: 10px 20px 10px 0;">Button</div>
-            <a target="_blank" href="https://github.com/yenchiah/project-website-template" class="custom-button noselect" style="margin: 10px 20px 10px 0;">Button with Hyperlink</a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <h2>Text with Images</h2>
-          <hr>
           <p class="text">
             Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
             coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
@@ -120,16 +89,80 @@
         </td>
       </tr>
       <tr>
-        <td>
-          <img class="left-align image noselect" src="img/dummay-img.png" width="430">
-        </td>
-        <td>
-          <img class="right-align image noselect" src="img/dummay-img.png" width="430">
+        <td colspan="2">
+          <h2 class="add-top-margin">Text with Buttons</h2>
+          <hr>
+          <p class="text">
+            Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+            sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa
+          </p>
+          <div class="left-align-content button-group">
+            <button class="custom-button noselect">Default</button>
+            <button class="custom-button custom-button-primary noselect">Primary</button>
+            <button class="custom-button custom-button-danger noselect">Danger</button>
+            <button class="custom-button custom-button-info noselect">Info</button>
+            <button class="custom-button noselect" disabled>Disabled</button>
+            <a target="_blank" href="https://github.com/yenchiah/project-website-template" class="custom-button-hyperlink">
+              <button class="custom-button noselect">Hyperlink</button>
+            </a>
+          </div>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-          <h2>Text with Image Buttons</h2>
+          <h2 class="add-top-margin">Text with Radios</h2>
+          <hr>
+          <p class="text">
+            Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+            coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+            It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+            simplificat Angles, quam un
+          </p>
+          <div class="left-align-content button-group">
+            <div class="custom-radio custom-radio-left">
+              <input type="radio" name="playback-speed" value="slow" id="speed-slow">
+              <label for="speed-slow" class="noselect">Slow</label>
+            </div>
+            <div class="custom-radio custom-radio-middle">
+              <input type="radio" name="playback-speed" value="medium" id="speed-medium" checked>
+              <label for="speed-medium" class="noselect">Medium</label>
+            </div>
+            <div class="custom-radio custom-radio-right">
+              <input type="radio" name="playback-speed" value="fast" id="speed-fast">
+              <label for="speed-fast" class="noselect">Fast</label>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h2 class="add-top-margin">Text with Images</h2>
+          <hr>
+          <p class="text">
+            Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+            sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="left-align">
+            <img class="image noselect" src="img/dummay-img.png" width="430">
+            <p class="image-caption">Image Button Caption</p>
+          </div>
+        </td>
+        <td>
+          <div class="right-align">
+            <img class="image noselect" src="img/dummay-img.png" width="430">
+            <p class="image-caption">Image Button Caption</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h2 class="add-top-margin">Text with Image Buttons</h2>
           <hr>
           <p class="text">
             Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
@@ -142,25 +175,31 @@
       <tr>
         <td>
           <div class="left-align">
-            <a href="javascript:void(0)" class="image-button" id="image-1"></a>
-            <p class="image-button-caption left-align">Image Button Caption</p>
+            <a href="javascript:void(0)" target="_blank" class="image noselect"><img src="img/dummay-img.png" width="430"></a>
+            <p class="image-caption">Image Button Caption</p>
           </div>
         </td>
         <td>
           <div class="right-align">
-            <a href="javascript:void(0)" class="image-button" id="image-2"></a>
-            <p class="image-button-caption right-align">Image Button Caption</p>
+            <a href="javascript:void(0)" target="_blank" class="image noselect"><img src="img/dummay-img.png" width="430"></a>
+            <p class="image-caption">Image Button Caption</p>
           </div>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-          <h2>Text with Image and Video</h2>
+          <h2 class="add-top-margin">Text with Image and Video</h2>
           <hr>
           <p class="text">
             Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
             sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
             li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa
+          </p>
+          <p class="text">
+            Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+            coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+            It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+            simplificat Angles, quam un
           </p>
         </td>
       </tr>
@@ -181,7 +220,7 @@
       </tr>
       <tr style="width: 100%">
         <td style="width: 50%">
-          <video width="430" preload controls autoplay loop muted playsinline class="video left-align">
+          <video width="430" preload controls autoplay loop muted playsinline class="image left-align">
             <source src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>

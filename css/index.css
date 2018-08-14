@@ -1,27 +1,3 @@
-#image-1 {
-  background-image: url(../img/dummay-img.png);
-  background-size: 430px 270px;
-  height: 270px;
-  width: 430px;
-}
-
-#image-2 {
-  background-image: url(../img/dummay-img.png);
-  background-size: 430px 270px;
-  height: 270px;
-  width: 430px;
-}
-
-#download-ios img {
-  margin-top: 5px;
-  width: 180px;
-}
-
-#download-android img {
-  margin-top: 5px;
-  width: 180px;
-}
-
-#download-ios {
-  padding-right: 30px;
-}
+/*************************************************************************
+ * This css file is for your own style.
+ *************************************************************************/
