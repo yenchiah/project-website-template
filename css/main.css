@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v1.6
+ * Version: v1.7
  * This css file is for the main template.
  * If you want to keep this template updated, avoid modifying this file.
  * Instead, add your own css in the index.css file.
@@ -100,10 +100,11 @@ a {
 
 .content p a {
   text-decoration: none;
-  color: #9a2328;
+  color: #dc3545;
 }
 
 .content p a:hover {
+  color: #a71120;
   text-decoration: underline;
 }
 
@@ -123,7 +124,7 @@ a {
 
 h2 {
   font-size: 24px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 0 0;
   padding: 0;
   vertical-align: middle;
   font-weight: bold;
@@ -148,7 +149,13 @@ h2 {
 }
 
 .text-small-margin {
-  margin: 10px 0 10px 0;
+  margin: 5px 0 5px 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.text-no-margin {
+  margin: 0;
   padding: 0;
   vertical-align: middle;
 }
@@ -173,6 +180,87 @@ h2 {
   text-align: center;
   margin-top: -5px;
   margin-bottom: 10px;
+}
+
+ol.publication {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style: none;
+  margin: 7px 0 7px 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+ol.publication li {
+  display: flex;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+ol.publication li:before {
+  line-height: 1;
+  margin-right: 10px;
+}
+
+ol.publication.C-list {
+  counter-reset: C-counter;
+}
+
+ol.publication.C-list li {
+  counter-increment: C-counter;
+}
+
+ol.publication.C-list li:before {
+  content: "[C." counter(C-counter) "]";
+}
+
+ol.publication.J-list {
+  counter-reset: J-counter;
+}
+
+ol.publication.J-list li {
+  counter-increment: J-counter;
+}
+
+ol.publication.J-list li:before {
+  content: "[J." counter(J-counter) "]";
+}
+
+ol.publication.T-list {
+  counter-reset: T-counter;
+}
+
+ol.publication.T-list li {
+  counter-increment: T-counter;
+}
+
+ol.publication.T-list li:before {
+  content: "[T." counter(T-counter) "]";
+}
+
+ol.publication.O-list {
+  counter-reset: O-counter;
+}
+
+ol.publication.O-list li {
+  counter-increment: O-counter;
+}
+
+ol.publication.O-list li:before {
+  content: "[O." counter(O-counter) "]";
+}
+
+ol.publication.P-list {
+  counter-reset: P-counter;
+}
+
+ol.publication.P-list li {
+  counter-increment: P-counter;
+}
+
+ol.publication.P-list li:before {
+  content: "[P." counter(P-counter) "]";
 }
 
 .noselect {
@@ -252,6 +340,7 @@ hr {
   border: 0;
   height: 1px;
   background: #333;
+  margin: 0;
 }
 
 .button-group {
@@ -265,6 +354,30 @@ hr {
 
 .custom-button-hyperlink {
   text-decoration: none;
+}
+
+.custom-text-info, .custom-text-info p, .custom-text-info a {
+  color: #17a2b8;
+}
+
+.custom-text-info a:hover {
+  color: #007082;
+}
+
+.custom-text-primary, .custom-text-primary p, .custom-text-primary a {
+  color: #007bff;
+}
+
+.custom-text-primary a:hover {
+  color: #005cbf;
+}
+
+.custom-text-danger, .custom-text-danger p, .custom-text-danger a {
+  color: #dc3545;
+}
+
+.custom-text-danger a:hover {
+  color: #a71120;
 }
 
 .custom-button {
