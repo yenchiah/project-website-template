@@ -6,59 +6,47 @@
   <link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="css/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 <body>
 <div class="menu-container noselect">
   <div class="menu">
-    <table class="menu-table">
-      <tr>
-        <td>
-          <div class="logo">
-            <a href="javascript:void(0)">Project Title</a>
-          </div>
-        </td>
-        <td>
-          <div class="menu-items">
-            <a href="javascript:void(0)" class="menu-highlight">Overview</a>
-            <a href="embedding.html">Embedding</a>
-            <a target="_blank" href="https://github.com/yenchiah/project-website-template">GitHub</a>
-          </div>
-        </td>
-      </tr>
-    </table>
+    <div class="menu-table flex-row-space-between">
+      <div class="logo flex-item">
+        <a href="index.html">Project Title</a>
+      </div>
+      <div class="menu-items flex-item">
+        <a href="javascript:void(0)" class="menu-highlight">Overview</a>
+        <a href="embedding.html">Embedding</a>
+        <a target="_blank" href="https://github.com/yenchiah/project-website-template">GitHub</a>
+      </div>
+    </div>
   </div>
 </div>
 <div class="content-container">
   <div class="content">
-    <table class="content-table">
-      <tr>
-        <td>
-          <img class="left-align image noselect" src="img/dummay-img.png" width="430">
-        </td>
-        <td>
-          <p class="text text-large add-top-margin" style="margin-left: 80px;">
-            <a target="_blank" href="javascript:void(0)">Author 1</a>, author1 (at) cs.cmu.edu
-            <br>
-            <a target="_blank" href="javascript:void(0)">Author 2</a>, author2 (at) cs.cmu.edu
-            <br>
-            <a target="_blank" href="javascript:void(0)">Author 3</a>, author3 (at) cs.cmu.edu
-            <br>
-            <a target="_blank" href="javascript:void(0)">Laboratory</a>
-            <br>
-            <a target="_blank" href="javascript:void(0)">Institute</a>
-            <br>
-            <a target="_blank" href="javascript:void(0)">Organization</a>
-            <br>
-            <a target="_blank" href="javascript:void(0)">Street Address</a>
-            <br>
+    <div class="content-table flex-column">
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <img class="noselect image" src="img/dummay-img.png">
+        </div>
+        <div class="flex-item flex-column">
+          <p class="text text-large">
+            <a target="_blank" href="javascript:void(0)">Author 1</a>, author1 (at) cs.cmu.edu<br>
+            <a target="_blank" href="javascript:void(0)">Author 2</a>, author2 (at) cs.cmu.edu<br>
+            <a target="_blank" href="javascript:void(0)">Author 3</a>, author3 (at) cs.cmu.edu<br>
+            <a target="_blank" href="javascript:void(0)">Laboratory</a><br>
+            <a target="_blank" href="javascript:void(0)">Institute</a><br>
+            <a target="_blank" href="javascript:void(0)">Organization</a><br>
+            <a target="_blank" href="javascript:void(0)">Street Address</a><br>
             <a target="_blank" href="javascript:void(0)">City, State, Country</a>
           </p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
           <p class="text add-top-margin">
             Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
             augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
@@ -66,39 +54,44 @@
             vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
             sapien ut libero venenatis faucibus.
           </p>
-        </td>
-      </tr>
-      <tr>
-        <td width="50%">
-          <p class="text left-align badge-text">Large Badge Caption!</p>
-        </td>
-        <td width="50%">
-          <div class="button-group noselect right-align">
-            <a href="javascript:void(0)" target="_blank" style="margin-right: 15px;"><img src="img/app-store-badge.png" width="180"></a>
-            <a href="javascript:void(0)" target="_blank" ><img src="img/google-play-badge.png" width="180"></a>
+        </div>
+      </div>
+      <div class="flex-row-space-between">
+        <div class="flex-item flex-column">
+          <p class="text badge-text">Large Badge Caption!</p>
+        </div>
+        <div class="flex-item flex-column">
+          <div class="button-group noselect flex-row">
+            <a href="javascript:void(0)" target="_blank" class="custom-image-button flex-column">
+              <img src="img/app-store-badge.png" width="180">
+            </a>
+            <a href="javascript:void(0)" target="_blank" class="custom-image-button flex-column">
+              <img src="img/google-play-badge.png" width="180">
+            </a>
           </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
           <p class="text">
             Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
             coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
             It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-            simplificat Angles, quam un
+            simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental
           </p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
           <h2 class="add-top-margin">Text with Buttons</h2>
           <hr>
           <p class="text">
             Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
             sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa
+            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+            custosi traductores. At solmen va esser necessi far uniform
           </p>
-          <div class="left-align-content button-group">
+          <div class="button-group noselect flex-row">
             <button class="custom-button noselect">Default</button>
             <button class="custom-button custom-button-primary noselect">Primary</button>
             <button class="custom-button custom-button-danger noselect">Danger</button>
@@ -108,19 +101,19 @@
               <button class="custom-button noselect">Hyperlink</button>
             </a>
           </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
           <h2 class="add-top-margin">Text with Radios</h2>
           <hr>
           <p class="text">
             Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
             coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
             It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-            simplificat Angles, quam un
+            simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental
           </p>
-          <div class="left-align-content button-group">
+          <div class="button-group noselect flex-row">
             <div class="custom-radio custom-radio-left">
               <input type="radio" name="playback-speed" value="slow" id="speed-slow">
               <label for="speed-slow" class="noselect">Slow</label>
@@ -134,81 +127,73 @@
               <label for="speed-fast" class="noselect">Fast</label>
             </div>
           </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <h2 class="add-top-margin">Text with Images</h2>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 class="add-top-margin">Text with Images (Not Stretched for Mobile)</h2>
           <hr>
           <p class="text">
             Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
             sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa
+            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+            custosi traductores. At solmen va esser necessi far uniform
           </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="left-align">
-            <img class="image noselect" src="img/dummay-img.png" width="430">
-            <p class="image-caption">Image Button Caption</p>
-          </div>
-        </td>
-        <td>
-          <div class="right-align">
-            <img class="image noselect" src="img/dummay-img.png" width="430">
-            <p class="image-caption">Image Button Caption</p>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <h2 class="add-top-margin">Text with Image Buttons</h2>
+        </div>
+      </div>
+      <div class="flex-row-space-between">
+        <div class="flex-item flex-column">
+          <img class="image noselect" src="img/dummay-img.png">
+          <p class="image-caption">Image Button Caption</p>
+        </div>
+        <div class="flex-item flex-column">
+          <img class="image noselect" src="img/dummay-img.png">
+          <p class="image-caption">Image Button Caption</p>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 class="add-top-margin">Text with Image Buttons (Not Stretched for Mobile)</h2>
           <hr>
           <p class="text">
             Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
             coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
             It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-            simplificat Angles, quam un
+            simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental
           </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="left-align">
-            <a href="javascript:void(0)" target="_blank" class="image noselect"><img src="img/dummay-img.png" width="430"></a>
-            <p class="image-caption">Image Button Caption</p>
-          </div>
-        </td>
-        <td>
-          <div class="right-align">
-            <a href="javascript:void(0)" target="_blank" class="image noselect"><img src="img/dummay-img.png" width="430"></a>
-            <p class="image-caption">Image Button Caption</p>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <h2 class="add-top-margin">Text with Image and Video</h2>
+        </div>
+      </div>
+      <div class="flex-row-space-between">
+        <div class="flex-item flex-column">
+          <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image noselect">
+            <img src="img/dummay-img.png">
+          </a>
+          <p class="image-caption">Image Button Caption</p>
+        </div>
+        <div class="flex-item flex-column">
+          <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image noselect">
+            <img src="img/dummay-img.png">
+          </a>
+          <p class="image-caption">Image Button Caption</p>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 class="add-top-margin">Text with Image and Video (Stretched for Mobile)</h2>
           <hr>
           <p class="text">
             Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
             sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa
+            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+            custosi traductores. At solmen va esser necessi far uniform
           </p>
-          <p class="text">
-            Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-            coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-            It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-            simplificat Angles, quam un
-          </p>
-        </td>
-      </tr>
-      <tr style="width: 100%">
-        <td style="width: 50%">
-          <img class="left-align image noselect" src="img/dummay-img.png" width="430">
-        </td>
-        <td style="width: 50%; padding-left: 20px">
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <img class="noselect image" src="img/dummay-img.png">
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
           <p class="text">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
             aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -217,45 +202,45 @@
             sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
             magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           </p>
-        </td>
-      </tr>
-      <tr style="width: 100%">
-        <td style="width: 50%">
-          <video width="430" preload controls autoplay loop muted playsinline class="image left-align">
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <video preload controls autoplay loop muted playsinline class="image noselect">
             <source src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-        </td>
-        <td style="width: 50%; padding-left: 20px">
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
           <p class="text">
-            Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
-            Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis
-            in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam
-            pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed
-            aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent
-            adipiscing. Sed ut perspiciatis unde omnis iste natus error sit
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem.
           </p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
           <p class="text">
             Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
             sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
             li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-            custosi traductores.
+            custosi traductores. At solmen va esser necessi far uniform
           </p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
           <p class="text text-small text-italic">
             Credits: <span class="highlight-text">Organization One</span>: Author One and Author Two / <span
             class="highlight-text">Organization Two</span>: Author Three and Author Four
           </p>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 </body>
