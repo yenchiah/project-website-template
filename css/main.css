@@ -1,20 +1,10 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v1.8
+ * Version: v1.9
  * This css file is for the main template.
  * If you want to keep this template updated, avoid modifying this file.
  * Instead, add your own css in the index.css file.
  *************************************************************************/
-
-@media screen and (max-width: 500px) {
-  .menu-items a {
-    width: 100%;
-  }
-
-  .menu-items a:first-child {
-    margin-top: 10px;
-  }
-}
 
 html, body {
   margin: 0;
@@ -38,22 +28,13 @@ a {
 .menu {
   position: relative;
   margin: 0 auto;
+  max-width: 900px;
 }
 
 .menu-table {
-  padding: 7px 10px;
+  padding: 10px 10px;
   width: 100%;
   margin: 0;
-}
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-  box-sizing: border-box;
 }
 
 .logo a {
@@ -65,20 +46,20 @@ a {
   flex: 1 auto;
 }
 
-.menu-items {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-  box-sizing: border-box;
+.menu-button {
+  width: 45px;
+  height: 45px;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-button img {
+  width: 30px;
+  height: 30px;
 }
 
 .menu-items a {
   color: rgba(255, 255, 255, 0.8);
-  margin-top: 7px;
-  margin-bottom: 7px;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
@@ -118,6 +99,7 @@ a {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
+  max-width: 900px;
 }
 
 .content p a {
@@ -160,6 +142,16 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   align-content: stretch;
   box-sizing: border-box;
@@ -250,6 +242,10 @@ ul {
   text-align: center;
   margin-top: -10px;
   margin-bottom: 10px;
+}
+
+.max-width-400 {
+  max-width: 400px;
 }
 
 ol.publication {
@@ -412,7 +408,7 @@ ol.publication.A-list li p:before {
 
 .iframe-container {
   position: absolute;
-  top: 60px;
+  top: 67px;
   bottom: 0;
   left: 0;
   height: auto;
@@ -777,4 +773,69 @@ hr {
 .custom-dropdown > div > a:hover {
   background-color: #e1e1e1;
   color: black;
+}
+
+/********************************************************************************
+The @media part need to be put at the end to override all previous css
+********************************************************************************/
+@media screen and (min-width: 900px) {
+  .flex-item-stretch {
+    flex: 1;
+  }
+
+  .flex-item-stretch-2 {
+    flex: 2;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logo {
+    width: calc(70% - 45px);
+  }
+
+  .menu-items {
+    display: none;
+    width: 100%;
+  }
+
+  .menu-items a:first-child {
+    margin-top: 10px;
+  }
+
+  .menu-items a {
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .menu-button {
+    width: calc(30% - 45px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+    box-sizing: border-box;
+  }
+
+  .menu-button:focus {
+    pointer-events: none;
+  }
+
+  .menu-button:focus + .menu-items {
+    display: block;
+  }
+
+  .menu-button:focus + .menu-items a {
+    display: block;
+  }
+
+  .menu-items:hover {
+    display: block;
+  }
+
+  .menu-items > a {
+    display: block;
+  }
 }

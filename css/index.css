@@ -2,27 +2,6 @@
  * This css file is for your own style.
  *************************************************************************/
 
-.menu {
-  max-width: 960px;
-}
-
-.content {
-  max-width: 960px;
-}
-
-@media screen and (min-width: 960px) {
-  .flex-item-stretch {
-    flex: 1;
-  }
-  .flex-item-stretch-2 {
-    flex: 2;
-  }
-}
-
-#custom-image {
-  max-width: 430px;
-}
-
 #custom-dropdown {
   width: 240px;
 }
