@@ -791,6 +791,7 @@ The @media part need to be put at the end to override all previous css
 @media screen and (max-width: 750px) {
   .logo {
     width: calc(70% - 45px);
+    -webkit-tap-highlight-color: transparent;
   }
 
   .menu-items {
@@ -817,6 +818,7 @@ The @media part need to be put at the end to override all previous css
     align-items: center;
     align-content: stretch;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .menu-button:focus {
