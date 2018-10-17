@@ -169,6 +169,10 @@ a {
   flex: 1 auto;
 }
 
+.flex-item-stretch-2 {
+  flex: 1 auto;
+}
+
 .flex-item {
   margin: 0 20px;
 }
@@ -208,7 +212,7 @@ ul {
 }
 
 .text-large-margin {
-  margin: 25px 0 25px 0;
+  margin: 15px 0 15px 0;
   padding: 0;
 }
 
@@ -225,7 +229,7 @@ ul {
 .image {
   border-radius: 2px;
   width: 100%;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .image img {
@@ -240,7 +244,7 @@ ul {
 .image-caption {
   width: 100%;
   text-align: center;
-  margin-top: -5px;
+  margin-top: -10px;
   margin-bottom: 10px;
 }
 

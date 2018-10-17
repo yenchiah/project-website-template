@@ -14,4 +14,11 @@
   .flex-item-stretch {
     flex: 1;
   }
+  .flex-item-stretch-2 {
+    flex: 2;
+  }
+}
+
+#custom-image {
+  max-width: 430px;
 }
