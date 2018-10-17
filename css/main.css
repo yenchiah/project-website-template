@@ -189,6 +189,10 @@ a {
   width: 100%;
 }
 
+.force-hide {
+  display: none !important;
+}
+
 h2 {
   font-size: 24px;
   margin: 10px 0 0 0;
@@ -460,6 +464,10 @@ hr {
   margin-right: 15px;
 }
 
+.button-group .custom-dropdown:not(:last-child) {
+  margin-right: 15px;
+}
+
 .custom-button-hyperlink {
   text-decoration: none;
 }
@@ -677,4 +685,96 @@ hr {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.custom-dropdown {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 10px 0 10px 0;
+}
+
+.custom-dropdown > a {
+  padding: 5px 26px 5px 8px;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: none;
+  transition: background-color 0.1s, box-shadow 0.1s, border 0.1s;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  color: black;
+  height: 28px;
+  border: 1px solid #7d7d7d;
+  background-color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.custom-dropdown > a > span {
+  text-align: left;
+  font-size: 14px !important;
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+}
+
+.custom-dropdown > a:after {
+  position: absolute;
+  content: "";
+  top: 13px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: black;
+}
+
+.custom-dropdown > div {
+  display: none;
+  position: absolute;
+  margin-top: -1px;
+  border: 1px solid #7d7d7d;
+  background-color: white;
+  z-index: 1;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  min-width: 100%;
+}
+
+.custom-dropdown > a:focus {
+  pointer-events: none;
+}
+
+.custom-dropdown > a:focus + div {
+  display: block;
+}
+
+.custom-dropdown > div:hover {
+  display: block;
+}
+
+.custom-dropdown > div > a {
+  color: black;
+  padding: 5px 8px;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  outline: none;
+  font-size: 14px !important;
+  line-height: 16px;
+  height: 26px;
+  white-space: nowrap;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  box-sizing: border-box;
+}
+
+.custom-dropdown > div > a:hover {
+  background-color: #e1e1e1;
+  color: black;
 }
