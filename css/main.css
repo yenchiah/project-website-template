@@ -45,15 +45,15 @@ a {
 .logo a {
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   text-decoration: none;
   font-weight: 700;
   flex: 1 auto;
 }
 
 .menu-button {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   display: none;
   cursor: pointer;
   margin-right: 20px;
@@ -205,7 +205,7 @@ ul {
 }
 
 .badge-text {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -415,7 +415,7 @@ ol.publication.A-list li p:before {
 
 .iframe-container {
   position: absolute;
-  top: 67px;
+  top: 61px;
   bottom: 0;
   left: 0;
   height: auto;
