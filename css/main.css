@@ -23,7 +23,7 @@ a {
   position: relative;
   width: 100%;
   background-color: #212121;
-  min-width: 340px;
+  min-width: 300px;
 }
 
 .menu {
@@ -96,7 +96,7 @@ a {
   z-index: 1;
   position: relative;
   width: 100%;
-  min-width: 340px;
+  min-width: 300px;
 }
 
 .content {
@@ -420,7 +420,7 @@ ol.publication.A-list li p:before {
   left: 0;
   height: auto;
   width: 100%;
-  min-width: 340px;
+  min-width: 300px;
 }
 
 .iframe {
