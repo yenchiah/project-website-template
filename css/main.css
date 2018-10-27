@@ -814,7 +814,7 @@ hr {
   width: 100%;
 }
 
-.gallery a div {
+.gallery a > div {
   width: 100%;
   text-align: center;
 }
