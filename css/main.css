@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v1.9
+ * Version: v1.10
  * This css file is for the main template.
  * If you want to keep this template updated, avoid modifying this file.
  * Instead, add your own css in the index.css file.
@@ -783,6 +783,42 @@ hr {
   color: black;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.gallery a {
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  cursor: default;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+.gallery a img {
+  border-radius: 2px;
+  width: 100%;
+}
+
+.gallery a div {
+  width: 100%;
+  text-align: center;
+}
+
 /********************************************************************************
 The @media part need to be put at the end to override all previous css
 ********************************************************************************/
@@ -845,5 +881,32 @@ The @media part need to be put at the end to override all previous css
 
   .menu-items > a {
     display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .gallery a {
+    flex: 1 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .gallery a {
+    flex: 1 0 33.3%;
+    max-width: 33.3%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .gallery a {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery a {
+    flex: 1 auto;
   }
 }

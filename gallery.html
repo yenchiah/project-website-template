@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <title>Project Title</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="menu-container noselect">
+  <div class="menu">
+    <div class="menu-table flex-row-space-between">
+      <div class="logo flex-row-center">
+        <a href="index.html">Project Title</a>
+      </div>
+      <a class="menu-button" tabindex="0" href="javascript:void(0)">
+        <img class="noselect" src="img/menu.png">
+      </a>
+      <div class="menu-items flex-row-center flex-item">
+        <a href="index.html">Overview</a>
+        <a href="gallery.html" class="menu-highlight">Gallery</a>
+        <a href="embedding.html">Embedding</a>
+        <a href="https://github.com/yenchiah/project-website-template">GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-container">
+  <div class="content">
+    <div class="content-table flex-column">
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <p class="text add-top-margin">
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+            augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+            condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+            vel, luctus pulvinar, hendrerit id, lorem.
+          </p>
+        </div>
+      </div>
+      <div class="gallery">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  function init() {
+    var $gallery = $(".gallery");
+    // In practice, these images urls may come from your server via an http request.
+    for (var i = 0; i < 20; i++) {
+      var item = "<a href=\"javascript:void(0)\" class=\"flex-column\">" +
+        "<img src=\"img/dummay-img.png\">" +
+        "<div>Image Caption</div>" +
+        "</a>";
+      $gallery.append($(item));
+    }
+  }
+
+  $(init);
+</script>
+</html>
