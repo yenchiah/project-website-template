@@ -456,7 +456,7 @@ hr {
   margin: 0;
 }
 
-.button-group .custom-button, .button-group .custom-image-button {
+.button-group .custom-button {
   margin: 10px 0 10px 0;
 }
 
@@ -464,11 +464,27 @@ hr {
   margin-right: 15px;
 }
 
+.button-group .custom-image-button {
+  margin: 10px 0 10px 0;
+}
+
 .button-group .custom-image-button:not(:last-child) {
   margin-right: 15px;
 }
 
+.button-group .custom-dropdown {
+  margin: 10px 0 10px 0;
+}
+
 .button-group .custom-dropdown:not(:last-child) {
+  margin-right: 15px;
+}
+
+.button-group .custom-button-flat {
+  margin: 10px 0 10px 0;
+}
+
+.button-group .custom-button-flat:not(:last-child) {
   margin-right: 15px;
 }
 
@@ -579,6 +595,39 @@ hr {
 .custom-button-info:not(:disabled):active {
   background-color: #007082;
   border-color: #007082;
+}
+
+.custom-button-flat {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  outline: none;
+  border-radius: 48px;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background-color 0.1s, box-shadow 0.1s, border 0.1s;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #777777;
+  background-color: white;
+  padding: 13px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+.custom-button-flat img {
+  width: 20px;
+  height: 20px;
+}
+
+.custom-button-flat span {
+  margin-left: 6px;
 }
 
 .custom-radio {
@@ -695,7 +744,6 @@ hr {
   position: relative;
   display: block;
   cursor: pointer;
-  margin: 10px 0 10px 0;
 }
 
 .custom-dropdown > a {
