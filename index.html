@@ -3,7 +3,8 @@
 <head>
   <title>Project Title</title>
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-  <link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="css/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
@@ -13,14 +14,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="menu-container noselect">
+<div class="menu-container">
   <div class="menu">
     <div class="menu-table flex-row-space-between">
       <div class="logo flex-row-center">
         <a href="index.html">Project Title</a>
       </div>
       <a class="menu-button" tabindex="0" href="javascript:void(0)">
-        <img class="noselect" src="img/menu.png">
+        <img src="img/menu.png">
       </a>
       <div class="menu-items flex-row-center flex-item">
         <a href="index.html" class="menu-highlight">Overview</a>
@@ -50,7 +51,7 @@
     <div class="content-table flex-column">
       <div class="flex-row">
         <div class="flex-item flex-column">
-          <img class="noselect image" src="img/dummay-img.png">
+          <img class="image" src="img/dummay-img.png">
         </div>
         <div class="flex-item flex-column">
           <p class="text text-large">
@@ -81,11 +82,11 @@
           <p class="text badge-text">Large Badge Caption!</p>
         </div>
         <div class="flex-item flex-column">
-          <div class="button-group noselect flex-row">
-            <a href="javascript:void(0)" target="_blank" class="custom-image-button flex-column">
+          <div class="control-group">
+            <a href="javascript:void(0)" target="_blank" class="custom-image-button">
               <img src="img/app-store-badge.png" width="150">
             </a>
-            <a href="javascript:void(0)" target="_blank" class="custom-image-button flex-column">
+            <a href="javascript:void(0)" target="_blank" class="custom-image-button">
               <img src="img/google-play-badge.png" width="150">
             </a>
           </div>
@@ -111,31 +112,31 @@
             li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
             custosi traductores. At solmen va esser.
           </p>
-          <div class="button-group noselect flex-row">
-            <button class="custom-button noselect">Default</button>
-            <button class="custom-button custom-button-primary noselect">Primary</button>
-            <button class="custom-button custom-button-danger noselect">Danger</button>
-            <button class="custom-button custom-button-info noselect">Info</button>
-            <button class="custom-button noselect" disabled>Disabled</button>
+          <div class="control-group">
+            <button class="custom-button">Default</button>
+            <button class="custom-button custom-button-primary">Primary</button>
+            <button class="custom-button custom-button-danger">Danger</button>
+            <button class="custom-button custom-button-info">Info</button>
+            <button class="custom-button" disabled>Disabled</button>
             <a target="_blank" href="https://github.com/yenchiah/project-website-template" class="custom-button-hyperlink">
-              <button class="custom-button noselect">Hyperlink</button>
+              <button class="custom-button">Hyperlink</button>
             </a>
           </div>
-          <div class="button-group noselect flex-row">
-            <button class="custom-button-flat noselect"><img src="img/home.png"></button>
-            <button class="custom-button-flat noselect"><img src="img/calendar.png"></button>
-            <button class="custom-button-flat noselect"><img src="img/play.png"></button>
-            <button class="custom-button-flat noselect"><img src="img/pause.png"></button>
-            <button class="custom-button-flat noselect"><img src="img/stop.png"></button>
-            <button class="custom-button-flat noselect"><img src="img/terrain.png"></button>
+          <div class="control-group">
+            <button class="custom-button-flat"><img src="img/home.png"></button>
+            <button class="custom-button-flat"><img src="img/calendar.png"></button>
+            <button class="custom-button-flat"><img src="img/play.png"></button>
+            <button class="custom-button-flat"><img src="img/pause.png"></button>
+            <button class="custom-button-flat"><img src="img/stop.png"></button>
+            <button class="custom-button-flat"><img src="img/terrain.png"></button>
           </div>
-          <div class="button-group noselect flex-row">
-            <button class="custom-button-flat noselect"><img src="img/home.png"><span>Home</span></button>
-            <button class="custom-button-flat noselect"><img src="img/calendar.png"><span>Calendar</span></button>
-            <button class="custom-button-flat noselect"><img src="img/play.png"><span>Play</span></button>
-            <button class="custom-button-flat noselect"><img src="img/pause.png"><span>Pause</span></button>
-            <button class="custom-button-flat noselect"><img src="img/stop.png"><span>Stop</span></button>
-            <button class="custom-button-flat noselect"><img src="img/terrain.png"><span>Terrain</span></button>
+          <div class="control-group">
+            <button class="custom-button-flat"><img src="img/home.png"><span>Home</span></button>
+            <button class="custom-button-flat"><img src="img/calendar.png"><span>Calendar</span></button>
+            <button class="custom-button-flat"><img src="img/play.png"><span>Play</span></button>
+            <button class="custom-button-flat"><img src="img/pause.png"><span>Pause</span></button>
+            <button class="custom-button-flat"><img src="img/stop.png"><span>Stop</span></button>
+            <button class="custom-button-flat"><img src="img/terrain.png"><span>Terrain</span></button>
           </div>
         </div>
       </div>
@@ -149,18 +150,18 @@
             It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
             simplificat Angles, quam un skeptic Cambridge amico dit me.
           </p>
-          <div class="button-group noselect flex-row">
+          <div class="control-group">
             <div class="custom-radio custom-radio-left">
               <input type="radio" name="playback-speed" value="slow" id="speed-slow">
-              <label for="speed-slow" class="noselect">Slow</label>
+              <label for="speed-slow">Slow</label>
             </div>
             <div class="custom-radio custom-radio-middle">
               <input type="radio" name="playback-speed" value="medium" id="speed-medium" checked>
-              <label for="speed-medium" class="noselect">Medium</label>
+              <label for="speed-medium">Medium</label>
             </div>
             <div class="custom-radio custom-radio-right">
               <input type="radio" name="playback-speed" value="fast" id="speed-fast">
-              <label for="speed-fast" class="noselect">Fast</label>
+              <label for="speed-fast">Fast</label>
             </div>
           </div>
         </div>
@@ -175,7 +176,7 @@
             li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
             custosi traductores. At solmen va esser.
           </p>
-          <div class="button-group noselect flex-row">
+          <div class="control-group">
             <div class="custom-dropdown">
               <a tabindex="0" href="javascript:void(0)"><span>Dropdown Menu (No JavaScript)</span></a>
               <div>
@@ -207,11 +208,11 @@
       </div>
       <div class="flex-row-space-between">
         <div class="flex-item flex-column">
-          <img class="image max-width-400 noselect" src="img/dummay-img.png">
+          <img class="image max-width-400" src="img/dummay-img.png">
           <p class="image-caption">Image Button Caption</p>
         </div>
         <div class="flex-item flex-column">
-          <img class="image max-width-400 noselect" src="img/dummay-img.png">
+          <img class="image max-width-400" src="img/dummay-img.png">
           <p class="image-caption">Image Button Caption</p>
         </div>
       </div>
@@ -229,13 +230,13 @@
       </div>
       <div class="flex-row-space-between">
         <div class="flex-item flex-column">
-          <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image max-width-400 noselect">
+          <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image max-width-400">
             <img src="img/dummay-img.png">
           </a>
           <p class="image-caption">Image Button Caption</p>
         </div>
         <div class="flex-item flex-column">
-          <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image max-width-400 noselect">
+          <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image max-width-400">
             <img src="img/dummay-img.png">
           </a>
           <p class="image-caption">Image Button Caption</p>
@@ -255,7 +256,7 @@
       </div>
       <div class="flex-row">
         <div class="flex-item flex-item-stretch flex-column" id="custom-image">
-          <img class="noselect image" src="img/dummay-img.png">
+          <img class="image" src="img/dummay-img.png">
         </div>
         <div class="flex-item flex-item-stretch flex-column">
           <p class="text">
@@ -270,7 +271,7 @@
       </div>
       <div class="flex-row">
         <div class="flex-item flex-item-stretch flex-column">
-          <video preload controls autoplay loop muted playsinline class="image noselect">
+          <video preload controls autoplay loop muted playsinline class="image">
             <source src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
