@@ -10,8 +10,6 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-  <!--You can remove the jQuery link if not handling user interactions -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="menu-container">
@@ -25,6 +23,7 @@
       </a>
       <div class="menu-items flex-row-center flex-item">
         <a href="index.html" class="menu-highlight">Overview</a>
+        <a href="widgets.html">Widgets</a>
         <a href="gallery.html">Gallery</a>
         <a href="embedding.html">Embedding</a>
         <a href="https://github.com/yenchiah/project-website-template">GitHub</a>
@@ -137,60 +136,6 @@
             <button class="custom-button-flat"><img src="img/pause.png"><span>Pause</span></button>
             <button class="custom-button-flat"><img src="img/stop.png"><span>Stop</span></button>
             <button class="custom-button-flat"><img src="img/terrain.png"><span>Terrain</span></button>
-          </div>
-        </div>
-      </div>
-      <div class="flex-row">
-        <div class="flex-item flex-column">
-          <h2 class="add-top-margin">Text with Radios</h2>
-          <hr>
-          <p class="text">
-            Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-            coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-            It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-            simplificat Angles, quam un skeptic Cambridge amico dit me.
-          </p>
-          <div class="control-group">
-            <div class="custom-radio custom-radio-left">
-              <input type="radio" name="playback-speed" value="slow" id="speed-slow">
-              <label for="speed-slow">Slow</label>
-            </div>
-            <div class="custom-radio custom-radio-middle">
-              <input type="radio" name="playback-speed" value="medium" id="speed-medium" checked>
-              <label for="speed-medium">Medium</label>
-            </div>
-            <div class="custom-radio custom-radio-right">
-              <input type="radio" name="playback-speed" value="fast" id="speed-fast">
-              <label for="speed-fast">Fast</label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex-row">
-        <div class="flex-item flex-column">
-          <h2 class="add-top-margin">Text with Dropdown Menus</h2>
-          <hr>
-          <p class="text">
-            Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-            sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-            custosi traductores. At solmen va esser.
-          </p>
-          <div class="control-group">
-            <div class="custom-dropdown">
-              <a tabindex="0" href="javascript:void(0)"><span>Dropdown Menu (No JavaScript)</span></a>
-              <div>
-                <a href="javascript:void(0)">Item 1</a>
-                <a href="javascript:void(0)">Item 2</a>
-                <a href="javascript:void(0)">Item 3</a>
-                <a href="javascript:void(0)">Item 4</a>
-                <a href="javascript:void(0)">Item 5</a>
-              </div>
-            </div>
-            <div class="custom-dropdown" id="custom-dropdown">
-              <a tabindex="0" href="javascript:void(0)"><span></span></a>
-              <div></div>
-            </div>
           </div>
         </div>
       </div>
@@ -309,70 +254,4 @@
   </div>
 </div>
 </body>
-<!--You can remove the script if not handling user interactions with control elements (e.g., button, radios, dropdowns)-->
-<script>
-  function setCustomDropdown($ui, settings) {
-    var items = settings["items"]; // the text that will appear for each item
-    var init_index = settings["init_index"];
-    var init_text = settings["init_text"];
-    var on_item_click_callback = settings["on_item_click_callback"];
-    var on_item_create_callback = settings["on_item_create_callback"];
-    var $menu = $ui.find("div").empty();
-    var $button_text = $ui.find("a > span").text("");
-    var $selected_item;
-    // Set initial button text
-    if (typeof init_text !== "undefined") {
-      $button_text.text(init_text);
-    } else {
-      if (typeof init_index !== "undefined" && typeof items !== "undefined") {
-        $button_text.text(items[init_index]);
-      }
-    }
-    // Set button event
-    // Note that the button is designed to use focusout and focus to determine its state
-    // "focusout" indicates that the menu is currently opened and should be closed
-    // "focus" indicates that the menu is currently closed and should be opened
-    $ui.find("a").off("focusout").on("focusout", function () {
-      // Find which item is hovered, and then simulate the click
-      if (typeof $selected_item !== "undefined") {
-        $button_text.text($selected_item.text()); // update the text on the button
-        if (typeof on_item_click_callback === "function") on_item_click_callback($selected_item, $selected_item.index());
-        $selected_item = undefined;
-      }
-      if ($menu.is(":visible")) $menu.addClass("force-hide"); // close the menu
-    }).off("focus").on("focus", function () {
-      if (!$menu.is(":visible")) $menu.removeClass("force-hide"); // open the menu
-    });
-    // Add events for menu items
-    for (var i = 0; i < items.length; i++) {
-      var $item = $("<a href=\"javascript:void(0)\">" + items[i] + "</a>");
-      // We need to let the focusout button event know which item is selected
-      // Note that we cannot use the click event to find this,
-      // because as soon as the item is clicked,
-      // the focusout event of the button is triggered,
-      // this closes the menu and we never get the click event from the items
-      $item.on("mouseover", function () {
-        $selected_item = $(this);
-      }).on("mouseout", function () {
-        $selected_item = undefined;
-      });
-      $menu.append($item);
-      if (typeof on_item_create_callback === "function") on_item_create_callback($item, i);
-    }
-    return $ui;
-  }
-
-  function init() {
-    setCustomDropdown($("#custom-dropdown"), {
-      items: ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"],
-      //init_index: 0, // You can use this parameter to set the initial item for displaying
-      init_text: "Dropdown Menu (With JavaScript)",
-      on_item_click_callback: function ($ui) {
-        console.log($ui.text());
-      }
-    });
-  }
-
-  $(init);
-</script>
 </html>
