@@ -621,6 +621,7 @@ The @media part need to be put at the end to override all previous css
 
 @media screen and (max-width: 500px) {
   .gallery a {
-    flex: 1 auto;
+    flex: 1 0 100%;
+    max-width: 100%;
   }
 }
