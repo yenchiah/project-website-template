@@ -76,7 +76,7 @@
             if (has_cancel_callback) settings["cancel_callback"]();
           }
         }
-        if(full_width_button) {
+        if (full_width_button) {
           buttons["Cancel"]["class"] += " full-width";
         }
       }
@@ -89,7 +89,7 @@
             settings["action_callback"]();
           }
         }
-        if(full_width_button) {
+        if (full_width_button) {
           buttons["Action"]["class"] += " full-width";
         }
       }
