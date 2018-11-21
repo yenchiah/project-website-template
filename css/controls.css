@@ -1,12 +1,12 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v2.0
+ * Version: v2.1
  * This CSS file has control elements that do not require JavaScript
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
  *************************************************************************/
 
-.custom-button-hyperlink {
+ .custom-button-hyperlink {
   text-decoration: none;
 }
 
@@ -141,6 +141,11 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+.custom-button-flat:disabled {
+  opacity: 0.4;
+  cursor: default;
 }
 
 .custom-button-flat img {
