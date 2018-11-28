@@ -16,6 +16,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="js/widgets.js"></script>
+  <script src="js/index.js"></script>
 </head>
 <body>
 <div class="menu-container">
@@ -30,7 +31,6 @@
       <div class="menu-items flex-row-center flex-item">
         <a href="index.html">Overview</a>
         <a href="widgets.html" class="menu-highlight">Widgets</a>
-        <a href="gallery.html">Gallery</a>
         <a href="embedding.html">Embedding</a>
         <a href="https://github.com/yenchiah/project-website-template">GitHub</a>
       </div>
@@ -127,58 +127,39 @@
           </div>
         </div>
       </div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 class="add-top-margin">Text with Gallery (Generated Using JavaScript)</h2>
+          <hr>
+          <p class="text">
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+            augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+            condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+            vel, luctus pulvinar, hendrerit id, lorem.
+          </p>
+        </div>
+      </div>
+      <div class="gallery"></div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <p class="text">
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+            augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+            condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+            vel, luctus pulvinar, hendrerit id, lorem.
+          </p>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text text-small text-italic">
+            Credits: <span class="highlight-text">Organization One</span>: Author One and Author Two / <span
+            class="highlight-text">Organization Two</span>: Author Three and Author Four
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 </body>
-<script>
-  function init() {
-    // Create the widget object
-    var widgets = new edaplotjs.Widgets();
-
-    // Set custom dropdown
-    widgets.setCustomDropdown($("#custom-dropdown"), {
-      items: ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"],
-      //init_index: 0, // You can use this parameter to set the initial item for displaying
-      init_text: "Dropdown Menu (With JavaScript)",
-      on_item_click_callback: function ($ui) {
-        console.log($ui.text());
-      }
-    });
-
-    // Set custom radio
-    $("input:radio[name='playback-speed']").on("change", function() {
-      console.log($(this).val());
-    });
-
-    // Set custom dialogs
-    var $dialog_1 = widgets.createCustomDialog({
-      selector: "#dialog-1",
-      cancel_callback: function () {
-        console.log("cancel");
-      },
-      full_width_button: true
-    });
-    $("#dialog-btn-1").on("click", function() {
-      $dialog_1.dialog("open");
-    });
-    var $dialog_2 = widgets.createCustomDialog({
-      selector: "#dialog-2",
-      parent: $(".content-container"),
-      action_text: "Action",
-      action_callback: function () {
-        console.log("action");
-      },
-      cancel_text: "Back",
-      cancel_callback: function () {
-        console.log("cancel");
-      }
-    });
-    $("#dialog-btn-2").on("click", function() {
-      $dialog_2.dialog("open");
-    });
-  }
-
-  $(init);
-</script>
 </html>
