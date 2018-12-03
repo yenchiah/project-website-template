@@ -6,7 +6,7 @@
  * Instead, add your own CSS in the index.css
  *************************************************************************/
 
-html, body {
+ html, body {
   margin: 0;
   padding: 0;
   background-color: white;
@@ -526,6 +526,11 @@ ol.publication.A-list li p:before {
 .gallery a img {
   border-radius: 2px;
   width: 100%;
+  background-image: url(../img/loading.gif);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
+  min-height: 50px;
 }
 
 .gallery a > div {
