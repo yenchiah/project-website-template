@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v2.3
+ * Version: v2.4
  * This JS file has widgets for building interactive web applications
  * Use this file with widgets.css
  * If you want to keep this template updated, avoid modifying this file

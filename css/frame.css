@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v2.3
+ * Version: v2.4
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -19,6 +19,15 @@ a {
 }
 
 img {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+video {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Chrome/Safari/Opera */
   -khtml-user-select: none; /* Konqueror */
@@ -259,7 +268,7 @@ hr {
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
 }
 
-.image img {
+.image img, .image video {
   width: 100%;
   height: auto;
   box-sizing: border-box;
@@ -523,7 +532,7 @@ ol.publication.A-list li p:before {
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
 }
 
-.gallery a img {
+.gallery a img, .gallery a video {
   border-radius: 2px;
   width: 100%;
   background-image: url(../img/loading.gif);
