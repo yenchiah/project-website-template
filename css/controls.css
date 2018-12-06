@@ -6,11 +6,7 @@
  * Instead, add your own CSS in the index.css
  *************************************************************************/
 
-.custom-button-hyperlink {
-  text-decoration: none;
-}
-
-.custom-image-button {
+ .custom-image-button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -18,6 +14,7 @@
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;
+  text-decoration: none;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Chrome/Safari/Opera */
   -khtml-user-select: none; /* Konqueror */
@@ -195,4 +192,13 @@
 
 .control-group .custom-button-flat:not(:last-child) {
   margin-right: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .stretch-on-mobile {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
 }
