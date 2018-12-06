@@ -27,9 +27,6 @@
     // Set custom dialogs
     var $dialog_1 = widgets.createCustomDialog({
       selector: "#dialog-1",
-      cancel_callback: function () {
-        console.log("cancel");
-      },
       full_width_button: true
     });
     $("#dialog-btn-1").on("click", function () {
@@ -49,6 +46,17 @@
     });
     $("#dialog-btn-2").on("click", function () {
       $dialog_2.dialog("open");
+    });
+    var $dialog_3 = widgets.createCustomDialog({
+      selector: "#dialog-3",
+      cancel_callback: function () {
+        console.log("cancel");
+      },
+      full_width_button: true,
+      no_body_scroll: true
+    });
+    $("#dialog-btn-3").on("click", function () {
+      $dialog_3.dialog("open");
     });
 
     // Create the gallery

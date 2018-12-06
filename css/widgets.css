@@ -344,3 +344,7 @@
 .control-group .custom-dropdown:not(:last-child) {
   margin-right: 15px;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

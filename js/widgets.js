@@ -65,6 +65,9 @@
       // Specify if full width buttons
       var full_width_button = safeGet(settings["full_width_button"], false);
 
+      // Prevent scrolling of the body element
+      var no_body_scroll = safeGet(settings["no_body_scroll"], false);
+
       // Specify buttons
       var buttons = {};
       if (show_cancel_btn) {
@@ -105,7 +108,19 @@
         classes: {"ui-dialog": style_class}, // this is for jquery 1.12 and after
         dialogClass: style_class, // this is for before jquery 1.12
         buttons: buttons,
-        closeText: ""
+        closeText: "",
+        open: function (event, ui) {
+          var $body = $("body");
+          if (no_body_scroll && !$body.hasClass("no-scroll")) {
+            $body.addClass("no-scroll");
+          }
+        },
+        close: function (event, ui) {
+          var $body = $("body");
+          if (no_body_scroll && $body.hasClass("no-scroll")) {
+            $body.removeClass("no-scroll");
+          }
+        }
       };
       // Specify the parent of the dialog, need to be a jQuery object
       if (typeof settings["parent"] !== "undefined") {
