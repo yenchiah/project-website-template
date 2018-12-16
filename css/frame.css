@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v2.6
+ * Version: v3.0
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -127,12 +127,6 @@ hr {
 .menu-items a:hover {
   color: rgb(255, 255, 255);
   opacity: 1;
-}
-
-.menu-highlight {
-  color: rgb(255, 255, 255) !important;
-  opacity: 1 !important;
-  font-weight: 700 !important;
 }
 
 .content-container {

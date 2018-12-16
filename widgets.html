@@ -8,34 +8,27 @@
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="css/widgets.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="js/widgets.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/custom.js"></script>
+  <style>
+    .menu-widget {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
 </head>
 <body>
-<div class="menu-container">
-  <div class="menu">
-    <div class="menu-table flex-row-space-between">
-      <div class="logo flex-row-center">
-        <a href="index.html">Project Title</a>
-      </div>
-      <a class="menu-button" tabindex="0" href="javascript:void(0)">
-        <img src="img/menu.png">
-      </a>
-      <div class="menu-items flex-row-center flex-item">
-        <a href="index.html">Overview</a>
-        <a href="widgets.html" class="menu-highlight">Widgets</a>
-        <a href="embedding.html">Embedding</a>
-        <a href="https://github.com/yenchiah/project-website-template">GitHub</a>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="menu-container"></div>
+<script>
+  $(function() {$(".menu-container").load("menu.html");});
+</script>
 <div class="content-container">
   <div class="content">
     <div class="content-table flex-column">
