@@ -126,9 +126,14 @@
       if (typeof settings["parent"] !== "undefined") {
         dialog_settings["appendTo"] = settings["parent"];
         dialog_settings["position"] = {my: "center", at: "center", of: settings["parent"]};
+      } else {
+        dialog_settings["position"] = {my: "center", at: "center", of: window};
       }
       var $dialog = $selector.dialog(dialog_settings);
       $dialog.closest(".ui-dialog").find(".ui-dialog-titlebar-close").empty().append("<i class='fa fa-times fa-lg'></i>");
+      $(window).on("resize", function () {
+        $dialog.dialog("option", "position", dialog_settings["position"]);
+      });
       return $dialog;
     };
     this.createCustomDialog = createCustomDialog;

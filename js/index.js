@@ -34,7 +34,7 @@
     });
     var $dialog_2 = widgets.createCustomDialog({
       selector: "#dialog-2",
-      parent: $(".content-container"),
+      parent: $("body"),
       action_text: "Action",
       action_callback: function () {
         console.log("action");
