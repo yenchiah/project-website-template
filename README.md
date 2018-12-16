@@ -19,7 +19,7 @@ The downside is that every template page needs to include jQuery. If you only wa
   [everything in the menu.html goes here]
 </div>
 ```
-In this way, you can remove the script line that loads jQuery.
+In this way, you can remove the script line that loads jQuery in the header of the html.
 
 This template is tested and worked on:
 - Desktop/Mobile Chrome 69.0.3497.100
