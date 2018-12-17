@@ -24,6 +24,6 @@ The downside is that every template page needs to include jQuery. If your websit
 In this way, you can remove the script line that loads jQuery in the header of the html.
 
 This template is tested and worked on:
-- Desktop/Mobile Chrome 70.0.3538.110
+- Desktop/Mobile Chrome 71.0.3578.98
 - Desktop/Mobile Firefox 64.0
 - Desktop Safari 12.0.2
