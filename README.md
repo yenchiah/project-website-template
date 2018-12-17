@@ -13,7 +13,7 @@ From version 3.0, the menu bar at the top is moved into a single file (menu.html
   $(function() {$(".menu-container").load("menu.html");});
 </script>
 ```
-The downside is that every template page needs to include jQuery. If your website is static and requires no user interactions, I recommend remove the <script> block and copy the code from the menu file into the menu-container div.
+The downside is that every template page needs to include jQuery. If your website is static and requires no user interactions, I recommend remove the <script> block and copy the code from the menu file (menu.html) into the menu-container div.
 ```html
 <div class="menu-container">
   [everything in the menu.html goes here]
