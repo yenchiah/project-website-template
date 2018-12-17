@@ -52,7 +52,7 @@ hr {
   border: 0;
   height: 1px;
   background: #333;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .menu-container {
@@ -209,6 +209,18 @@ hr {
   flex: 1 auto;
 }
 
+.flex-item-stretch-3 {
+  flex: 1 auto;
+}
+
+.flex-item-stretch-4 {
+  flex: 1 auto;
+}
+
+.flex-item-stretch-5 {
+  flex: 1 auto;
+}
+
 .flex-item {
   margin: 0 20px;
 }
@@ -271,6 +283,11 @@ hr {
   border-radius: 2px;
 }
 
+.image-wrap-text {
+  float: left;
+  margin: 5px 40px 25px 0
+}
+
 .image-caption {
   width: 100%;
   text-align: center;
@@ -280,6 +297,10 @@ hr {
 
 .max-width-400 {
   max-width: 400px;
+}
+
+.max-width-140 {
+  max-width: 140px;
 }
 
 ol.publication {
@@ -551,6 +572,18 @@ The @media part need to be put at the end to override all previous css
 
   .flex-item-stretch-2 {
     flex: 2;
+  }
+
+  .flex-item-stretch-3 {
+    flex: 3;
+  }
+
+  .flex-item-stretch-4 {
+    flex: 4;
+  }
+
+  .flex-item-stretch-5 {
+    flex: 5;
   }
 }
 
