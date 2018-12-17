@@ -25,7 +25,7 @@ The downside is that every template page needs to include jQuery. If your websit
   [everything in the menu.html goes here]
 </div>
 ```
-In this way, you can remove the script line that loads jQuery in the header of the html.
+In this way, you can remove the script line that loads jQuery in the header of the html and also delete the menu file (menu.html).
 
 This template is tested and worked on:
 - Desktop/Mobile Chrome 71.0.3578.98
