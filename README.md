@@ -23,7 +23,7 @@ If your website is static and requires no user interactions, I recommend copying
   [copy everything in the menu.html and paste the code here]
 </div>
 ```
-In this way, you can remove the script line that loads jQuery in the header of the html and also delete the files for loading menus (menu.html and (menu.js).
+In this way, you can remove the script line that loads jQuery in the header of the html and also delete the files for loading the menu bar (menu.html and menu.js).
 
 This template is tested and worked on:
 - Desktop/Mobile Chrome 71.0.3578.98
