@@ -6,7 +6,8 @@
  * Instead, add your own CSS in the index.css
  *************************************************************************/
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: white;
@@ -19,21 +20,21 @@ a {
 }
 
 img {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 video {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h2 {
@@ -61,12 +62,12 @@ hr {
   width: 100%;
   background-color: #212121;
   min-width: 300px;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .menu {
@@ -266,15 +267,16 @@ hr {
   border-radius: 2px;
   width: 100%;
   margin: 15px 0;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.image img, .image video {
+.image img,
+.image video {
   width: 100%;
   height: auto;
   box-sizing: border-box;
@@ -333,7 +335,7 @@ ol.publication.C-list li p {
 }
 
 ol.publication.C-list li p:before {
-  content: "[C" counter(C-counter) "]";
+  content: "[C"counter(C-counter)"]";
 }
 
 ol.publication.J-list {
@@ -345,7 +347,7 @@ ol.publication.J-list li p {
 }
 
 ol.publication.J-list li p:before {
-  content: "[J" counter(J-counter) "]";
+  content: "[J"counter(J-counter)"]";
 }
 
 ol.publication.T-list {
@@ -357,7 +359,7 @@ ol.publication.T-list li p {
 }
 
 ol.publication.T-list li p:before {
-  content: "[T" counter(T-counter) "]";
+  content: "[T"counter(T-counter)"]";
 }
 
 ol.publication.O-list {
@@ -369,7 +371,7 @@ ol.publication.O-list li p {
 }
 
 ol.publication.O-list li p:before {
-  content: "[O" counter(O-counter) "]";
+  content: "[O"counter(O-counter)"]";
 }
 
 ol.publication.P-list {
@@ -381,7 +383,7 @@ ol.publication.P-list li p {
 }
 
 ol.publication.P-list li p:before {
-  content: "[P" counter(P-counter) "]";
+  content: "[P"counter(P-counter)"]";
 }
 
 ol.publication.M-list {
@@ -393,7 +395,7 @@ ol.publication.M-list li p {
 }
 
 ol.publication.M-list li p:before {
-  content: "[M" counter(M-counter) "]";
+  content: "[M"counter(M-counter)"]";
 }
 
 ol.publication.F-list {
@@ -405,7 +407,7 @@ ol.publication.F-list li p {
 }
 
 ol.publication.F-list li p:before {
-  content: "[Featured.F" counter(F-counter) "]";
+  content: "[Featured.F"counter(F-counter)"]";
 }
 
 ol.publication.A-list {
@@ -417,16 +419,16 @@ ol.publication.A-list li p {
 }
 
 ol.publication.A-list li p:before {
-  content: "[A" counter(A-counter) "]";
+  content: "[A"counter(A-counter)"]";
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .center-align-content {
@@ -497,7 +499,9 @@ ol.publication.A-list li p:before {
   margin-bottom: 15px;
 }
 
-.custom-text-info, .custom-text-info p, .custom-text-info a {
+.custom-text-info,
+.custom-text-info p,
+.custom-text-info a {
   color: #17a2b8;
 }
 
@@ -505,7 +509,9 @@ ol.publication.A-list li p:before {
   color: #007082;
 }
 
-.custom-text-primary, .custom-text-primary p, .custom-text-primary a {
+.custom-text-primary,
+.custom-text-primary p,
+.custom-text-primary a {
   color: #007bff;
 }
 
@@ -513,7 +519,9 @@ ol.publication.A-list li p:before {
   color: #005cbf;
 }
 
-.custom-text-danger, .custom-text-danger p, .custom-text-danger a {
+.custom-text-danger,
+.custom-text-danger p,
+.custom-text-danger a {
   color: #dc3545;
 }
 
@@ -539,15 +547,16 @@ ol.publication.A-list li p:before {
   text-decoration: none;
   padding: 10px;
   cursor: default;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.gallery a img, .gallery a video {
+.gallery a img,
+.gallery a video {
   border-radius: 2px;
   width: 100%;
   background-image: url(../img/loading.gif);
@@ -557,14 +566,14 @@ ol.publication.A-list li p:before {
   min-height: 50px;
 }
 
-.gallery a > div {
+.gallery a>div {
   width: 100%;
   text-align: center;
 }
 
 /********************************************************************************
-The @media part need to be put at the end to override all previous css
-********************************************************************************/
+ The @media part need to be put at the end to override all previous css
+ ********************************************************************************/
 @media screen and (min-width: 900px) {
   .flex-item-stretch {
     flex: 1;
@@ -622,11 +631,11 @@ The @media part need to be put at the end to override all previous css
     pointer-events: none;
   }
 
-  .menu-button:focus + .menu-items {
+  .menu-button:focus+.menu-items {
     display: block;
   }
 
-  .menu-button:focus + .menu-items a {
+  .menu-button:focus+.menu-items a {
     display: block;
   }
 
@@ -634,7 +643,7 @@ The @media part need to be put at the end to override all previous css
     display: block;
   }
 
-  .menu-items > a {
+  .menu-items>a {
     display: block;
   }
 }

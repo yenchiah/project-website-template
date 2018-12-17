@@ -1,19 +1,21 @@
 <!doctype html>
 <html>
+
 <head>
   <title>Project Title</title>
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="css/widgets.css" media="screen" rel="stylesheet" type="text/css"/>
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/widgets.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/menu.js"></script>
   <script src="js/widgets.js"></script>
   <script src="js/custom.js"></script>
   <style>
@@ -24,138 +26,136 @@
     }
   </style>
 </head>
+
 <body>
-<div class="menu-container"></div>
-<script>
-  $(function() {$(".menu-container").load("menu.html");});
-</script>
-<div class="content-container">
-  <div class="content">
-    <div class="content-table flex-column">
-      <div class="flex-row">
-        <div class="flex-item flex-column">
-          <p class="text add-top-margin">
-            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-            augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-            condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-            vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
-            sapien ut libero venenatis faucibus. Nullam quis ante.
-          </p>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text add-top-margin">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+              sapien ut libero venenatis faucibus. Nullam quis ante.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="flex-row">
-        <div class="flex-item flex-column">
-          <h2 class="add-top-margin">Text with Dropdown Menus</h2>
-          <hr>
-          <p class="text">
-            Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-            sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-            li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-            custosi traductores. At solmen va esser.
-          </p>
-          <div class="control-group">
-            <div class="custom-dropdown">
-              <a tabindex="0" href="javascript:void(0)"><span>Dropdown Menu (No JavaScript)</span></a>
-              <div>
-                <a href="javascript:void(0)">Item 1</a>
-                <a href="javascript:void(0)">Item 2</a>
-                <a href="javascript:void(0)">Item 3</a>
-                <a href="javascript:void(0)">Item 4</a>
-                <a href="javascript:void(0)">Item 5</a>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text with Dropdown Menus</h2>
+            <hr>
+            <p class="text">
+              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+              custosi traductores. At solmen va esser.
+            </p>
+            <div class="control-group">
+              <div class="custom-dropdown">
+                <a tabindex="0" href="javascript:void(0)"><span>Dropdown Menu (No JavaScript)</span></a>
+                <div>
+                  <a href="javascript:void(0)">Item 1</a>
+                  <a href="javascript:void(0)">Item 2</a>
+                  <a href="javascript:void(0)">Item 3</a>
+                  <a href="javascript:void(0)">Item 4</a>
+                  <a href="javascript:void(0)">Item 5</a>
+                </div>
+              </div>
+              <div class="custom-dropdown" id="custom-dropdown">
+                <a tabindex="0" href="javascript:void(0)"><span></span></a>
+                <div></div>
               </div>
             </div>
-            <div class="custom-dropdown" id="custom-dropdown">
-              <a tabindex="0" href="javascript:void(0)"><span></span></a>
-              <div></div>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text with Radios</h2>
+            <hr>
+            <p class="text">
+              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+              simplificat Angles, quam un skeptic Cambridge amico dit me.
+            </p>
+            <div class="control-group">
+              <div class="custom-radio custom-radio-left">
+                <input type="radio" name="playback-speed" value="slow" id="speed-slow">
+                <label for="speed-slow">Slow</label>
+              </div>
+              <div class="custom-radio custom-radio-middle">
+                <input type="radio" name="playback-speed" value="medium" id="speed-medium" checked>
+                <label for="speed-medium">Medium</label>
+              </div>
+              <div class="custom-radio custom-radio-right">
+                <input type="radio" name="playback-speed" value="fast" id="speed-fast">
+                <label for="speed-fast">Fast</label>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex-row">
-        <div class="flex-item flex-column">
-          <h2 class="add-top-margin">Text with Radios</h2>
-          <hr>
-          <p class="text">
-            Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-            coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-            It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-            simplificat Angles, quam un skeptic Cambridge amico dit me.
-          </p>
-          <div class="control-group">
-            <div class="custom-radio custom-radio-left">
-              <input type="radio" name="playback-speed" value="slow" id="speed-slow">
-              <label for="speed-slow">Slow</label>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text with Dialog Button</h2>
+            <hr>
+            <p class="text">
+              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+              simplificat Angles, quam un skeptic Cambridge amico dit me.
+            </p>
+            <div class="control-group">
+              <button id="dialog-btn-1" class="custom-button-flat"><img src="img/calendar.png"><span>Dialog 1</span></button>
+              <button id="dialog-btn-2" class="custom-button-flat"><img src="img/calendar.png"><span>Dialog 2</span></button>
+              <button id="dialog-btn-3" class="custom-button-flat"><img src="img/calendar.png"><span>Dialog 3</span></button>
             </div>
-            <div class="custom-radio custom-radio-middle">
-              <input type="radio" name="playback-speed" value="medium" id="speed-medium" checked>
-              <label for="speed-medium">Medium</label>
+            <div id="dialog-1" title="Dialog 1" data-role="none">
+              <p>No action, attached and centered to the window, full-width button.</p>
             </div>
-            <div class="custom-radio custom-radio-right">
-              <input type="radio" name="playback-speed" value="fast" id="speed-fast">
-              <label for="speed-fast">Fast</label>
+            <div id="dialog-2" title="Dialog 2" data-role="none">
+              <p>With action, attached and centered to the body.</p>
+            </div>
+            <div id="dialog-3" title="Dialog 3" data-role="none">
+              <p>No action, attached and centered to the window, no scrolling, full-width button.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex-row">
-        <div class="flex-item flex-column">
-          <h2 class="add-top-margin">Text with Dialog Button</h2>
-          <hr>
-          <p class="text">
-            Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-            coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-            It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-            simplificat Angles, quam un skeptic Cambridge amico dit me.
-          </p>
-          <div class="control-group">
-            <button id="dialog-btn-1" class="custom-button-flat"><img src="img/calendar.png"><span>Dialog 1</span></button>
-            <button id="dialog-btn-2" class="custom-button-flat"><img src="img/calendar.png"><span>Dialog 2</span></button>
-            <button id="dialog-btn-3" class="custom-button-flat"><img src="img/calendar.png"><span>Dialog 3</span></button>
-          </div>
-          <div id="dialog-1" title="Dialog 1" data-role="none">
-            <p>No action, attached and centered to the window, full-width button.</p>
-          </div>
-          <div id="dialog-2" title="Dialog 2" data-role="none">
-            <p>With action, attached and centered to the body.</p>
-          </div>
-          <div id="dialog-3" title="Dialog 3" data-role="none">
-            <p>No action, attached and centered to the window, no scrolling, full-width button.</p>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text with Gallery (Generated Using JavaScript)</h2>
+            <hr>
+            <p class="text">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
           </div>
         </div>
-      </div>
-      <div class="flex-row">
-        <div class="flex-item flex-column">
-          <h2 class="add-top-margin">Text with Gallery (Generated Using JavaScript)</h2>
-          <hr>
-          <p class="text">
-            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-            augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-            condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-            vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
+        <div class="gallery"></div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="gallery"></div>
-      <div class="flex-row">
-        <div class="flex-item flex-column">
-          <p class="text">
-            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-            augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-            condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-            vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-        </div>
-      </div>
-      <div class="flex-row">
-        <div class="flex-item flex-item-stretch flex-column">
-          <p class="text text-small text-italic">
-            Credits: <span class="highlight-text">Organization One</span>: Author One and Author Two / <span
-            class="highlight-text">Organization Two</span>: Author Three and Author Four
-          </p>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text text-small text-italic">
+              Credits: <span class="highlight-text">Organization One</span>: Author One and Author Two / <span class="highlight-text">Organization Two</span>: Author Three and Author Four
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </body>
+
 </html>

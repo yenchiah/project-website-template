@@ -105,7 +105,9 @@
         draggable: false,
         width: width,
         modal: true,
-        classes: {"ui-dialog": style_class}, // this is for jquery 1.12 and after
+        classes: {
+          "ui-dialog": style_class
+        }, // this is for jquery 1.12 and after
         dialogClass: style_class, // this is for before jquery 1.12
         buttons: buttons,
         closeText: "",
@@ -125,9 +127,17 @@
       // Specify the parent of the dialog, need to be a jQuery object
       if (typeof settings["parent"] !== "undefined") {
         dialog_settings["appendTo"] = settings["parent"];
-        dialog_settings["position"] = {my: "center", at: "center", of: settings["parent"]};
+        dialog_settings["position"] = {
+          my: "center",
+          at: "center",
+          of: settings["parent"]
+        };
       } else {
-        dialog_settings["position"] = {my: "center", at: "center", of: window};
+        dialog_settings["position"] = {
+          my: "center",
+          at: "center",
+          of: window
+        };
       }
       var $dialog = $selector.dialog(dialog_settings);
       $dialog.closest(".ui-dialog").find(".ui-dialog-titlebar-close").empty().append("<i class='fa fa-times fa-lg'></i>");
