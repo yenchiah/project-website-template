@@ -6,7 +6,7 @@ This is a responsive (mobile/desktop) and light-weight HTML/CSS template for bui
 - widgets.css (CSS for widgets that require JavaScript)
 - widgets.js (JavaScript for widgets)
 
-Start from version 3.0, the menu bar at the top is moved into a single file (menu.html) for better management. Each template page will now use jQuery to load the menu bar file, as shown below:
+From version 3.0, the menu bar at the top is moved into a single file (menu.html) for better management. Each template page will now use jQuery to load the menu bar file, as shown below:
 ```html
 <div class="menu-container"></div>
 <script>
