@@ -6,7 +6,7 @@
  * Instead, add your own CSS in the index.css
  *************************************************************************/
 
- .custom-image-button {
+.custom-image-button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
