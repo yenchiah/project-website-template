@@ -1,6 +1,6 @@
 Demo: https://yenchiah.github.io/project-website-template/
 
-This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, you can start from a simple webpage (index.html). For building interactive websites, this library also provide several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). One example that uses this template is [Smell PGH](http://smellpgh.org). If you would love to keep updating this template, please keep your own style and script in custom.css and custom.js, avoid modifying the following files:
+This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, you can start from a simple empty template (empty.html). This library provides different types of layouts (index.html). For building interactive websites, this library also provide several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). One example that uses this template is [Smell PGH](http://smellpgh.org). If you would love to keep updating this template, please keep your code in separate files (custom.css and custom.js) and avoid modifying the following:
 - frame.css (CSS for the main frame of the website)
 - controls.css (CSS for control elements that do not require JavaScript)
 - widgets.css (CSS for widgets that require JavaScript)
