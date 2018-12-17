@@ -3,10 +3,10 @@
 Demo: https://yenchiah.github.io/project-website-template/
 
 This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, I recommend starting with the empty template (empty.html) and copy the code from the file that contains different layouts (index.html). For building interactive websites, this library also provide several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). One example that uses this template is [Smell PGH](http://smellpgh.org). If you would love to keep updating this template, please keep your code in separate files (custom.css and custom.js) and avoid modifying the following:
-- frame.css (CSS for the main frame of the website)
-- controls.css (CSS for control elements that do not require JavaScript)
-- widgets.css (CSS for widgets that require JavaScript)
-- widgets.js (JavaScript for widgets)
+- css/frame.css (CSS for the main frame of the website)
+- css/controls.css (CSS for control elements that do not require JavaScript)
+- css/widgets.css (CSS for widgets that require JavaScript)
+- js/widgets.js (JavaScript for widgets)
 
 From version 3.0, the menu bar at the top is moved into a single file (menu.html) for better management. Each template page will now use jQuery to load the menu bar file, as shown below:
 ```html
