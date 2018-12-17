@@ -11,21 +11,19 @@ If you would love to keep updating this template, please keep your codes in sepa
 - css/controls.css (CSS for control elements that do not require JavaScript)
 - css/widgets.css (CSS for widgets that require JavaScript)
 - js/widgets.js (JavaScript for widgets)
+- js/menu.js (JavaScript for loading the menu bar)
 
-From version 3.0, the menu bar at the top is moved into a single file (menu.html) for better management. Each template page will now use jQuery to load the menu bar file, as shown below:
+From version 3.0, the menu bar at the top is moved into a single file (menu.html) for better management. Each template page will now use jQuery to load the menu bar file (menu.js), as shown below:
 ```html
-<div class="menu-container"></div>
-<script>
-  $(function() {$(".menu-container").load("menu.html");});
-</script>
+<script src="js/menu.js"></script>
 ```
-The downside is that every template page needs to include jQuery. If your website is static and requires no user interactions, I recommend remove the <script> block and copy the code from the menu file (menu.html) into the menu-container div.
+If your website is static and requires no user interactions, I recommend copying the code from the menu file (menu.html) into the menu-container div in your html template.
 ```html
 <div class="menu-container">
-  [everything in the menu.html goes here]
+  [copy everything in the menu.html and paste the code here]
 </div>
 ```
-In this way, you can remove the script line that loads jQuery in the header of the html and also delete the menu file (menu.html).
+In this way, you can remove the script line that loads jQuery in the header of the html and also delete the files for loading menus (menu.html and (menu.js).
 
 This template is tested and worked on:
 - Desktop/Mobile Chrome 71.0.3578.98
