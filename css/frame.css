@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.1
+ * Version: v3.2
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -39,6 +39,14 @@ video {
 
 h2 {
   font-size: 24px;
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h3 {
+  font-size: 18px;
   margin: 10px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -501,8 +509,16 @@ ol.publication.A-list li p:before {
   margin-top: 15px;
 }
 
+.add-top-margin-small {
+  margin-top: 5px;
+}
+
 .add-bottom-margin {
   margin-bottom: 15px;
+}
+
+.add-bottom-margin-small {
+  margin-bottom: 5px;
 }
 
 .custom-text-info,
@@ -578,8 +594,8 @@ ol.publication.A-list li p:before {
 }
 
 /********************************************************************************
- The @media part need to be put at the end to override all previous css
- ********************************************************************************/
+  The @media part need to be put at the end to override all previous css
+  ********************************************************************************/
 @media screen and (min-width: 900px) {
   .flex-item-stretch {
     flex: 1;
