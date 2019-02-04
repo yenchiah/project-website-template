@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.3
+ * Version: v3.4
  * This JS file has widgets for building interactive web applications
  * Use this file with widgets.css
  * If you want to keep this template updated, avoid modifying this file
@@ -67,6 +67,9 @@
 
       // Prevent scrolling of the body element
       var no_body_scroll = safeGet(settings["no_body_scroll"], false);
+
+      // Show the close button or not
+      var show_close_button = safeGet(settings["show_close_button"], true);
 
       // Specify buttons
       var buttons = {};
@@ -144,6 +147,11 @@
       $(window).on("resize", function () {
         $dialog.dialog("option", "position", dialog_settings["position"]);
       });
+      if (!show_close_button) {
+        $dialog.on("dialogopen", function () {
+          $(this).parent().find(".ui-dialog-titlebar-close").hide();
+        });
+      }
       return $dialog;
     };
     this.createCustomDialog = createCustomDialog;
