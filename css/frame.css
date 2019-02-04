@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.2
+ * Version: v3.3
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -577,8 +577,8 @@ ol.publication.A-list li p:before {
   user-select: none;
 }
 
-.gallery a img,
-.gallery a video {
+.gallery a>img,
+.gallery a>video {
   border-radius: 2px;
   width: 100%;
   background-image: url(../img/loading.gif);
@@ -594,8 +594,8 @@ ol.publication.A-list li p:before {
 }
 
 /********************************************************************************
-  The @media part need to be put at the end to override all previous css
-  ********************************************************************************/
+ The @media part need to be put at the end to override all previous css
+ ********************************************************************************/
 @media screen and (min-width: 900px) {
   .flex-item-stretch {
     flex: 1;

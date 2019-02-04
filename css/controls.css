@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.2
+ * Version: v3.3
  * This CSS file has control elements that do not require JavaScript
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -140,6 +140,20 @@
   user-select: none;
 }
 
+.custom-button-flat.large {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 17px;
+  border-radius: 56px;
+}
+
+.custom-button-flat.small {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 12px;
+  border-radius: 42px;
+}
+
 .custom-button-flat:disabled {
   opacity: 0.4;
   cursor: default;
@@ -148,6 +162,16 @@
 .custom-button-flat img {
   width: 20px;
   height: 20px;
+}
+
+.custom-button-flat.small img {
+  width: 16px;
+  height: 16px;
+}
+
+.custom-button-flat.large img {
+  width: 24px;
+  height: 24px;
 }
 
 .custom-button-flat span {
