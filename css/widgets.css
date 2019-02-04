@@ -301,11 +301,12 @@
 }
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   border: 1px solid #7d7d7d;
   background: #7d7d7d none;
   color: white;
   border-radius: 2px;
-  margin: 0 0 0 0.7em;
+  margin: 0 0 0 1em;
   outline: none;
 }
 
