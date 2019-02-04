@@ -593,9 +593,6 @@ ol.publication.A-list li p:before {
   text-align: center;
 }
 
-/********************************************************************************
- The @media part need to be put at the end to override all previous css
- ********************************************************************************/
 @media screen and (min-width: 900px) {
   .flex-item-stretch {
     flex: 1;
