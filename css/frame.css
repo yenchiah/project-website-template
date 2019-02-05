@@ -454,7 +454,7 @@ ol.publication.A-list li p:before {
 .left-align-content {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .text-large {

@@ -7,7 +7,7 @@
  * Instead, add your own CSS in the index.css
  *************************************************************************/
 
-.custom-radio {
+ .custom-radio {
   padding: 0;
   text-align: center;
   outline: none;
@@ -149,6 +149,11 @@
   cursor: pointer;
 }
 
+.custom-dropdown.large>a {
+  height: 37px;
+  padding: 5px 31px 5px 10px;
+}
+
 .custom-dropdown>a>span {
   text-align: left;
   font-size: 14px !important;
@@ -159,6 +164,11 @@
   text-overflow: ellipsis;
 }
 
+.custom-dropdown.large>a>span {
+  font-size: 16px !important;
+  line-height: 25px;
+}
+
 .custom-dropdown>a:after {
   position: absolute;
   content: "";
@@ -167,6 +177,13 @@
   width: 0;
   height: 0;
   border: 4px solid transparent;
+  border-top-color: black;
+}
+
+.custom-dropdown.large>a:after {
+  top: 17px;
+  right: 13px;
+  border: 5px solid transparent;
   border-top-color: black;
 }
 
@@ -210,6 +227,13 @@
   border-top: 0;
   border-right: 0;
   box-sizing: border-box;
+}
+
+.custom-dropdown.large>div>a {
+  font-size: 16px !important;
+  line-height: 25px;
+  height: 35px;
+  padding: 5px 10px;
 }
 
 .custom-dropdown>div>a:hover {

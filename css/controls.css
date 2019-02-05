@@ -61,8 +61,6 @@
 .custom-button:disabled {
   opacity: 0.4;
   cursor: default;
-  border-color: #7d7d7d;
-  background-color: #7d7d7d;
 }
 
 .custom-button-primary {
@@ -178,6 +176,33 @@
   margin-left: 6px;
 }
 
+.custom-textbox {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background: rgb(255, 255, 255);
+  border: 1px solid #7d7d7d;
+  font-size: 16px !important;
+  outline: none;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  min-height: 37px;
+  max-height: 37px;
+  resize: vertical;
+}
+
+textarea.custom-textbox {
+  min-height: 60px !important;
+  max-height: 200px !important;
+}
+
+input[readonly].custom-textbox {
+  cursor: default;
+  pointer-events: none;
+  background: rgb(230, 230, 230);
+}
+
 .control-group {
   display: flex;
   flex-direction: row;
@@ -215,6 +240,14 @@
 }
 
 .control-group .custom-button-flat:not(:last-child) {
+  margin-right: 15px;
+}
+
+.control-group .custom-textbox {
+  margin: 10px 0 10px 0;
+}
+
+.control-group .custom-textbox:not(:last-child) {
   margin-right: 15px;
 }
 
