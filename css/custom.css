@@ -2,6 +2,10 @@
  * Your custom CSS file
  *************************************************************************/
 
-#custom-dropdown {
+.custom-dropdown {
+  width: 240px;
+}
+
+.custom-textbox {
   width: 240px;
 }
