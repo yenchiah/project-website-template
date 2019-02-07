@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.5
+ * Version: v3.6
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -301,7 +301,7 @@ hr {
 
 .image-wrap-text {
   float: left;
-  margin: 5px 40px 25px 0
+  margin: 5px 40px 25px 0;
 }
 
 .image-caption {
@@ -664,6 +664,11 @@ ol.publication.A-list li p:before {
 
   .menu-items>a {
     display: block;
+  }
+
+  .image-wrap-text {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
 
