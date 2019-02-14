@@ -37,3 +37,10 @@ Here are several known problems that will be addressed in a later version:
 
 - The dropdown menu in the widget has clicking problems on Windows Firefox
 - The no_body_scroll setting for the dialog widget does not work on mobile devices
+
+# Future Plans
+
+Here are several planned features that will be add in the future:
+
+- A slideshow block for showing images or vides
+- A footer at the bottom
