@@ -42,5 +42,5 @@ Here are several known problems that will be addressed in a later version:
 
 Here are several planned features that will be add in the future:
 
-- A slideshow block for showing images or vides
+- A slideshow block for showing images or videos
 - A footer at the bottom
