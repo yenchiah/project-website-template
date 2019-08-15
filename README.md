@@ -29,11 +29,12 @@ This template is tested and worked on:
 - Android Mobile Chrome 71.0.3578.98
 - MAC Desktop Firefox 64.0
 - Android Mobile Firefox 64.0
-- MAC Desktop Safari 12.0.2
+- MAC Desktop Safari 12
+- iOS Mobile Safari 12
 
-# Known Problems
+# Known Problems and Bugs
 
-Here are several known problems that will be addressed in a later version:
+Here are several known problems and bugs that will be addressed in a later version:
 
 - The dropdown menu in the widget has clicking problems on Windows Firefox.
 - The no_body_scroll setting for the dialog widget does not work on mobile devices.
