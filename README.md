@@ -35,8 +35,10 @@ This template is tested and worked on:
 
 Here are several known problems that will be addressed in a later version:
 
-- The dropdown menu in the widget has clicking problems on Windows Firefox
-- The no_body_scroll setting for the dialog widget does not work on mobile devices
+- The dropdown menu in the widget has clicking problems on Windows Firefox.
+- The no_body_scroll setting for the dialog widget does not work on mobile devices.
+- On mobile Safari, the menu on the top will not close after opening it. This is because the menu icon on mobile Safari retains focus after a touch event, and the menu relies on the loss of focus event of the icon to close.
+
 
 # Future Plans
 
