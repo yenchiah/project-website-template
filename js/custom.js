@@ -34,7 +34,6 @@
     });
     var $dialog_2 = widgets.createCustomDialog({
       selector: "#dialog-2",
-      parent: $("body"),
       action_text: "Action",
       action_callback: function () {
         console.log("action");
@@ -49,11 +48,11 @@
     });
     var $dialog_3 = widgets.createCustomDialog({
       selector: "#dialog-3",
+      full_width_button: true,
+      parent: $(".content"),
       cancel_callback: function () {
         console.log("cancel");
       },
-      full_width_button: true,
-      no_body_scroll: true
     });
     $("#dialog-btn-3").on("click", function () {
       $dialog_3.dialog("open");

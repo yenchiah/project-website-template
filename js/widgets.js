@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.8
+ * Version: v3.9
  * This JS file has widgets for building interactive web applications
  * Use this file with widgets.css
  * If you want to keep this template updated, avoid modifying this file
@@ -65,9 +65,6 @@
       // Specify if full width buttons
       var full_width_button = safeGet(settings["full_width_button"], false);
 
-      // Prevent scrolling of the body element
-      var no_body_scroll = safeGet(settings["no_body_scroll"], false);
-
       // Show the close button or not
       var show_close_button = safeGet(settings["show_close_button"], true);
 
@@ -101,6 +98,7 @@
       }
 
       // Create dialog
+      var $selector_container;
       var dialog_settings = {
         autoOpen: false,
         resizable: false,
@@ -115,38 +113,64 @@
         buttons: buttons,
         closeText: "",
         open: function (event, ui) {
-          var $body = $("body");
-          if (no_body_scroll && !$body.hasClass("no-scroll")) {
-            $body.addClass("no-scroll");
+          if (typeof settings["parent"] === "undefined") {
+            var $body = $("body");
+            if (!$body.hasClass("no-scroll")) {
+              // When the modal is open, we want to set the top of the body to the scroll position
+              document.body.style.top = -window.scrollY + "px";
+              $body.addClass("no-scroll");
+            }
+            $selector_container.css({
+              position: "fixed",
+              top: "calc(50% - " + ($selector_container.height() / 2) + "px)",
+              margin: "0 auto",
+              left: "0",
+              right: "0",
+              overflow: "hidden"
+            });
+          } else {
+            var $overlay = $(".ui-widget-overlay");
+            if (!$overlay.hasClass("fit-parent")) {
+              $overlay.addClass("fit-parent");
+            }
           }
         },
         close: function (event, ui) {
-          var $body = $("body");
-          if (no_body_scroll && $body.hasClass("no-scroll")) {
-            $body.removeClass("no-scroll");
+          if (typeof settings["parent"] === "undefined") {
+            var $body = $("body");
+            if ($body.hasClass("no-scroll")) {
+              // When the modal is hidden, we want to remain at the top of the scroll position
+              $body.removeClass("no-scroll");
+              var scrollY = document.body.style.top;
+              document.body.style.top = "";
+              window.scrollTo(0, parseInt(scrollY || "0") * -1);
+            }
+          } else {
+            var $overlay = $(".ui-widget-overlay");
+            if ($overlay.hasClass("fit-parent")) {
+              $overlay.removeClass("fit-parent");
+            }
           }
         }
       };
-      // Specify the parent of the dialog, need to be a jQuery object
-      if (typeof settings["parent"] !== "undefined") {
+
+      if (typeof settings["parent"] === "undefined") {
+        dialog_settings["position"] = {
+          my: "center",
+          at: "center",
+          of: window
+        };
+      } else {
         dialog_settings["appendTo"] = settings["parent"];
         dialog_settings["position"] = {
           my: "center",
           at: "center",
           of: settings["parent"]
         };
-      } else {
-        dialog_settings["position"] = {
-          my: "center",
-          at: "center",
-          of: window
-        };
       }
       var $dialog = $selector.dialog(dialog_settings);
-      $dialog.closest(".ui-dialog").find(".ui-dialog-titlebar-close").empty().append("<i class='fa fa-times fa-lg'></i>");
-      $(window).on("resize", function () {
-        $dialog.dialog("option", "position", dialog_settings["position"]);
-      });
+      $selector_container = $selector.closest(".ui-dialog");
+      $selector_container.find(".ui-dialog-titlebar-close").empty().append("<i class='fa fa-times fa-lg'></i>");
       if (!show_close_button) {
         $dialog.on("dialogopen", function () {
           $(this).parent().find(".ui-dialog-titlebar-close").hide();

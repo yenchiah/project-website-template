@@ -1,13 +1,13 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.8
+ * Version: v3.9
  * This CSS file has widgets for building interactive web applications
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
  *************************************************************************/
 
- .custom-radio {
+.custom-radio {
   padding: 0;
   text-align: center;
   outline: none;
@@ -248,7 +248,8 @@
 .custom-dialog-flat {
   font-size: 16px;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  background: white;
+  background-color: white;
+  background-image: none;
   padding: 0;
   margin: 0;
   border-radius: 2px;
@@ -262,6 +263,8 @@
 
 .custom-dialog-flat .ui-dialog-content {
   padding: 0 1.2em 0 1.2em;
+  background-color: white;
+  background-image: none;
 }
 
 .custom-dialog-flat .ui-dialog-content p {
@@ -313,6 +316,10 @@
   border: 0;
 }
 
+.custom-dialog-flat .ui-dialog-titlebar .ui-dialog-titlebar-close .fa-lg {
+  vertical-align: -0.15em;
+}
+
 .custom-dialog-flat .ui-dialog-buttonpane {
   border-width: 0;
   margin: 0;
@@ -353,7 +360,7 @@
 }
 
 .ui-widget-overlay {
-  opacity: 0.6;
+  opacity: 0.7;
   background-image: none;
   background-color: black;
 }
@@ -372,4 +379,16 @@
 
 .no-scroll {
   overflow: hidden;
+  position: fixed;
+  height: 100vh;
+}
+
+.fit-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
 }
