@@ -25,10 +25,10 @@ If your website is static and requires no user interactions, I recommend copying
 In this way, you can remove the script line that loads jQuery in the header of the html and also delete the files for loading the menu bar (menu.html and menu.js).
 
 This template is tested and worked on:
-- MAC Desktop Chrome 71.0.3578.98
-- Android Mobile Chrome 71.0.3578.98
-- MAC Desktop Firefox 64.0
-- Android Mobile Firefox 64.0
+- MAC Desktop Chrome 76
+- Android Mobile Chrome 76
+- MAC Desktop Firefox 64
+- Android Mobile Firefox 64
 - MAC Desktop Safari 12
 - iOS Mobile Safari 12
 
