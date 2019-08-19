@@ -44,14 +44,11 @@ This template is tested and worked on:
   - Firefox 18
 
 # Known Problems and Bugs
-
 Here are several known problems and bugs that will be addressed in a later version:
 
 - On mobile Safari, the menu on the top will not close after opening it. This is because the menu icon on mobile Safari retains focus after a touch event, and the menu relies on the loss of focus event of the icon to close.
 
-
 # Future Plans
-
 Here are several planned features that will be add in the future:
 
 - A slideshow block for showing images or videos
