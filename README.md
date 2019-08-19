@@ -29,8 +29,8 @@ In this way, you can remove the script line that loads jQuery in the header of t
 This template is tested and worked on:
 - MAC Desktop Chrome 76
 - Android Mobile Chrome 76
-- MAC Desktop Firefox 64
-- Android Mobile Firefox 64
+- MAC Desktop Firefox 68
+- Android Mobile Firefox 68
 - MAC Desktop Safari 12
 - iOS Mobile Safari 12
 
