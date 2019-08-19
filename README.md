@@ -31,6 +31,10 @@ This template is tested and worked on:
   - Chrome 76
   - Safari 12
   - Firefox 68
+- Windows 10
+  - Chrome 76
+  - Firefox 68
+  - Edge 44
 - Android 8
   - Chrome 76
   - Firefox 68
