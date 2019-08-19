@@ -1,9 +1,11 @@
 # project-website-template
 Demo: https://yenchiah.github.io/project-website-template/
 
-This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, I recommend starting with the empty template (empty.html) and copy codes from the file that contains different layouts (index.html). For building interactive websites, this library also provides several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). Two examples that use this template are:
-- Project webstie: [http://smellpgh.org](http://smellpgh.org)
+This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, I recommend starting with the empty template (empty.html) and copy codes from the file that contains different layouts (index.html). For building interactive websites, this library also provides several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). Examples that use this template are:
 - Personal website: [http://yenchiah.me](http://yenchiah.me)
+- Project webstie: [http://smellpgh.org](http://smellpgh.org)
+- Project webstie: [https://smellmycity.org](https://smellmycity.org)
+- Project webstie: [https://smoke.createlab.org](https://smoke.createlab.org)
 
 If you would love to keep updating this template, please keep your codes in separate files (custom.css and custom.js) and avoid modifying the followings:
 - css/frame.css (CSS for the main frame of the website)
