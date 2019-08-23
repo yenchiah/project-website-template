@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.11
+ * Version: v3.12
  * This JS file has widgets for building interactive web applications
  * Use this file with widgets.css
  * If you want to keep this template updated, avoid modifying this file
@@ -24,6 +24,7 @@
     //
     // Private methods
     //
+
     // Safely get the value from a variable, return a default value if undefined
     function safeGet(v, default_val) {
       if (typeof default_val === "undefined") default_val = "";
@@ -34,6 +35,7 @@
     //
     // Privileged methods
     //
+
     function createCustomDialog(settings) {
       settings = safeGet(settings, {});
 
@@ -113,42 +115,62 @@
         buttons: buttons,
         closeText: "",
         open: function (event, ui) {
-          if (typeof settings["parent"] === "undefined") {
-            var $body = $("body");
-            if (!$body.hasClass("no-scroll")) {
-              // When the modal is open, we want to set the top of the body to the scroll position
-              document.body.style.top = -window.scrollY + "px";
-              $body.addClass("no-scroll");
-            }
-            $selector_container.css({
-              position: "fixed",
-              top: "calc(50% - " + ($selector_container.height() / 2) + "px)",
-              margin: "0 auto",
-              left: "0",
-              right: "0",
-              overflow: "hidden"
-            });
-          } else {
-            var $overlay = $(".ui-widget-overlay");
-            if (!$overlay.hasClass("fit-parent")) {
-              $overlay.addClass("fit-parent");
+          var num_opened_dialog = 0;
+          $(".ui-dialog-content").each(function () {
+            if ($(this).dialog("isOpen")) num_opened_dialog += 1;
+          });
+          // Larger than 1 after opening means that there exists other opened dialog boxes
+          var is_other_dialog_opened = num_opened_dialog > 1;
+          // Check if parent element is specified
+          if (!is_other_dialog_opened) {
+            if (typeof settings["parent"] === "undefined") {
+              var $body = $("body");
+              if (!$body.hasClass("no-scroll")) {
+                // When the modal is open, we want to set the top of the body to the scroll position
+                document.body.style.top = -window.scrollY + "px";
+                $body.addClass("no-scroll");
+              }
+              $selector_container.css({
+                position: "fixed",
+                top: "calc(50% - " + ($selector_container.height() / 2) + "px)",
+                margin: "0 auto",
+                left: "0",
+                right: "0",
+                overflow: "hidden"
+              });
+            } else {
+              // If there is a parent, need to fit the overlay to the parent element
+              var $overlay = $(".ui-widget-overlay");
+              if (!$overlay.hasClass("fit-parent")) {
+                $overlay.addClass("fit-parent");
+              }
             }
           }
         },
         close: function (event, ui) {
-          if (typeof settings["parent"] === "undefined") {
-            var $body = $("body");
-            if ($body.hasClass("no-scroll")) {
-              // When the modal is hidden, we want to remain at the top of the scroll position
-              $body.removeClass("no-scroll");
-              var scrollY = document.body.style.top;
-              document.body.style.top = "";
-              window.scrollTo(0, parseInt(scrollY || "0") * -1);
-            }
-          } else {
-            var $overlay = $(".ui-widget-overlay");
-            if ($overlay.hasClass("fit-parent")) {
-              $overlay.removeClass("fit-parent");
+          var num_opened_dialog = 0;
+          $(".ui-dialog-content").each(function () {
+            if ($(this).dialog("isOpen")) num_opened_dialog += 1;
+          });
+          // Larger than 0 after closing means that there exists other opened dialog boxes
+          var is_other_dialog_opened = num_opened_dialog > 0;
+          if (!is_other_dialog_opened) {
+            // Check if parent element is specified
+            if (typeof settings["parent"] === "undefined") {
+              var $body = $("body");
+              if ($body.hasClass("no-scroll")) {
+                // When the modal is hidden, we want to remain at the top of the scroll position
+                $body.removeClass("no-scroll");
+                var scrollY = document.body.style.top;
+                document.body.style.top = "";
+                window.scrollTo(0, parseInt(scrollY || "0") * -1);
+              }
+            } else {
+              // If there is a parent, need to remove the class that fits the overlay to the parent
+              var $overlay = $(".ui-widget-overlay");
+              if ($overlay.hasClass("fit-parent")) {
+                $overlay.removeClass("fit-parent");
+              }
             }
           }
         }
