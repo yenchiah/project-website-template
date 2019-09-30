@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.13
+ * Version: v3.14
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -291,6 +291,10 @@ hr {
   -ms-user-select: none;
   user-select: none;
   display: flex;
+}
+
+.image.center {
+  align-self: center;
 }
 
 .image img,
