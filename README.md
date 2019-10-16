@@ -47,6 +47,7 @@ This template is tested and worked on:
 Here are several known problems and bugs that will be addressed in a later version:
 
 - On mobile Safari, the menu on the top will not close after opening it. This is because the menu icon on mobile Safari retains focus after a touch event, and the menu relies on the loss of focus event of the icon to close.
+- On Safari (both desktop and mobile), the image button in the "Text with Images and Image Buttons" section has a wrong aspect ratio.
 
 # Future Plans
 Here are several planned features that will be add in the future:
