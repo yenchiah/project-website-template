@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.16
+ * Version: v3.17
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -56,8 +56,14 @@ h3 {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-ul {
+ul,
+ol {
   margin: 10px 0 10px 0;
+}
+
+li ol,
+li ul {
+  margin: 0;
 }
 
 hr {
@@ -164,12 +170,16 @@ hr {
   max-width: 900px;
 }
 
-.content p a {
+.content p a,
+.content ul a,
+.content ol a {
   text-decoration: none;
   color: #005cbf;
 }
 
-.content p a:hover {
+.content p a:hover,
+.content ul a:hover,
+.content ol a:hover {
   text-decoration: underline;
 }
 
@@ -448,6 +458,17 @@ ol.publication.A-list li p {
 
 ol.publication.A-list li p:before {
   content: "[A"counter(A-counter)"]";
+}
+
+ol.nested {
+  list-style: none;
+  counter-reset: item;
+}
+
+ol.nested>li:before {
+  counter-increment: item;
+  content: counters(item, ".") ". ";
+  padding-right: 0.6em;
 }
 
 .noselect {
