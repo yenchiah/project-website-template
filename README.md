@@ -32,15 +32,15 @@ This template is tested and worked on:
   - Safari 12
   - Firefox 68
 - Windows 10
-  - Chrome 76
+  - Chrome 77
   - Firefox 68
   - Edge 44
-- Android 8
-  - Chrome 76
+- Android 7, 8, 9, and 10
+  - Chrome 77
   - Firefox 68
-- iOS 12
-  - Chrome 76
-  - Safari 12
+- iOS 12 and 13
+  - Chrome 77
+  - Safari
   - Firefox 18
 
 # Problems and Bugs
