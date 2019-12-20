@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.17
+ * Version: v3.18
  * This JS file has widgets for building interactive web applications
  * Use this file with widgets.css
  * If you want to keep this template updated, avoid modifying this file
@@ -70,33 +70,55 @@
       // Show the close button or not
       var show_close_button = safeGet(settings["show_close_button"], true);
 
+      // Close the dialog when the action button is clicked or not
+      var close_dialog_on_action = safeGet(settings["close_dialog_on_action"], true);
+
+      // Close the dialog when the cancel button is clicked or not
+      var close_dialog_on_cancel = safeGet(settings["close_dialog_on_cancel"], true);
+
+      // Reverse the positions of the action and cancel buttons
+      var reverse_button_positions = safeGet(settings["reverse_button_positions"], false);
+
       // Specify buttons
-      var buttons = {};
+      var buttons = [];
       if (show_cancel_btn) {
-        buttons["Cancel"] = {
-          class: "ui-cancel-button",
+        var btn_class = "ui-cancel-button";
+        if (full_width_button) {
+          btn_class += " full-width";
+        }
+        buttons.push({
+          class: btn_class,
           text: cancel_text,
           click: function () {
-            $(this).dialog("close");
+            if (close_dialog_on_cancel) {
+              $(this).dialog("close");
+            }
             if (has_cancel_callback) settings["cancel_callback"]();
           }
-        }
-        if (full_width_button) {
-          buttons["Cancel"]["class"] += " full-width";
-        }
+        });
       }
       if (has_action_callback) {
-        buttons["Action"] = {
-          class: "ui-action-button",
+        var btn_class = "ui-action-button";
+        if (full_width_button) {
+          btn_class += " full-width";
+        }
+        buttons.push({
+          class: btn_class,
           text: action_text,
           click: function () {
-            $(this).dialog("close");
-            settings["action_callback"]();
+            if (close_dialog_on_action) {
+              $(this).dialog("close");
+            }
+            if (has_action_callback) settings["action_callback"]();
           }
-        }
-        if (full_width_button) {
-          buttons["Action"]["class"] += " full-width";
-        }
+        });
+      }
+
+      // Reverse button positions or not
+      if (buttons.length == 2 && reverse_button_positions) {
+        var tmp = buttons[1];
+        buttons[1] = buttons[0];
+        buttons[0] = tmp;
       }
 
       // Create dialog
@@ -199,7 +221,7 @@
         });
       }
       return $dialog;
-    };
+    }
     this.createCustomDialog = createCustomDialog;
 
     function setCustomDropdown($ui, settings) {
@@ -253,6 +275,18 @@
       return $ui;
     }
     this.setCustomDropdown = setCustomDropdown;
+
+    // Copy text in a input field
+    function copyText(element_id) {
+      // Get the text field
+      var copy = document.getElementById(element_id);
+      // Select the text field
+      copy.select();
+      copy.setSelectionRange(0, 99999); /*For mobile devices*/
+      // Copy the text inside the text field
+      document.execCommand("copy");
+    }
+    this.copyText = copyText;
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //

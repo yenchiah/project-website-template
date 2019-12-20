@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.17
+ * Version: v3.18
  * This CSS file has control elements that do not require JavaScript
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -176,29 +176,32 @@
   margin-left: 6px;
 }
 
-.custom-textbox {
+input.custom-textbox,
+textarea.custom-textbox {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   box-sizing: border-box;
   padding: 5px 10px;
   background: rgb(255, 255, 255);
   border: 1px solid #7d7d7d;
-  font-size: 16px !important;
+  font-size: 16px;
   outline: none;
   border-radius: 2px;
-  width: 100%;
-  min-height: 37px;
-  max-height: 37px;
   resize: vertical;
 }
 
-textarea.custom-textbox {
-  min-height: 60px !important;
-  max-height: 200px !important;
+input.custom-textbox {
+  min-height: 37px;
+  max-height: 37px;
 }
 
-input[readonly].custom-textbox {
+textarea.custom-textbox {
+  min-height: 60px;
+  max-height: 200px;
+}
+
+input[readonly].custom-textbox,
+textarea[readonly].custom-textbox {
   cursor: default;
-  pointer-events: none;
   background: rgb(230, 230, 230);
 }
 

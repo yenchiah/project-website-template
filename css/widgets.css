@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.17
+ * Version: v3.18
  * This CSS file has widgets for building interactive web applications
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file
@@ -262,7 +262,7 @@
 }
 
 .custom-dialog-flat .ui-dialog-content {
-  padding: 0 1.2em 0 1.2em;
+  padding: 0 1.2em 1.2em 1.2em;
   background-color: white;
   background-image: none;
 }
@@ -323,7 +323,7 @@
 .custom-dialog-flat .ui-dialog-buttonpane {
   border-width: 0;
   margin: 0;
-  padding: 1.2em 1.2em 1.2em 1.2em;
+  padding: 0em 1.2em 1.2em 1.2em;
 }
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset {
@@ -346,8 +346,8 @@
 }
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button.ui-action-button {
-  background-color: #dc3545;
-  border: 1px solid #dc3545;
+  background-color: #007bff;
+  border: 1px solid #007bff;
 }
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button.full-width {
@@ -356,7 +356,7 @@
 }
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button.full-width:not(:first-child) {
-  margin-top: 0.5em;
+  margin-top: 0.8em;
 }
 
 .ui-widget-overlay {
