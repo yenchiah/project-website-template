@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.18
+ * Version: v3.19
  * This CSS file has widgets for building interactive web applications
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file
@@ -303,6 +303,15 @@
   right: 1.2em;
   top: 1.3em;
   text-indent: 0;
+}
+
+.custom-dialog-flat .ui-dialog-titlebar .ui-dialog-titlebar-close:after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  bottom: -12px;
+  left: -12px;
+  right: -12px;
 }
 
 .custom-dialog-flat .ui-dialog-titlebar .ui-dialog-titlebar-close.ui-state-default {
