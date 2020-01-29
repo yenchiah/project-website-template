@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.19
+ * Version: v3.20
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -310,7 +310,7 @@ hr {
 .image img,
 .image video {
   width: 100%;
-  height: auto;
+  height: 100%;
   box-sizing: border-box;
   display: table-cell;
   overflow: hidden;
