@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.20
+ * Version: v3.21
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -633,6 +633,42 @@ ol.nested>li:before {
 .gallery a>div {
   width: 100%;
   text-align: center;
+}
+
+.custom-table {
+  border: 1px solid #666666;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  width: fit-content;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.custom-table.center {
+  align-self: center;
+}
+
+.custom-table thead {
+  text-align: left;
+  border-bottom: 1px solid #666666;
+}
+
+.custom-table tfoot {
+  border-top: 1px solid #666666;
+}
+
+.custom-table tr.bg-color-gray {
+  background-color: #dadada;
+}
+
+.custom-table tr.bg-color-light-gray {
+  background-color: #efefef;
+}
+
+.custom-table td,
+.custom-table th {
+  padding: 5px 12px;
 }
 
 @media screen and (min-width: 900px) {
