@@ -1,11 +1,73 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.21
+ * Version: v3.22
  * This CSS file has widgets for building interactive web applications
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
  *************************************************************************/
+
+.custom-tab {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.custom-tab .custom-tab-menu {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-bottom: none;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.custom-tab .custom-tab-menu-item {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.custom-tab .custom-tab-menu-item:hover {
+  background-color: #ddd;
+}
+
+.custom-tab .custom-tab-menu-item.active {
+  background-color: #ccc;
+}
+
+.custom-tab .custom-tab-content {
+  padding: 30px;
+  border: 1px solid #ccc;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+.custom-tab .custom-tab-menu.center,
+.custom-tab .custom-tab-content .image.center,
+.custom-tab .custom-tab-content p.center,
+.custom-tab .custom-tab-content table.center {
+  align-self: center;
+}
+
+.custom-tab .custom-tab-content.no-padding {
+  padding: 0;
+}
 
 .custom-radio {
   padding: 0;

@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.21
+ * Version: v3.22
  * This JS file has widgets for building interactive web applications
  * Use this file with widgets.css
  * If you want to keep this template updated, avoid modifying this file
@@ -35,6 +35,38 @@
     //
     // Privileged methods
     //
+    function createCustomTab(settings) {
+      settings = safeGet(settings, {});
+
+      // Specify the selector of the tab
+      var $selector = $(settings["selector"]);
+      if ($selector.length == 0) {
+        console.error("Cannot find selector: " + settings["selector"]);
+        return false;
+      }
+      if ($selector.length > 1) {
+        console.error("Multiple selectors were found. Please indicate only one at a time.");
+        return false;
+      }
+
+      // Get the menu items
+      var $menu_items = $selector.find(".custom-tab-menu-item");
+      var $all_contents = $selector.find(".custom-tab-content");
+      $menu_items.each(function (i, element) {
+        var $element = $(element);
+        var idx_content = $element.data("content");
+        var $desired_content = $selector.find(".custom-tab-content[data-content=" + idx_content + "]");
+        // Add click event
+        $element.on("click", function () {
+          $all_contents.hide();
+          $desired_content.css("display", "flex");
+          $menu_items.removeClass("active");
+          $element.addClass("active");
+        });
+      });
+      $selector.find(".custom-tab-menu-item.active").click();
+    }
+    this.createCustomTab = createCustomTab;
 
     function createCustomDialog(settings) {
       settings = safeGet(settings, {});
