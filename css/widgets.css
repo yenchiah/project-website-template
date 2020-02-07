@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.23
+ * Version: v3.24
  * This CSS file has widgets for building interactive web applications
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file
@@ -36,6 +36,7 @@
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .custom-tab .custom-tab-menu-item:hover {
