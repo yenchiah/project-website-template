@@ -49,10 +49,7 @@
 
     // Create custom tabs
     widgets.createCustomTab({
-      selector: "#custom-tab-1"
-    });
-    widgets.createCustomTab({
-      selector: "#custom-tab-2"
+      selector: "#custom-tab"
     });
 
     // Set custom dropdown
@@ -138,7 +135,7 @@
     // Create the gallery
     var $gallery = $(".gallery");
     // In practice, these images urls may come from your server via http ajax requests.
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 8; i++) {
       var item = "<a href=\"javascript:void(0)\" class=\"flex-column\">" +
         "<img src=\"img/dummay-img.png\">" +
         "<div>Image Caption</div>" +

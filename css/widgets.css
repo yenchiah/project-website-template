@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.24
+ * Version: v3.25
  * This CSS file has widgets for building interactive web applications
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file
@@ -48,7 +48,7 @@
 }
 
 .custom-tab .custom-tab-content {
-  padding: 30px;
+  padding: 20px;
   border: 1px solid #ccc;
   display: none;
   flex-direction: column;
@@ -68,6 +68,26 @@
 
 .custom-tab .custom-tab-content.no-padding {
   padding: 0;
+}
+
+.custom-tab .graph-title:first-child {
+  margin-top: 0;
+}
+
+.custom-tab .graph-title.add-top-right-left-padding {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.custom-tab .graph-title.add-bottom-border {
+  border-bottom: 1px solid #ccc;
+}
+
+.custom-tab .image,
+.custom-tab .custom-table-container {
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .custom-radio {
