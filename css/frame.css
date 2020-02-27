@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.25
+ * Version: v3.26
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
@@ -168,7 +168,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   max-width: 900px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .content p a,
