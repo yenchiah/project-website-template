@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.26
+ * Version: v3.27
  * This CSS file has widgets for building interactive web applications
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file
@@ -48,7 +48,7 @@
 }
 
 .custom-tab .custom-tab-content {
-  padding: 20px;
+  padding: 25px;
   border: 1px solid #ccc;
   display: none;
   flex-direction: column;
@@ -70,23 +70,28 @@
   padding: 0;
 }
 
-.custom-tab .graph-title:first-child {
-  margin-top: 0;
-}
-
 .custom-tab .graph-title.add-top-right-left-padding {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 5px;
 }
 
 .custom-tab .graph-title.add-bottom-border {
   border-bottom: 1px solid #ccc;
 }
 
-.custom-tab .image,
-.custom-tab .custom-table-container {
-  margin-top: 5px;
+.custom-tab .image:first-child,
+.custom-tab .custom-table-container:first-child,
+.custom-tab .text:first-child,
+.custom-tab .graph-title:first-child {
+  margin-top: 0;
+}
+
+.custom-tab .image:last-child,
+.custom-tab .custom-table-container:last-child,
+.custom-tab .text:last-child,
+.custom-tab .graph-title:last-child {
   margin-bottom: 0;
 }
 
