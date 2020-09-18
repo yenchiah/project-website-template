@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.27
+ * Version: v3.28
  * This JS file has widgets for building interactive web applications
  * Use this file with widgets.css
  * If you want to keep this template updated, avoid modifying this file
@@ -307,6 +307,16 @@
       return $ui;
     }
     this.setCustomDropdown = setCustomDropdown;
+
+    function setCustomLegend($ui, settings) {
+      settings = safeGet(settings, {});
+      $ui.accordion({
+        collapsible: true,
+        animate: safeGet(settings["animate"], false)
+      });
+      return $ui;
+    }
+    this.setCustomLegend = setCustomLegend;
 
     // Copy text in a input field
     function copyText(element_id) {

@@ -47,11 +47,6 @@
     // Create the widget object
     widgets = new edaplotjs.Widgets();
 
-    // Create custom tabs
-    widgets.createCustomTab({
-      selector: "#custom-tab"
-    });
-
     // Set custom dropdown
     widgets.setCustomDropdown($("#custom-dropdown"), {
       items: ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"],
@@ -142,6 +137,14 @@
         "</a>";
       $gallery.append($(item));
     }
+
+    // Create custom tabs
+    widgets.createCustomTab({
+      selector: "#custom-tab"
+    });
+
+    // Set the custom legend
+    widgets.setCustomLegend($("#custom-legend"));
   }
 
   $(init);
