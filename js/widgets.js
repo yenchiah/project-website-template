@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.28
+ * Version: v3.29
  * This JS file has widgets for building interactive web applications
  * Use this file with widgets.css
  * If you want to keep this template updated, avoid modifying this file
@@ -179,10 +179,16 @@
           if (!is_other_dialog_opened) {
             if (typeof settings["parent"] === "undefined") {
               var $body = $("body");
-              if (!$body.hasClass("no-scroll")) {
-                // When the modal is open, we want to set the top of the body to the scroll position
+              if (!$body.hasClass("no-scroll") || !$body.hasClass("no-x-scroll")) {
+                // When the dialog is open, we want to set the top of the body to the scroll position
                 document.body.style.top = -window.scrollY + "px";
-                $body.addClass("no-scroll");
+                if (window.innerWidth > document.body.clientWidth) {
+                  // This means that the page has a vertical scroll bar
+                  $body.addClass("no-x-scroll");
+                } else {
+                  // This means that the page has no vertical scroll bar
+                  $body.addClass("no-scroll");
+                }
               }
               $selector_container.css({
                 position: "fixed",
@@ -212,9 +218,14 @@
             // Check if parent element is specified
             if (typeof settings["parent"] === "undefined") {
               var $body = $("body");
-              if ($body.hasClass("no-scroll")) {
-                // When the modal is hidden, we want to remain at the top of the scroll position
-                $body.removeClass("no-scroll");
+              if ($body.hasClass("no-scroll") || $body.hasClass("no-x-scroll")) {
+                if ($body.hasClass("no-scroll")) {
+                  $body.removeClass("no-scroll");
+                }
+                if ($body.hasClass("no-x-scroll")) {
+                  $body.removeClass("no-x-scroll");
+                }
+                // When the dialog is hidden, we want to remain at the top of the scroll position
                 var scrollY = document.body.style.top;
                 document.body.style.top = "";
                 window.scrollTo(0, parseInt(scrollY || "0") * -1);

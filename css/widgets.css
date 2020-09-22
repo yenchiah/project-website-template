@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.28
+ * Version: v3.29
  * This CSS file has widgets for building interactive web applications
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file
@@ -594,9 +594,16 @@
   margin-right: 15px;
 }
 
-.no-scroll {
+.no-x-scroll {
   overflow-x: hidden;
   overflow-y: scroll;
+  position: fixed;
+  height: 100vh;
+}
+
+.no-scroll {
+  overflow-x: hidden;
+  overflow-y: hidden;
   position: fixed;
   height: 100vh;
 }
