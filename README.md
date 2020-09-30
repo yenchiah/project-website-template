@@ -1,3 +1,4 @@
+#amazing project with openly available for everyone
 # project-website-template
 Demo: https://yenchiah.github.io/project-website-template/
 
