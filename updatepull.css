@@ -1,0 +1,113 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+/*********** footer part starts *********/
+ 
+.footer-top{
+	padding: 40px;
+	margin: 20px 0;
+	width: 100%;
+	background-color: #262626;
+    text-align: center;
+}
+
+
+.all-footers{
+	padding: 15px 0 25px 0;
+	width: 100%;
+	text-align: center;
+}
+
+#footer .footer-top .footer-info h2{
+	text-transform: uppercase;
+	border-left: 5px solid green;
+	color: #fff;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+
+
+#footer .footer-top .all-footers h4{
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 1.4rem;
+}
+#footer .footer-top .all-footers p{
+     font-size: 0.9rem;
+     padding :8px 0;
+     color: #8c8c8c;
+}
+
+
+
+#footer .footer-top .footer-links li{
+	padding: 10px 0 12px 0;
+	border-bottom: 1px solid #b3b3b3;
+}
+#footer .footer-top .footer-links li a{
+	text-decoration: none;
+	color: #8c8c8c;
+	font-size: 0.9rem;
+}
+#footer .footer-top .footer-links li a i{
+	margin-right: 10px;
+}
+#footer .footer-top .footer-links li a:hover , #footer .footer-top .footer-links li i:hover {color: #bfbfbf;}
+
+
+#footer .footer-top .footer-newsletter input[type="email"]{
+	border: 0;
+	padding: 6px 8px;
+	width: 61%;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"] {
+	background-color: #f4511e;
+	border: 0;
+	width: 32%;
+	padding: 6px 0;
+	text-align: center;
+	color: #fff;
+	transition: .5s;
+	cursor: pointer;
+	margin-left: -5px;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"]:hover {
+	background-color: #13a456;
+}
+
+#footer .footer-top .footer-icons a{
+	padding: 9px;
+	background-color: #f4511e;
+	border-radius: 50%;
+	color: #fff;
+	transition: .5s;
+}
+#footer .footer-top .footer-icons a:hover{background-color: #13a456;}
+#footer .footer-top .footer-icons i{
+	padding: 15px 0 14px 0;
+	font-size: 0.9rem;
+    text-align: center;
+}
+
+
+
+
+/***** copyright section *****/
+.copyright{
+	background-color: #1a1a1a;
+	width: 100%;
+	height: auto;
+    margin: -20px 0 -10px 0;
+    padding: 18px 0 16px 0;
+    text-align: center;
+}
+
+
+/*********** footer part ends *********/
