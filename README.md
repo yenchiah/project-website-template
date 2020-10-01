@@ -8,7 +8,7 @@ This is a responsive (mobile/desktop) and light-weight HTML/CSS template for bui
 - Project website: [https://smoke.createlab.org](https://smoke.createlab.org)
 
 If you would love to keep updating this template, please keep your codes in separate files (custom.css and custom.js) and avoid modifying the following:
-- css/frame.css (CSS for the main frame of the website)
+- css/frame.css (CSS for the mainframe of the website)
 - css/controls.css (CSS for control elements that do not require JavaScript)
 - css/widgets.css (CSS for widgets that require JavaScript)
 - js/widgets.js (JavaScript for widgets)
@@ -49,7 +49,7 @@ Here are several known problems and bugs that will be addressed in a later versi
 - On mobile Safari, the menu on the top will not close after opening it. This is because the menu icon on mobile Safari retains focus after a touch event, and the menu relies on the loss of focus event of the icon to close.
 
 # Future Plans
-Here are several planned features that will be add in the future:
+Here are several planned features that will be added in the future:
 
 - A slideshow block for showing images or videos
 - A footer at the bottom
