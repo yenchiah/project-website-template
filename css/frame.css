@@ -10,11 +10,12 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: lightcoral;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   left: 0;
   right: 0;
   width: auto;
+
 }
 
 a {
