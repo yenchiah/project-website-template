@@ -48,8 +48,13 @@ Here are several known problems and bugs that will be addressed in a later versi
 
 - On mobile Safari, the menu on the top will not close after opening it. This is because the menu icon on mobile Safari retains focus after a touch event, and the menu relies on the loss of focus event of the icon to close.
 
-# Future Plans
-Here are several planned features that will be add in the future:
+# Future Plans for Feature Enhancement
+Here are several features that I plan to add in the future. If you wish to contribute, please email me to discuss the design before submitting pull requests.
 
 - A slideshow block for showing images or videos
 - A footer at the bottom
+
+# Policy for Open Source Contribution
+I welcome contributions in fixing the bugs and enhancing features. However, please avoid submitting pull requests (PRs) that modify the template's existing design without discussing them with me. Please also avoid submitting PRs that are not related to bug fixes or feature enhancements. Fixing grammar errors in the README file is not necessary, although I do appreciate it.
+
+If you are excited to contribute to the new features directly, please explain your design decisions and how your design matches this template's style in the PR. If you fix bugs, please explain which bug you fixed and how you fixed them. The explanations that you put in each PR can greatly help me determine if the changes can be merged into the master branch. PRs with no explanations will highly likely be rejected.
