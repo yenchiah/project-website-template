@@ -6,16 +6,15 @@
  * Instead, add your own CSS in the index.css
  *************************************************************************/
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  left: 0;
-  right: 0;
-  width: auto;
-}
+html,body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+            left: 0;
+            right: 0;
+            width: auto;
+          }
 
 a {
   outline: none;
@@ -56,13 +55,11 @@ h3 {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-ul,
-ol {
+ul,ol {
   margin: 10px 0 10px 0;
 }
 
-li ol,
-li ul {
+li ol,li ul {
   margin: 0;
 }
 
@@ -171,9 +168,7 @@ hr {
   overflow-x: auto;
 }
 
-.content p a,
-.content ul a,
-.content ol a {
+.content p a, .content ul a, .content ol a {
   text-decoration: none;
   color: #005cbf;
 }
