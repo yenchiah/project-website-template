@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.29
+ * Version: v3.32
  * This JS file has widgets for building interactive web applications
  * Use this file with widgets.css
  * If you want to keep this template updated, avoid modifying this file
@@ -15,26 +15,23 @@
   // Create the class
   //
   var Widgets = function () {
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Variables
-    //
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Private methods
-    //
-
-    // Safely get the value from a variable, return a default value if undefined
-    function safeGet(v, default_val) {
-      if (typeof default_val === "undefined") default_val = "";
-      return (typeof v === "undefined") ? default_val : v;
+    /**
+     * A helper for getting data safely with a default value.
+     * @public
+     * @param {*} v - the original value.
+     * @param {*} defaultVal - the default value to return when the original one is undefined.
+     * @returns {*} - the original value (if not undefined) or the default value.
+     */
+    function safeGet(v, defaultVal) {
+      if (typeof defaultVal === "undefined") defaultVal = "";
+      return (typeof v === "undefined") ? defaultVal : v;
     }
+    this.safeGet = safeGet;
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Privileged methods
-    //
+    /**
+     * @public
+     * @todo need documentation
+     */
     function createCustomTab(settings) {
       settings = safeGet(settings, {});
 
@@ -68,6 +65,10 @@
     }
     this.createCustomTab = createCustomTab;
 
+    /**
+     * @public
+     * @todo need documentation
+     */
     function createCustomDialog(settings) {
       settings = safeGet(settings, {});
 
@@ -87,7 +88,7 @@
       var show_cancel_btn = safeGet(settings["show_cancel_btn"], true);
 
       // Specify the style
-      var style_class = "custom-dialog-flat";
+      var style_class = "custom-dialog-flat " + safeGet(settings["class"], "");
 
       // Specify the selector of the dialog
       // If no selector, a <div></div> will be created
@@ -117,15 +118,17 @@
         var btn_class = "ui-cancel-button";
         if (full_width_button) {
           btn_class += " full-width";
+        } else {
+          btn_class += " stretch-on-mobile";
         }
         buttons.push({
           class: btn_class,
           text: cancel_text,
-          click: function () {
+          click: function (event) {
             if (close_dialog_on_cancel) {
               $(this).dialog("close");
             }
-            if (has_cancel_callback) settings["cancel_callback"]();
+            if (has_cancel_callback) settings["cancel_callback"](event);
           }
         });
       }
@@ -133,15 +136,17 @@
         var btn_class = "ui-action-button";
         if (full_width_button) {
           btn_class += " full-width";
+        } else {
+          btn_class += " stretch-on-mobile";
         }
         buttons.push({
           class: btn_class,
           text: action_text,
-          click: function () {
+          click: function (event) {
             if (close_dialog_on_action) {
               $(this).dialog("close");
             }
-            if (has_action_callback) settings["action_callback"]();
+            if (has_action_callback) settings["action_callback"](event);
           }
         });
       }
@@ -204,6 +209,11 @@
               if (!$overlay.hasClass("fit-parent")) {
                 $overlay.addClass("fit-parent");
               }
+              $selector_container.css({
+                margin: "0 auto",
+                left: "0",
+                right: "0"
+              });
             }
           }
         },
@@ -267,6 +277,10 @@
     }
     this.createCustomDialog = createCustomDialog;
 
+    /**
+     * @public
+     * @todo need documentation
+     */
     function setCustomDropdown($ui, settings) {
       var items = settings["items"]; // the text that will appear for each item
       var init_index = settings["init_index"];
@@ -319,6 +333,10 @@
     }
     this.setCustomDropdown = setCustomDropdown;
 
+    /**
+     * @public
+     * @todo need documentation
+     */
     function setCustomLegend($ui, settings) {
       settings = safeGet(settings, {});
       $ui.accordion({
@@ -329,28 +347,160 @@
     }
     this.setCustomLegend = setCustomLegend;
 
-    // Copy text in a input field
+    /**
+     * Copy text in a input field
+     * @public
+     * @todo need documentation
+     */
     function copyText(element_id) {
       // Get the text field
-      var copy = document.getElementById(element_id);
+      var c = document.getElementById(element_id);
       // Select the text field
-      copy.select();
-      copy.setSelectionRange(0, 99999); /*For mobile devices*/
+      c.select();
+      c.setSelectionRange(0, 99999); // For mobile devices
       // Copy the text inside the text field
-      document.execCommand("copy");
+      navigator.clipboard.writeText(c.value);
     }
     this.copyText = copyText;
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Constructor
-    //
+    /**
+     * Resize a jQuery dialog to fit the screen.
+     * @public
+     * @param {Object} $dialog - a jQuery dialog object.
+     */
+    function fitDialogToScreen($dialog) {
+      var $window = $(window);
+      $dialog.parent().css({
+        "width": $window.width(),
+        "height": $window.height(),
+        "left": 0,
+        "top": 0
+      });
+      $dialog.dialog("option", "height", $window.height());
+      $dialog.dialog("option", "width", $window.width());
+    }
+    this.fitDialogToScreen = fitDialogToScreen;
+
+    /**
+     * Create the html elements for a photo from Unsplash.
+     * @private
+     * @param {string} credit - the credit of the photo.
+     * @param {string} imageUrl - the source URL of an image for the photo.
+     * @returns {Object} - a jQuery DOM object.
+     */
+    function createUnsplashPhotoHTML(credit, imageUrl) {
+      var html = '<figure style="display: none;"><img src="' + imageUrl + '"><div>' + credit + '</div></figure>';
+      var $html = $(html);
+      $html.find("img").one("load", function () {
+        // Only show the figure when the image is loaded
+        $(this).parent().show();
+      });
+      return $html;
+    }
+
+    /**
+     * Create and display the image picker dialog (customized for Unsplash API).
+     * @public
+     * @param {string} uniqueId - the unique ID for the DOM elements.
+     * @param {Object} dialogData - the dictionary to store in the "raw" field of the dialog DOM.
+     * @param {string} photoURL - the URL to get the json returned by the Unsplash API.
+     * @param {function} [onselect] - callback function after confirming photo selection.
+     * @returns {Object} - a jQuery object of the dialog.
+     */
+    function createUnsplashPhotoPickerDialog(uniqueId, dialogData, photoURL, onselect) {
+      // Create HTML
+      var html = '';
+      html += '<div id="' + uniqueId + '" title="Photo Picker" data-role="none" style="display: none;">';
+      html += '  <p class="text dialog-photo-picker-text">';
+      html += '    Search photos using <a href="https://unsplash.com/" target="_blank">Unsplash</a> and pick one:';
+      html += '  </p>';
+      html += '  <form class="search-box-container">';
+      html += '  <input class="custom-textbox search-box" placeholder="Enter search terms">';
+      html += '    <button title="Search photos" type="submit" class="search-box-button">';
+      html += '      <svg width="32" height="32" class="search-box-icon" version="1.1" viewBox="0 0 32 32" aria-hidden="false">';
+      html += '        <path d="M22 20c1.2-1.6 2-3.7 2-6 0-5.5-4.5-10-10-10S4 8.5 4 14s4.5 10 10 10c2.3 0 4.3-.7 6-2l6.1 6 1.9-2-6-6zm-8 1.3c-4 0-7.3-3.3-7.3-7.3S10 6.7 14 6.7s7.3 3.3 7.3 7.3-3.3 7.3-7.3 7.3z"></path>';
+      html += '      </svg>';
+      html += '    </button>';
+      html += '  </form>';
+      html += '  <p class="text custom-text-danger photos-masonry-error-message">No images found. Please search again using other terms.</p>';
+      html += '  <div class="masonry"></div>';
+      html += '</div>';
+      var $html = $(html);
+      $(document.body).append($html);
+
+      // Create dialog
+      var $imagePickerDialog = createCustomDialog({
+        "selector": "#" + uniqueId,
+        "action_text": "Select",
+        "width": 290,
+        "class": "dialog-photo-picker",
+        "show_cancel_btn": false,
+        "action_callback": function () {
+          var d = $($html.find(".masonry").find(".selected")[0]).data("raw");
+          if (typeof onselect == "function") {
+            onselect(d, $imagePickerDialog);
+          }
+        }
+      });
+      $imagePickerDialog.dialog("widget").find("button.ui-action-button").prop("disabled", true);
+      $imagePickerDialog.data("raw", dialogData);
+
+      // Handle photo search
+      $html.find(".search-box-container").on("submit", function (event) {
+        event.preventDefault();
+        var search = $html.find(".search-box").blur().val();
+        if (search == "") {
+          console.log("no search term");
+        } else {
+          var targetPhotoURL;
+          if (typeof photoURL === "undefined") {
+            targetPhotoURL = "file/photo.json";
+          } else {
+            targetPhotoURL = photoURL + "&query=" + search;
+          }
+          $.getJSON(targetPhotoURL, function (data) {
+            $html.find(".photos-masonry-error-message").hide();
+            var $photos = $html.find(".masonry").empty().show();
+            for (var i = 0; i < data.length; i++) {
+              var d = data[i];
+              var imageUrl = d["urls"]["regular"];
+              var credit = 'Credit: <a href="' + d["user"]["links"]["html"] + '" target="_blank">' + d["user"]["name"] + '</a>';
+              var $d = createUnsplashPhotoHTML(credit, imageUrl);
+              $d.data("raw", d);
+              $photos.append($d);
+            }
+            $photos.find("figure").on("click", function () {
+              if ($(this).hasClass("selected")) {
+                $(this).removeClass("selected");
+                $imagePickerDialog.dialog("widget").find("button.ui-action-button").prop("disabled", true);
+              } else {
+                $photos.find(".selected").removeClass("selected");
+                $(this).addClass("selected");
+                $imagePickerDialog.dialog("widget").find("button.ui-action-button").prop("disabled", false);
+              }
+            });
+          }).fail(function () {
+            $html.find(".masonry").empty().hide();
+            $html.find(".photos-masonry-error-message").show();
+          });
+        }
+      });
+
+      // Focus on the search box
+      $html.find(".search-box").focus();
+
+      // Handle window resize
+      $(window).resize(function () {
+        fitDialogToScreen($imagePickerDialog);
+      });
+      fitDialogToScreen($imagePickerDialog);
+
+      return $imagePickerDialog;
+    }
+    this.createUnsplashPhotoPickerDialog = createUnsplashPhotoPickerDialog;
   };
 
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  //
   // Register to window
-  //
   if (window.edaplotjs) {
     window.edaplotjs.Widgets = Widgets;
   } else {

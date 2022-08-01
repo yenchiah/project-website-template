@@ -1,11 +1,122 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.29
+ * Version: v3.32
  * This CSS file has widgets for building interactive web applications
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the index.css
  *************************************************************************/
+
+.painting-frame {
+  margin: 15px 0;
+  width: 100%;
+  justify-content: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  position: relative;
+}
+
+.painting-frame .painting-frame-item {
+  position: relative;
+}
+
+.painting-frame .painting-frame-image {
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.32), 0 0px 10px rgba(0, 0, 0, 0.23);
+  border: 8px solid white;
+  border-radius: 0;
+  max-height: 600px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  display: table-cell;
+  overflow: hidden;
+}
+
+.painting-frame .painting-frame-caption {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  box-sizing: border-box;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  padding: 15px 25x;
+  padding: max(min(2vw, 15px), 10px) max(min(3vw, 25px), 15px);
+  font-size: 25px;
+  font-size: max(min(6vw, 25px), 16px);
+  line-height: 1.3;
+  color: white;
+  text-align: center;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.search-box-container {
+  height: 40px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.search-box-container .search-box {
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  text-indent: 40px;
+  display: block;
+}
+
+.search-box-container .search-box-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.search-box-container .search-box-icon {
+  width: 24px;
+  height: 24px;
+  padding: 8px 0px 8px 10px;
+  fill: #767676;
+}
+
+.search-box-container .search-box-icon:hover {
+  fill: #292929;
+  transition: 0.1s;
+}
+
+.dialog-photo-picker {
+  max-width: 1200px;
+}
+
+.dialog-photo-picker .masonry {
+  width: calc(100% + 30px);
+  margin: 0 -15px;
+  padding: 15px 0 0 0;
+  display: none;
+}
+
+.dialog-photo-picker .masonry figure {
+  cursor: pointer;
+}
+
+.dialog-photo-picker .photos-masonry-error-message {
+  padding: 20px 15px;
+  display: none;
+}
 
 .custom-tab {
   margin: 15px 0;
@@ -335,7 +446,7 @@
 
 .custom-dialog-flat {
   font-size: 16px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   background-color: white;
   background-image: none;
   padding: 0;
@@ -350,7 +461,7 @@
 }
 
 .custom-dialog-flat .ui-dialog-content {
-  padding: 0 1.2em 1.2em 1.2em;
+  padding: 1.6em 1.8em 1.5em 1.8em;
   background-color: white;
   background-image: none;
 }
@@ -359,11 +470,19 @@
   margin: 0.6em 0;
 }
 
-.custom-dialog-flat .ui-dialog-content p:first-child {
+.custom-dialog-flat .ui-dialog-content p:first-child,
+.custom-dialog-flat .ui-dialog-content div:first-child,
+.custom-dialog-flat .ui-dialog-content h1:first-child,
+.custom-dialog-flat .ui-dialog-content h2:first-child,
+.custom-dialog-flat .ui-dialog-content h3:first-child {
   margin-top: 0;
 }
 
-.custom-dialog-flat .ui-dialog-content p:last-child {
+.custom-dialog-flat .ui-dialog-content p:last-child,
+.custom-dialog-flat .ui-dialog-content div:last-child,
+.custom-dialog-flat .ui-dialog-content h1:last-child,
+.custom-dialog-flat .ui-dialog-content h2:last-child,
+.custom-dialog-flat .ui-dialog-content h3:last-child {
   margin-bottom: 0;
 }
 
@@ -373,10 +492,12 @@
   border: 0;
   border-radius: 0px;
   color: #2E2F30;
-  padding: 1.2em 1.2em 1.2em 1.2em;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 1.2em 1.8em 1.2em 1.8em;
 }
 
 .custom-dialog-flat .ui-dialog-titlebar .ui-dialog-title {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   text-align: center;
   margin: 0 0 0 0.5em;
   font-size: 19px;
@@ -388,7 +509,7 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  right: 1.2em;
+  right: 1.5em;
   top: 1.3em;
   text-indent: 0;
 }
@@ -424,12 +545,20 @@
 .custom-dialog-flat .ui-dialog-buttonpane {
   border-width: 0;
   margin: 0;
-  padding: 0em 1.2em 1.2em 1.2em;
+  border-top: 1px solid #d4d4d4;
+  padding: 0em 1.8em 1.2em 1.8em
 }
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset {
   width: 100%;
   text-align: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
 }
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button {
@@ -438,8 +567,13 @@
   background: #7d7d7d none;
   color: white;
   border-radius: 2px;
-  margin: 0 0 0 1em;
   outline: none;
+  margin: 1.2em 0 0 1.2em;
+}
+
+.custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button:disabled {
+  opacity: 0.4;
+  cursor: default;
 }
 
 .custom-dialog-flat .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button:first-child {
@@ -616,4 +750,28 @@
   right: 0;
   width: auto;
   height: auto;
+}
+
+@media screen and (min-width: 900px) {
+  .dialog-photo-picker .masonry {
+    column-count: 4;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .dialog-photo-picker .masonry {
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .dialog-photo-picker .masonry {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dialog-photo-picker .masonry {
+    column-count: 2;
+  }
 }

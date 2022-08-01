@@ -27,26 +27,19 @@ If your website is static and requires no user interactions, I recommend copying
 In this way, you can remove the script line that loads jQuery in the header of the html and also delete the files for loading the menu bar (menu.html and menu.js).
 
 This template is tested and worked on:
-- macOS Mojave
-  - Chrome 77
-  - Safari 12
-  - Firefox 68
-- Windows 10
-  - Chrome 77
-  - Firefox 68
-  - Edge 44
-- Android 7, 8, 9, and 10
-  - Chrome 77
-  - Firefox 68
-- iOS 12 and 13
-  - Chrome 77
-  - Safari
-  - Firefox 18
+- macOS 12.4
+  - Chrome 103
+  - Safari 15.5
+  - Firefox 103
+  - Edge 103
+- Android 12 (not tested yet)
+- iOS 15.5 (not tested yet)
 
 # Problems and Bugs
 Here are the problems and bugs that I plan to address in the future. If you fixed them, please do not hesitate to send me a pull request, and I would be very grateful. Please also report problems and bugs in [GitHub Issues](https://github.com/yenchiah/project-website-template/issues).
 
 - On mobile Safari, the menu on the top will not close after opening it. This is because the menu icon on mobile Safari retains focus after a touch event, and the menu relies on the loss of focus event of the icon to close.
+- On Safari, the survey question that asks users to select photos will display the photos in a weired way after clicking on the checkbox. The reason for this problem is unknown.
 
 # Future Plans for Feature Enhancement
 Here are several features that I plan to add in the future. If you wish to contribute, please email me to discuss the design before submitting pull requests.
@@ -55,6 +48,6 @@ Here are several features that I plan to add in the future. If you wish to contr
 - A footer at the bottom
 
 # Policy for Open Source Contribution
-I welcome and appreciate contributions in fixing bugs and enhancing features. However, please avoid submitting pull requests (PRs) that modify the template's existing design without discussing them with me. Please do not submit PRs that are not related to bug fixes or feature enhancements. Editing text in the README file is not encouraged (e.g., fixing grammar errors). PRs with unnecessary editing (e.g., adding unrelated text, changing the design of the template, modifying the README text arbitrarily) or unrelated changes (e.g., changes that are related to only their applications) will be marked as "spam" and "invalid."
+I welcome and appreciate contributions in fixing bugs and enhancing features. However, please avoid submitting pull requests (PRs) that modify the template's existing design without discussing them with me. Please do not submit PRs that are not related to bug fixes or feature enhancements. Editing text in the README file is not encouraged (e.g., fixing grammar errors). PRs with unnecessary editing (e.g., adding unrelated text, changing the design of the template, modifying the README text arbitrarily) or unrelated changes (e.g., changes that are related to only their applications) will be marked as "spam" and "invalid".
 
-If you are excited to contribute to the new features directly, please explain your design decisions and how your design matches this template's style in the PR. If you fix bugs, please explain which bug you fixed and how you fixed them. The explanations that you put in each PR can greatly help me determine if the changes can be merged into the master branch. PRs with no explanations will highly likely be rejected and marked as "wontfix."
+If you are excited to contribute to the new features directly, please explain your design decisions and how your design matches this template's style in the PR. If you fix bugs, please explain which bug you fixed and how you fixed them. The explanations that you put in each PR can greatly help me determine if the changes can be merged into the master branch. PRs with no explanations will highly likely be rejected and marked as "wontfix".

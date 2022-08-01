@@ -17,6 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/widgets.js"></script>
+  <script src="js/util.js"></script>
   <script src="js/custom.js"></script>
   <style>
     .menu-widget {
@@ -44,9 +45,10 @@
           </div>
         </div>
         <!-------------------------------------------------------------------------------------------->
+        <!--Start Dropdown Menu-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Dropdown Menu</h2>
+            <h2 class="add-top-margin-large">Dropdown Menu</h2>
             <hr>
             <p class="text">
               Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
@@ -92,10 +94,12 @@
             </div>
           </div>
         </div>
+        <!--End Dropdown Menu-->
         <!-------------------------------------------------------------------------------------------->
+        <!--Start Radio Button-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Radio Button</h2>
+            <h2 class="add-top-margin-large">Radio Button</h2>
             <hr>
             <p class="text">
               Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
@@ -119,10 +123,12 @@
             </div>
           </div>
         </div>
+        <!--End Radio Button-->
         <!-------------------------------------------------------------------------------------------->
+        <!--Start Dialog Button and Box-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Dialog Button and Box</h2>
+            <h2 class="add-top-margin-large">Dialog Button and Box</h2>
             <hr>
             <p class="text">
               Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
@@ -156,34 +162,35 @@
             </div>
           </div>
         </div>
+        <!--End Dialog Button and Box-->
         <!-------------------------------------------------------------------------------------------->
+        <!--Start Unsplash Photo Picker-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Gallery (Generated Using JavaScript)</h2>
+            <h2 class="add-top-margin-large">Unsplash Photo Picker</h2>
             <hr>
             <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
+              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+              simplificat Angles, quam un skeptic Cambridge amico dit me.
             </p>
+            <div class="custom-survey add-top-margin add-bottom-margin" id="create-vision">
+              <span class="text">1. Please click on the following image to choose a photo obtained from the Unsplash application:</span>
+              <a id="vision-image-frame" class="painting-frame" href="javascript:void(0)" style="margin-top: 25px;">
+                <div class="painting-frame-item">
+                  <img id="vision-image" class="painting-frame-image" style="max-height: 300px;" src="img/choose-image.png">
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="gallery"></div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
+        <!--End Unsplash Photo Picker-->
         <!-------------------------------------------------------------------------------------------->
+        <!--Start Tab-->
         <div class="flex-row">
           <div class="flex-item flex-column full-width">
-            <h2 class="add-top-margin">Tab</h2>
+            <h2 class="add-top-margin-large">Tab</h2>
             <hr>
             <p class="text">
               Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
@@ -332,10 +339,12 @@
             </p>
           </div>
         </div>
+        <!--End Tab-->
         <!-------------------------------------------------------------------------------------------->
+        <!--Start Legend-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Legend</h2>
+            <h2 class="add-top-margin-large">Legend</h2>
             <hr>
             <p class="text">
               Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
@@ -373,14 +382,70 @@
             </p>
           </div>
         </div>
+        <!--End Legend-->
         <!-------------------------------------------------------------------------------------------->
+        <!--Start Gallery-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-large">Gallery Generated Using JavaScript</h2>
+            <hr>
+            <p class="text">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
+        </div>
+        <div class="gallery add-top-margin-small add-bottom-margin-small" id="gallery"></div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
+        </div>
+        <!--End Gallery-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Masonry-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-large">Masonry Generated Using JavaScript</h2>
+            <hr>
+            <p class="text">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
+        </div>
+        <div class="masonry add-top-margin-small add-bottom-margin-small" id="masonry"></div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+              vel, luctus pulvinar, hendrerit id, lorem.
+            </p>
+          </div>
+        </div>
+        <!--End Masonry-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Credits-->
         <div class="flex-row">
           <div class="flex-item flex-item-stretch flex-column">
-            <p class="text text-small text-italic">
+            <p class="text text-small text-italic add-top-margin-large">
               Credits: <span class="highlight-text">Organization One</span>: Author One and Author Two / <span class="highlight-text">Organization Two</span>: Author Three and Author Four
             </p>
           </div>
         </div>
+        <!--End Credits-->
+        <!-------------------------------------------------------------------------------------------->
       </div>
     </div>
   </div>
