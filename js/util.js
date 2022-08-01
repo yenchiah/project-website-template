@@ -1,3 +1,12 @@
+/*************************************************************************
+ * GitHub: https://github.com/yenchiah/project-website-template
+ * Version: v3.33
+ * This JS file has general utility functions
+ * Use this file with widgets.js
+ * If you want to keep this template updated, avoid modifying this file
+ * Instead, add your own JavaScript in the index.js
+ *************************************************************************/
+
 (function () {
   "use strict";
 

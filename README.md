@@ -12,6 +12,7 @@ If you would love to keep updating this template, please keep your codes in sepa
 - css/controls.css (CSS for control elements that do not require JavaScript)
 - css/widgets.css (CSS for widgets that require JavaScript)
 - js/widgets.js (JavaScript for widgets)
+- js/util.js (JavaScript for general utility functions)
 - js/menu.js (JavaScript for loading the menu bar)
 
 From version 3.0, the menu bar at the top is moved into a single file (menu.html) for better management. Each template page will now use jQuery to load the menu bar file (menu.js), as shown below:
@@ -32,8 +33,12 @@ This template is tested and worked on:
   - Safari 15.5
   - Firefox 103
   - Edge 103
-- Android 12 (not tested yet)
-- iOS 15.5 (not tested yet)
+- Android 12
+  - Chrome 103
+- iOS 15.5
+  - Chrome 103
+  - Safari 15.5
+  - Firefox 102
 
 # Problems and Bugs
 Here are the problems and bugs that I plan to address in the future. If you fixed them, please do not hesitate to send me a pull request, and I would be very grateful. Please also report problems and bugs in [GitHub Issues](https://github.com/yenchiah/project-website-template/issues).
