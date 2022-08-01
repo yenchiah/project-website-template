@@ -4,11 +4,11 @@ Demo: https://yenchiah.github.io/project-website-template/
 The current version is v3.33, and the last known stable version is [v3.29](https://github.com/yenchiah/project-website-template/tree/8beb079a57e9a7c210d1f612d658955642d8da84).
 
 This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, I recommend starting with the empty template (empty.html) and copy codes from the file that contains different layouts (index.html). For building interactive websites, this library also provides several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). Examples that use this template are:
-- Personal website: [http://yenchiah.me](http://yenchiah.me)
-- Project website: [http://smellpgh.org](http://smellpgh.org)
-- Project website: [https://smellmycity.org](https://smellmycity.org)
-- Project website: [https://smoke.createlab.org](https://smoke.createlab.org)
-- Project website: [https://periscope.io.tudelft.nl](https://periscope.io.tudelft.nl)
+- Personal website: [http://yenchiah.me](http://yenchiah.me) (Link to [code repository](https://github.com/yenchiah/yenchiah.github.io))
+- Project website: [http://smellpgh.org](http://smellpgh.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/smell-pittsburgh-website))
+- Project website: [https://smellmycity.org](https://smellmycity.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/smell-my-city-website))
+- Project website: [https://smoke.createlab.org](https://smoke.createlab.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/video-labeling-tool))
+- Project website: [https://periscope.io.tudelft.nl](https://periscope.io.tudelft.nl) (Link to [code repository](https://github.com/TUD-KInD/COCTEAU-TUD))
 
 If you would love to keep updating this template, please keep your codes in separate files (custom.css and custom.js) and avoid modifying the following:
 - css/frame.css (CSS for the main frame of the website)
