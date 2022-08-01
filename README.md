@@ -8,6 +8,7 @@ This is a responsive (mobile/desktop) and light-weight HTML/CSS template for bui
 - Project website: [http://smellpgh.org](http://smellpgh.org)
 - Project website: [https://smellmycity.org](https://smellmycity.org)
 - Project website: [https://smoke.createlab.org](https://smoke.createlab.org)
+- Project website: [https://periscope.io.tudelft.nl](https://periscope.io.tudelft.nl)
 
 If you would love to keep updating this template, please keep your codes in separate files (custom.css and custom.js) and avoid modifying the following:
 - css/frame.css (CSS for the main frame of the website)
