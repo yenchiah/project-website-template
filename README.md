@@ -47,7 +47,7 @@ This template is tested and worked on:
 Here are the problems and bugs that I plan to address in the future. If you fixed them, please do not hesitate to send me a pull request, and I would be very grateful. Please also report problems and bugs in [GitHub Issues](https://github.com/yenchiah/project-website-template/issues).
 
 - On mobile Safari, the menu on the top will not close after opening it. This is because the menu icon on mobile Safari retains focus after a touch event, and the menu relies on the loss of focus event of the icon to close.
-- On Safari, the survey question that asks users to select photos will display the photos in a weired way after clicking on the checkbox. The reason for this problem is unknown.
+- On Safari, the survey question that asks users to select photos will display the photos in a weird way after clicking on the checkbox. The reason for this problem is unknown.
 
 # Future Plans for Feature Enhancement
 Here are several features that I plan to add in the future. If you wish to contribute, please email me to discuss the design before submitting pull requests.
