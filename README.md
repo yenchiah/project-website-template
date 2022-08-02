@@ -53,7 +53,6 @@ Here are the problems and bugs that I plan to address in the future. If you fixe
 Here are several features that I plan to add in the future. If you wish to contribute, please email me to discuss the design before submitting pull requests.
 
 - A slideshow block for showing images or videos
-- A footer at the bottom
 
 # Policy for Open Source Contribution
 I welcome and appreciate contributions in fixing bugs and enhancing features. However, please avoid submitting pull requests (PRs) that modify the template's existing design without discussing them with me. Please do not submit PRs that are not related to bug fixes or feature enhancements. Editing text in the README file is not encouraged (e.g., fixing grammar errors). PRs with unnecessary editing (e.g., adding unrelated text, changing the design of the template, modifying the README text arbitrarily) or unrelated changes (e.g., changes that are related to only their applications) will be marked as "spam" and "invalid".
