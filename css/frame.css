@@ -1,9 +1,9 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.34
+ * Version: v3.36
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
- * Instead, add your own CSS in the index.css
+ * Instead, add your own CSS in the custom.css file
  *************************************************************************/
 
 html,
@@ -48,7 +48,7 @@ video {
 
 h2 {
   font-size: 24px;
-  color: #303030;
+  color: #333333;
   margin: 30px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -57,7 +57,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  color: #303030;
+  color: #333333;
   margin: 10px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -125,6 +125,11 @@ hr {
   text-decoration: none;
   font-weight: 700;
   flex: 1 auto;
+}
+
+.logo img {
+  margin: 0;
+  padding: 0;
 }
 
 .menu-button {
@@ -630,24 +635,21 @@ ol.nested>li:before {
   align-content: stretch;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
-.gallery a {
+.gallery>a.flex-column,
+.gallery>div.flex-column {
   color: black;
   text-decoration: none;
-  padding: 10px;
+  padding: 15px;
   cursor: default;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
-.gallery a>img,
-.gallery a>video {
+.gallery>a.flex-column>img,
+.gallery>a.flex-column>video,
+.gallery>div.flex-column>img,
+.gallery>div.flex-column>video {
   border-radius: 2px;
   width: 100%;
   background-image: url(../img/loading.gif);
@@ -657,7 +659,10 @@ ol.nested>li:before {
   min-height: 50px;
 }
 
-.gallery a>div {
+.gallery>a.flex-column>div,
+.gallery>div.flex-column>div,
+.gallery>a.flex-column>h3,
+.gallery>div.flex-column>h3 {
   width: 100%;
   text-align: center;
 }
@@ -1329,26 +1334,22 @@ ol.nested>li:before {
 }
 
 @media screen and (min-width: 900px) {
-  .gallery a {
-    flex: 1 0 25%;
-    max-width: 25%;
-  }
-
   .masonry {
     column-count: 3;
   }
 
   .custom-survey .custom-radio-group-survey.image-only {
     column-count: 2;
+  }
+
+  .gallery>a.flex-column,
+  .gallery>div.flex-column {
+    flex: 1 0 25%;
+    max-width: 25%;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
-  .gallery a {
-    flex: 1 0 33.3%;
-    max-width: 33.3%;
-  }
-
   .masonry {
     column-count: 3;
   }
@@ -1356,14 +1357,15 @@ ol.nested>li:before {
   .custom-survey .custom-radio-group-survey.image-only {
     column-count: 2;
   }
+
+  .gallery>a.flex-column,
+  .gallery>div.flex-column {
+    flex: 1 0 33.3%;
+    max-width: 33.3%;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
-  .gallery a {
-    flex: 1 0 50%;
-    max-width: 50%;
-  }
-
   .masonry {
     column-count: 2;
   }
@@ -1371,19 +1373,26 @@ ol.nested>li:before {
   .custom-survey .custom-radio-group-survey.image-only {
     column-count: 1;
   }
+
+  .gallery>a.flex-column,
+  .gallery>div.flex-column {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  .gallery a {
-    flex: 1 0 100%;
-    max-width: 100%;
-  }
-
   .masonry {
     column-count: 1;
   }
 
   .custom-survey .custom-radio-group-survey.image-only {
     column-count: 1;
+  }
+
+  .gallery>a.flex-column,
+  .gallery>div.flex-column {
+    flex: 1 0 100%;
+    max-width: 100%;
   }
 }
