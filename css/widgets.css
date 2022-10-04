@@ -775,3 +775,11 @@
     column-count: 1;
   }
 }
+
+
+/* My Css  */
+.how-step{
+  background-color: red;
+  display: flex;
+  
+}
