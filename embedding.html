@@ -35,6 +35,8 @@
       justify-content: center;
       /* align-items: center; */
       width: 350px;
+      cursor: pointer;
+      border-radius: 8px;
     }
     .img-container{
       background-color: #d5d5d5;
@@ -42,6 +44,16 @@
       width: 150px;
       border-radius: 10px;
       margin-right: 10px;
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+      outline: 1px solid black;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    li:hover{
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .role{
+      color: #747474;
     }
   </style>
 </head>
@@ -51,37 +63,52 @@
   <div class="iframe-container">
     <ul>
       <li>
-        <div class="img-container"></div>
+        <div class="img-container">
+          <img src="./img/team/charles.png" height="80px" width="auto" alt="charles">
+        </div>
         <div>
           <h3>Kasasira Charles Derrick</h3>
+          <p class="role">- Team Lead</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, amet.</p>
         </div>
       </li>
       <li>
-        <div class="img-container"></div>
+        <div class="img-container">
+          <img src="./img/team/hellen.png" height="80px" width="auto" alt="hellen">
+        </div>
         <div>
           <h3>Nakuwanda Hellen Bridget</h3>
+          <p class="role">- Authentication & Authorization</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, amet.</p>
         </div>
       </li>
       <li>
-        <div class="img-container"></div>
+        <div class="img-container">
+          <img src="./img/team/gideon.png" height="80px" width="auto" alt="Gideon">
+        </div>
         <div>
           <h3>Langalafa Gideon Ohure</h3>
+          <p class="role">- User Interface</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, amet.</p>
         </div>
       </li>
       <li>
-        <div class="img-container"></div>
+        <div class="img-container">
+          <img src="./img/team/hellen.png" height="80px" width="auto" alt="Akram">
+        </div>
         <div>
           <h3>Lukyamuzi Akram</h3>
+          <p class="role">- QR Codes</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, amet.</p>
         </div>
       </li>
       <li>
-        <div class="img-container"></div>
+        <div class="img-container">
+          <img src="./img/team/daphine.png" height="80px" width="auto" alt="Daphine">
+        </div>
         <div>
           <h3>Tangaya Daphine Damalie</h3>
+          <p class="role">- Payments</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, amet.</p>
         </div>
       </li>
