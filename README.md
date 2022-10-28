@@ -6,8 +6,8 @@ Link: https://charleskasasira.github.io
 ### The Team Behing The Entebbe Expressway Toll Pay Application
 | # | Names | Role |
 | :--- | --- | --- |
-| 1 | Kasasira Charles Derrick | Integrating Mobile Money Payment |
-| 2 | Lukyamuzi Akram | Team Lead |
-| 3 | Nakuwanda Hellen Bridget | - |
-| 4 | Langalafa Gideon Ohure | - |
-| 5 | Tangaya Daphine Damalie | - |
+| 1 | Kasasira Charles Derrick | Google Maps & Weath API |
+| 2 | Lukyamuzi Akram | Generate QR |
+| 3 | Nakuwanda Hellen Bridget | Authentication |
+| 4 | Langalafa Gideon Ohure | User Interface, User flows |
+| 5 | Tangaya Daphine Damalie | Mobile Payment Integration |
