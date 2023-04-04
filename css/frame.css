@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.36
+ * Version: v3.37
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the custom.css file
@@ -216,10 +216,9 @@ hr {
 }
 
 .banner .banner-table {
-  padding: 20px 10px;
+  padding: 0;
   width: 100%;
   margin: 0 auto;
-  max-width: 900px;
   align-self: flex-end;
 }
 
@@ -228,6 +227,12 @@ hr {
 .banner p,
 .banner span {
   color: white;
+}
+
+.banner .flex-item {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 30px;
 }
 
 .flex-column {

@@ -1,7 +1,7 @@
 # project-website-template
 Demo: https://yenchiah.github.io/project-website-template/
 
-The current version is v3.36, and the last known stable version is [v3.29](https://github.com/yenchiah/project-website-template/tree/8beb079a57e9a7c210d1f612d658955642d8da84).
+The current version is v3.37, and the last known stable version is [v3.36](https://github.com/yenchiah/project-website-template/tree/277205cb699b02f3f7ba5f9f6ea20d987582c5bf).
 
 This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, I recommend starting with the empty template (empty.html) and copy codes from the file that contains different layouts (index.html). For building interactive websites, this library also provides several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). Examples that use this template are:
 - Personal website: [http://yenchiah.me](http://yenchiah.me) (Link to [code repository](https://github.com/yenchiah/yenchiah.github.io))
@@ -18,18 +18,21 @@ If you would love to keep updating this template, please keep your codes in sepa
 - js/widgets.js (JavaScript for widgets)
 - js/util.js (JavaScript for general utility functions)
 - js/menu.js (JavaScript for loading the menu bar)
+- js/footer.js (JavaScript for loading the footer)
 
-From version 3.0, the menu bar at the top is moved into a single file (menu.html) for better management. Each template page will now use jQuery to load the menu bar file (menu.js), as shown below:
+From version 3.0, the menu bar at the top is moved into `menu.html` for better management. Also, from version 3.37, the footer at the bottom is moved into `footer.html`. Each template page will now use jQuery to load the menu bar and the footer, as shown below:
 ```html
 <script src="js/menu.js"></script>
+<script src="js/footer.js"></script>
 ```
-If your website is static and requires no user interactions, I recommend copying the code from the menu file (menu.html) into the menu-container div in your html template.
+The `menu.js` script loads `menu.html` to `menu-container`.
 ```html
-<div class="menu-container">
-  [copy everything in the menu.html and paste the code here]
-</div>
+<div class="menu-container"></div>
 ```
-In this way, you can remove the script line that loads jQuery in the header of the html and also delete the files for loading the menu bar (menu.html and menu.js).
+The `footer.js` script loads `footer.html` to `footer-container`.
+```html
+<div class="footer-container"></div>
+```
 
 This template is tested and worked on:
 - macOS 12.4
