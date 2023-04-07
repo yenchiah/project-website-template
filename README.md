@@ -10,6 +10,7 @@ This is a responsive (mobile/desktop) and light-weight HTML/CSS template for bui
 - Project website: [https://smoke.createlab.org](https://smoke.createlab.org) (Link to [code repository](https://github.com/CMU-CREATE-Lab/video-labeling-tool))
 - Project website: [https://periscope.io.tudelft.nl](https://periscope.io.tudelft.nl) (Link to [code repository](https://github.com/TUD-KInD/COCTEAU-TUD))
 - Lab website: [https://multix-amsterdam.github.io/](https://multix-amsterdam.github.io/) (Link to [code repository](https://github.com/MultiX-Amsterdam/multix-amsterdam.github.io))
+- Conference website: [https://www.mmm2024.org/](https://www.mmm2024.org/) (Link to [code repository](https://github.com/MultiX-Amsterdam/MMM24-website))
 
 If you would love to keep updating this template, please keep your codes in separate files (custom.css and custom.js) and avoid modifying the following:
 - css/frame.css (CSS for the main frame of the website)
