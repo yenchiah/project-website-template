@@ -1,7 +1,7 @@
 # project-website-template
 Demo: https://yenchiah.github.io/project-website-template/
 
-The current version is v3.40. The last known stable version is [v3.36](https://github.com/yenchiah/project-website-template/tree/277205cb699b02f3f7ba5f9f6ea20d987582c5bf).
+The current version is v3.41. The last known stable version is [v3.36](https://github.com/yenchiah/project-website-template/tree/277205cb699b02f3f7ba5f9f6ea20d987582c5bf).
 
 This is a responsive (mobile/desktop) and light-weight HTML/CSS template for building projects or personal websites. If your website does not require complex user interactions, I recommend starting with the empty template (empty.html) and copy codes from the file that contains different layouts (index.html). For building interactive websites, this library also provides several widgets (widgets.html) based on [jQuery](https://jquery.com/) and [jQuery UI](https://jqueryui.com/). Examples that use this template are:
 - Personal website: [http://yenchiah.me](http://yenchiah.me) (Link to [code repository](https://github.com/yenchiah/yenchiah.github.io))

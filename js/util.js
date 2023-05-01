@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.40
+ * Version: v3.41
  * This JS file has general utility functions
  * Use this file with widgets.js
  * If you want to keep this template updated, avoid modifying this file

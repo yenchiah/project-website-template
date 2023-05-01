@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.40
+ * Version: v3.41
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the custom.css file
@@ -296,6 +296,15 @@ hr {
   width: 100%;
   margin: 0 auto;
   align-self: flex-end;
+}
+
+.banner .banner-table a {
+  color: #a3cfff;
+  text-decoration: none;
+}
+
+.banner .banner-table a:hover {
+  text-decoration: underline;
 }
 
 .banner h2,
