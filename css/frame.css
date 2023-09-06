@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.41
+ * Version: v3.42
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the custom.css file
@@ -44,6 +44,15 @@ video {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+h1 {
+  font-size: 30px;
+  color: #333333;
+  margin: 30px 0 0 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -227,6 +236,7 @@ hr {
   text-decoration: none;
   display: block;
   text-align: left;
+  font-size: 16px;
 }
 
 .menu .menu-items .dropdown .dropdown-content a:hover {
@@ -307,6 +317,7 @@ hr {
   text-decoration: underline;
 }
 
+.banner h1,
 .banner h2,
 .banner h3,
 .banner p,
@@ -1435,7 +1446,7 @@ ol.nested>li:before {
   .menu .menu-items .dropdown .dropdown-content a {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.8);
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
     display: block;
     text-align: left;
