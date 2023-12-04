@@ -1,6 +1,6 @@
 /*************************************************************************
  * GitHub: https://github.com/yenchiah/project-website-template
- * Version: v3.42
+ * Version: v3.43
  * This CSS file is for the website frame
  * If you want to keep this template updated, avoid modifying this file
  * Instead, add your own CSS in the custom.css file
@@ -432,6 +432,37 @@ hr {
   padding: 0;
 }
 
+.scrollable-image-container {
+  overflow: auto;
+  border: 1px solid #666666;
+  display: grid;
+  width: fit-content;
+  margin: 15px 0;
+}
+
+.scrollable-image-container.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scrollable-image {
+  border-radius: 2px;
+  margin: 0;
+  overflow: auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+}
+
+.scrollable-image.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .image {
   border-radius: 2px;
   width: 100%;
@@ -515,7 +546,7 @@ ol.publication.C-list li p {
 }
 
 ol.publication.C-list li p:before {
-  content: "[C"counter(C-counter)"]";
+  content: "[C" counter(C-counter)"]";
 }
 
 ol.publication.J-list {
@@ -527,7 +558,7 @@ ol.publication.J-list li p {
 }
 
 ol.publication.J-list li p:before {
-  content: "[J"counter(J-counter)"]";
+  content: "[J" counter(J-counter)"]";
 }
 
 ol.publication.T-list {
@@ -539,7 +570,7 @@ ol.publication.T-list li p {
 }
 
 ol.publication.T-list li p:before {
-  content: "[T"counter(T-counter)"]";
+  content: "[T" counter(T-counter)"]";
 }
 
 ol.publication.O-list {
@@ -551,7 +582,7 @@ ol.publication.O-list li p {
 }
 
 ol.publication.O-list li p:before {
-  content: "[O"counter(O-counter)"]";
+  content: "[O" counter(O-counter)"]";
 }
 
 ol.publication.P-list {
@@ -563,7 +594,7 @@ ol.publication.P-list li p {
 }
 
 ol.publication.P-list li p:before {
-  content: "[P"counter(P-counter)"]";
+  content: "[P" counter(P-counter)"]";
 }
 
 ol.publication.M-list {
@@ -575,7 +606,7 @@ ol.publication.M-list li p {
 }
 
 ol.publication.M-list li p:before {
-  content: "[M"counter(M-counter)"]";
+  content: "[M" counter(M-counter)"]";
 }
 
 ol.publication.F-list {
@@ -587,7 +618,7 @@ ol.publication.F-list li p {
 }
 
 ol.publication.F-list li p:before {
-  content: "[F"counter(F-counter)"]";
+  content: "[F" counter(F-counter)"]";
 }
 
 ol.publication.A-list {
@@ -599,7 +630,7 @@ ol.publication.A-list li p {
 }
 
 ol.publication.A-list li p:before {
-  content: "[A"counter(A-counter)"]";
+  content: "[A" counter(A-counter)"]";
 }
 
 ol.nested {
