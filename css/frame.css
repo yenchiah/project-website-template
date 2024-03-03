@@ -281,9 +281,20 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: auto;
-  background-color: #005cbf;
+  /*background-color: #005cbf;*/
+  background-image: url("img/cybertree.webp");
   display: flex;
 } 
+
+.banner::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px; /* Height of the transparent effect */
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+}
 
 .banner .banner-table {
   padding: 0;
