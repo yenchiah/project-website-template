@@ -282,7 +282,7 @@ hr {
   line-height: 1.5;
   overflow-x: auto;
   /*background-color: #005cbf;*/
-  background-image: url("img/cybertree.webp");
+  /*background-image: url("img/cybertree.webp");*/
   display: flex;
 } 
 
@@ -292,7 +292,7 @@ hr {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100px; /* Height of the transparent effect */
+  height: 150px; /* Height of the transparent effect */
   background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
 }
 
