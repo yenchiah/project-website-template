@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Greenwood</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />  
+    <style>
+      .menu-index {
+        color: rgb(2, 23, 14) !important;
+        opacity: 1 !important;
+        font-weight: 700 !important;
+      }
+    </style>
+  </head>
+     <!-------------------------------------------------------------------------------------------->
+    <div class="menu-container"></div>
+    <div class="content-container">
+      <!-------------------------------------------------------------------------------------------->
+      <!--Start Header-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>King County Public Transit Options</title>
+      <link href="css/custom.css" rel="stylesheet">
+      <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+      <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
+      <div class="banner" style="background: url("img/cityplanningtree.webp") no-repeat center; background-size: cover; height: 600px;"></div>
+      <div class="banner">
+      </div>
+      <!--End Header-->
+<body>
+    <!-------------------------------------------------------------------------------------------->
+        
+       
+        <!--Start Text with Adaptive Image-->
+        <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 id="adaptive-image">Adaptive Image</h2>
+              <hr>
+              <p class="text">
+                For my first portfolio piece, I’m trying to map public transit to help people plan multimodal trips in which they bike to a bus stop, put their bike on the bus, get off at the appropriate stop, and bike the rest of the way to their destination.
+
+I'm working with GeoJSON datasets from King County Open GIS portal. I’ve done data preprocessing using python notebooks, now I need to build in an interactive map with several layers that can be toggled on/off. I
+              </p>
+              <a class="image adaptive-image" style="background-image: url('img/dummay-img-long.png'); min-height: 150px;" href="img/dummay-img-long.png" target="_blank"></a>
+              <p class="text">
+                My geodata is too big to host only on github, so I’m in the process of turning it into mapbox tiles
+            </div>
+          </div>
+          <!--End Text with Adaptive Image-->
+          <!-------------------------------------------------------------------------------------------->
+    <div id="king_county_bus_stops" style="width: 100%; height: 500px;"></div>
+    <script>
+        mapboxgl.accessToken = "Mapbox_Access_Token";
+        var map = new mapboxgl.Map({
+            container: "king_county_bus_stops",
+            style: "mapbox://styles/mapbox/streets-v11",
+            center: [-122.335167, 47.608013], // Seattle, King County coordinates
+            zoom: 10
+        });
+    </script>
+</body>
+</html>
