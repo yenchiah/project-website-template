@@ -18,13 +18,11 @@
    * @class
    */
   var Util = function () {
-    var navigatorUserAgent = navigator.userAgent;
-    var isMSIEUserAgent = navigatorUserAgent.match(/MSIE|Trident|Edge/) != null;
-    var isOperaUserAgent = navigatorUserAgent.match(/OPR/) != null;
-    // The string "Chrome" is found in many user agents of browsers that are not truly Chrome
-    var isChromeUserAgent = navigatorUserAgent.match(/Chrome/) != null && !isMSIEUserAgent && !isOperaUserAgent;
-    var isSafariUserAgent = navigatorUserAgent.match(/Safari/) != null && !isChromeUserAgent && !isMSIEUserAgent;
-    var isFirefoxUserAgent = navigatorUserAgent.match(/Firefox/) != null;
+    var isMSIEUserAgent = !!window.document.documentMode;
+	var isOperaUserAgent = !!window.opr && !!opr.addons || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+	var isChromeUserAgent = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+	var isSafariUserAgent = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	var isFirefoxUserAgent = typeof InstallTrigger !== 'undefined';
 
     /**
      * Parse and return variables in the format of a hash URL string.
