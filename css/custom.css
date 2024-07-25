@@ -32,3 +32,67 @@
   display: none;
   color: #007bff;
 }
+
+.logo img {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px; /* Adjust as necessary */
+  margin-right: 100px; /* Space between logo image and text */
+}
+
+/* Container for the download section */
+.download-container {
+  position: relative;
+  text-align: center;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+.download-container-head {
+  position: absolute;
+  left: 70%;
+  top: 65%;
+  text-align: center;
+  max-width: fit-content;
+  max-height: fit-content;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start below the final position */
+  transform: translateX(40px);
+  animation: flyIn 1s forwards; /* Fly-in animation */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for pop effect */
+}
+
+@keyframes flyIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.download-container-head:hover {
+  transform: scale(2.1); /* Pop effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for effect */
+}
+
+/* Text styles */
+.download-text {
+  position: absolute;
+  top: -70px; /* Adjust based on your design */
+  left: 20%;
+  right: 20%;
+  font-size: 30px; /* Adjust font size */
+  font-weight: bold; /* Adjust font weight */
+  color: white;
+  margin-top: 5%;
+}
+
+/* Container for images */
+.download-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust spacing between images */
+}
+
+/* Image styles */
+.download-images img {
+  height: 50px; /* Adjust based on your design */
+}

@@ -94,7 +94,7 @@ hr {
   z-index: 2;
   position: relative;
   width: 100%;
-  background-color: #333333;
+  background-color: #007bff;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -106,9 +106,12 @@ hr {
 }
 
 .menu {
-  position: relative;
+  position: fixed;
   margin: 0 auto;
+  width:100vw;
   max-width: 900px;
+  background-color: #007bff;
+  border-bottom-right-radius: 50px;
 }
 
 .menu .menu-table {
@@ -275,7 +278,7 @@ hr {
 .content ul a,
 .content ol a {
   text-decoration: none;
-  color: #005cbf;
+  color: #007bff;
 }
 
 .content p a:hover,
@@ -297,7 +300,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: auto;
-  background-color: #005cbf;
+  background-color: #007bff;
   display: flex;
 }
 
@@ -322,12 +325,17 @@ hr {
 .banner h3,
 .banner p,
 .banner span {
-  color: white;
+  color: #ffffff;
 }
-
+.banner h4,
+.banner h5 {
+  color: rgb(219, 199, 20);
+  font-size: 300%;
+  align-items:end;
+}
 .banner .flex-item {
   max-width: 900px;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 0 30px;
 }
 
@@ -745,7 +753,7 @@ ol.nested>li:before {
 }
 
 .custom-text-primary a:hover {
-  color: #005cbf;
+  color: #007bff;
 }
 
 .custom-text-danger,
@@ -1229,7 +1237,7 @@ ol.nested>li:before {
   content: '';
   width: 14px;
   height: 14px;
-  background: #005cbf;
+  background: #007bff;
   position: absolute;
   top: 18px;
   left: 18px;
