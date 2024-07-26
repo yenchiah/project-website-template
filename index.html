@@ -20,6 +20,46 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
+    .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 50%;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
   </style>
 </head>
 
@@ -159,32 +199,39 @@
             </p>
           </div>
         </div>
-        <div class="flex-row-space-between">
-          <div class="flex-item flex-column">
-              <img class="image max-width-200" src="img/Benja.jpg" alt="Mr. Nakabaale Benjamin">
-              <p class="image-caption">Mr. Nakabaale Benjamin</p>
+        <div class="card-container">
+          <div class="card">
+              <img src="img/Benja.jpg" alt="Mr. Nakabaale Benjamin">
+              <h2>Mr. Nakabaale Benjamin</h2>
+              <p>Project Manager</p>
+              <p>Leads the team with a vision to enhance the student housing experience.</p>
           </div>
-          <div class="flex-item flex-column">
-              <img class="image max-width-200" src="img/Naomi.jpg" alt="Ms. Munezeiro Naomi">
-              <p class="image-caption">Ms. Munezeiro Naomi</p>
+          <div class="card">
+              <img src="img/Naomi.jpg" alt="Ms. Munezeiro Naomi">
+              <h2>Ms. Munezeiro Naomi</h2>
+              <p>Software Engineer</p>
+              <p>Develops and maintains the core functionality of the application.</p>
+          </div>
+          <div class="card">
+              <img src="img/Jo.jpg" alt="Ms. Nantongo Joselyn M">
+              <h2>Ms. Nantongo Joselyn M</h2>
+              <p>UX Designer</p>
+              <p>Ensures the application is user-friendly and aesthetically pleasing.</p>
+          </div>
+          <div class="card">
+              <img src="img/Naomi.jpg" alt="Ms. Munezeiro Naomi">
+              <h2>Ms. Munezeiro Naomi</h2>
+              <p>QA Specialist</p>
+              <p>Oversees testing to ensure the application is bug-free and reliable.</p>
+          </div>
+          <div class="card">
+              <img src="img/Naomi.jpg" alt="Ms. Munezeiro Naomi">
+              <h2>Ms. Munezeiro Naomi</h2>
+              <p>Technical Writer</p>
+              <p>Documents the development process and creates user guides.</p>
           </div>
       </div>
-      <div class="flex-row-space-between">
-          <div class="flex-item flex-column">
-              <img class="image max-width-200" src="img/Jo.jpg" alt="Ms. Nantongo Joselyn M">
-              <p class="image-caption">Ms. Nantongo Joselyn M</p>
-          </div>
-          <div class="flex-item flex-column">
-              <img class="image max-width-200" src="img/Naomi.jpg" alt="Ms. Munezeiro Naomi">
-              <p class="image-caption">Ms. Munezeiro Naomi</p>
-          </div>
-      </div>
-      <div class="flex-row-space-between">
-          <div class="flex-item flex-column">
-              <img class="image max-width-200" src="img/Naomi.jpg" alt="Ms. Munezeiro Naomi">
-              <p class="image-caption">Ms. Munezeiro Naomi</p>
-          </div>
-      </div>
+      
       
         <div class="flex-row">
           <div class="flex-item flex-column">
