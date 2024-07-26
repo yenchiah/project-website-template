@@ -297,7 +297,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: auto;
-  background-color:green;
+  background-color:rgba(0, 255, 76, 0.485);
   display: flex;
 }
 
@@ -474,6 +474,7 @@ hr {
   -ms-user-select: none;
   user-select: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .image.center {
