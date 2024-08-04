@@ -4,7 +4,8 @@
 <head>
   <title>Hall Room Allocation</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet"
+    type="text/css" />
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
@@ -20,58 +21,83 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
-    .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-    gap: 30px; /* Adds spacing between cards */
-  }
-  .card {
-    flex: 1 1 calc(30% - 40px); /* Adjusts width of each card to fit three on the first line */
-    max-width: calc(30% - 40px); /* Ensures cards don't grow too large */
-    box-sizing: border-box;
-    text-align: center;
-    border: 1px solid #ccc; /* Adds a border to each card */
-    padding: 15px;
-    background-color: #f9f9f9; /* Background color for each card */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow */
-  }
-  .card img {
-    width: 100%;
-    height: auto;
-    
-    margin-bottom: 10px; /* Adds space below the image */
-  }
-  .card h2 {
-    margin: 10px 0;
-    color: #333; /* Color for the heading */
-  }
-  .card p {
-    color: #666; /* Color for the text */
-    margin: 5px 0;
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px;
-  }
-  .gallery a {
-    flex: 1 1 calc(20% - 10px);
-    margin: 5px;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  }
-  .gallery img {
-    width: 80%;
-    height: 70px;
-    display: block;
-  }
-  .gallery div {
-    margin-top: 5px;
-  }
 
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 30px;
+      /* Adds spacing between cards */
+    }
+
+    .card {
+      flex: 1 1 calc(30% - 40px);
+      /* Adjusts width of each card to fit three on the first line */
+      max-width: calc(30% - 40px);
+      /* Ensures cards don't grow too large */
+      box-sizing: border-box;
+      text-align: center;
+      border: 1px solid #ccc;
+      /* Adds a border to each card */
+      padding: 15px;
+      background-color: #f9f9f9;
+      /* Background color for each card */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* Adds a subtle shadow */
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+
+      margin-bottom: 10px;
+      /* Adds space below the image */
+    }
+
+    .card h2 {
+      margin: 10px 0;
+      color: #333;
+      /* Color for the heading */
+    }
+
+    .card p {
+      color: #666;
+      /* Color for the text */
+      margin: 5px 0;
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px;
+      }
+
+      .gallery a {
+        flex: 1 1 calc(20% - 10px);
+        margin: 5px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+    }
+
+    .gallery img {
+      width: 80%;
+      height: 70px;
+      display: block;
+    }
+
+    .gallery div {
+      margin-top: 5px;
+    }
+
+   .flex-items img {
+    width: 70px;
+    height: 60px;
+   }
+
+
+   
   </style>
 </head>
 
@@ -80,16 +106,20 @@
   <div class="content-container">
     <!-------------------------------------------------------------------------------------------->
     <!--Start Header-->
-    <div class="banner" style="background: url('img/maingate.jpg') no-repeat center; background-size: cover; height: 300px;"></div>
+    <div class="banner"
+      style="background: url('img/maingate.jpg') no-repeat center; background-size: cover; height: 300px;"></div>
     <div class="banner">
-      <div class="banner-table flex-column" >
+      <div class="banner-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
             <h2 class="add-top-margin-small">Welcome to the Hall Application Portal!</h2>
             <p class="text">
-              Our platform is designed to streamline the application process for students seeking accommodation in university halls. 
-              Whether you are a new applicant or a returning resident, our system ensures a seamless experience from application submission to room assignment.
-                Stay informed about your application status and receive notifications directly through your profile. Start your journey with us today and secure your place in the hall!
+              Our platform is designed to streamline the application process for students seeking accommodation in
+              university halls.
+              Whether you are a new applicant or a returning resident, our system ensures a seamless experience from
+              application submission to room assignment.
+              Stay informed about your application status and receive notifications directly through your profile. Start
+              your journey with us today and secure your place in the hall!
             </p>
           </div>
         </div>
@@ -114,207 +144,218 @@
               <a target="_blank" href="javascript:void(0)"></a>Author 5</a>,Kasakya Denis Nicholas<br>
               <a target="_blank" href="javascript:void(0)"></a> Study at Makerere University </a><br>
               <a target="_blank" href="javascript:void(0)"></a>Computer Science</a><br>
-             
+
             </p>
           </div>
         </div>
         <div class="flex-row">
           <div class="flex-item flex-column">
-         
-           
-        </div>
-        <!--End Intro-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text Only-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 >How to Apply </h2>
-            
-            <p class="text">
-              To apply for accommodation in the university halls, students must use their  email addresses and registration numbers. 
-              Please ensure that you have both of these details ready before starting the application process.
-               Begin by logging into the Hall Application Portal using your university email. Follow the prompts to enter your registration number and complete the application form. Accurate information is crucial, so double-check all entries before submission.
+
+
+          </div>
+          <!--End Intro-->
+          <!-------------------------------------------------------------------------------------------->
+          <!--Start Text Only-->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2>How to Apply </h2>
+
+              <p class="text">
+                To apply for accommodation in the university halls, students must use their email addresses and
+                registration numbers.
+                Please ensure that you have both of these details ready before starting the application process.
+                Begin by logging into the Hall Application Portal using your university email. Follow the prompts to
+                enter your registration number and complete the application form. Accurate information is crucial, so
+                double-check all entries before submission.
                 This will ensure a smooth and efficient application process, and help us to serve you better.
-            </p>
-            <h3> URL</h3>
-            <p class="text">
-              <a class="break-long-url" target="_blank" href='https://github.com/Nakabaale-Benjamin/Nakabaale-Benjamin.github.io'>https://github.com/Nakabaale-Benjamin/Nakabaale-Benjamin.github.io
-           
+              </p>
+              <h3> URL</h3>
+              <p class="text">
+                <a class="break-long-url" target="_blank"
+                  href='https://github.com/Nakabaale-Benjamin/Nakabaale-Benjamin.github.io'>https://github.com/Nakabaale-Benjamin/Nakabaale-Benjamin.github.io
+
+            </div>
           </div>
-        </div>
-        <!--End Text Only-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Buttons-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
+          <!--End Text Only-->
+          <!-------------------------------------------------------------------------------------------->
+          <!--Start Text with Buttons-->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
               <button class="custom-button-flat"><img src="img/share.png"><span>Share</span></button>
-             
+
 
               </a>
-            <div class="control-group">
-              <button class="custom-button-flat pulse-black"><img src="img/home.png"><span>Pulse</span></button>
-              <button class="custom-button-flat pulse-primary"><img src="img/home.png"><span>Pulse</span></button>
-              <button class="custom-button-flat pulse-danger"><img src="img/home.png"><span>Pulse</span></button>
-              <button class="custom-button-flat pulse-info"><img src="img/home.png"><span>Pulse</span></button>
+              <div class="control-group">
+                <button class="custom-button-flat pulse-black"><img src="img/home.png"><span>Pulse</span></button>
+                <button class="custom-button-flat pulse-primary"><img src="img/home.png"><span>Pulse</span></button>
+                <button class="custom-button-flat pulse-danger"><img src="img/home.png"><span>Pulse</span></button>
+                <button class="custom-button-flat pulse-info"><img src="img/home.png"><span>Pulse</span></button>
+              </div>
+
             </div>
-            
           </div>
-        </div>
-        <!--End Text with Buttons-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Image buttons-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="images-and-image-button">AUTHORS</h2>
-            <hr>
-            <p class="text">
-              The Hall Application Portal was created by a dynamic team of professionals who exemplify outstanding teamwork and dedication. 
-              With a shared vision to enhance the student housing experience, our team worked tirelessly to develop a platform that is both user-friendly and efficient. 
-              Each member brought their unique skills to the table, from innovative software development and meticulous user experience design to robust project management. 
-              Their collaboration and commitment to excellence ensured that every aspect of the app was crafted with the utmost care and precision. Together, they have created a reliable solution that simplifies the housing application process for students.
-               We are proud of the hard work and unity that went into making this project a success.
-            </p>
-            </p>
+          <!--End Text with Buttons-->
+          <!-------------------------------------------------------------------------------------------->
+          <!--Start Text with Images and Image buttons-->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 id="images-and-image-button">AUTHORS</h2>
+              <hr>
+              <p class="text">
+                The Hall Application Portal was created by a dynamic team of professionals who exemplify outstanding
+                teamwork and dedication.
+                With a shared vision to enhance the student housing experience, our team worked tirelessly to develop a
+                platform that is both user-friendly and efficient.
+                Each member brought their unique skills to the table, from innovative software development and
+                meticulous user experience design to robust project management.
+                Their collaboration and commitment to excellence ensured that every aspect of the app was crafted with
+                the utmost care and precision. Together, they have created a reliable solution that simplifies the
+                housing application process for students.
+                We are proud of the hard work and unity that went into making this project a success.
+              </p>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card-container">
-          <div class="card">
+          <div class="card-container">
+            <div class="card">
               <img src="img/Benja.jpg" alt="Mr. Nakabaale Benjamin">
               <h2>Mr. Nakabaale Benjamin</h2>
               <p>Project Manager</p>
               <p>Leads the team with a vision to enhance the student housing experience.</p>
-          </div>
-          <div class="card">
+            </div>
+            <div class="card">
               <img src="img/Naomi.jpg" alt="Ms. Munezeiro Naomi">
               <h2>Ms. Munezeiro Naomi</h2>
               <p>Software Engineer</p>
               <p>Develops and maintains the core functionality of the application.</p>
-          </div>
-          <div class="card">
+            </div>
+            <div class="card">
               <img src="img/Jo.jpg" alt="Ms. Nantongo Joselyn M">
               <h2>Ms. Nantongo Joselyn M</h2>
               <p>UX Designer</p>
               <p>Ensures the application is user-friendly and aesthetically pleasing.</p>
-          </div>
-          <div class="card">
+            </div>
+            <div class="card">
               <img src="img/ruth.jpg" alt="Ms. Masagazi Ruth">
               <h2>Ms. Masagazi Ruth</h2>
               <p>QA Specialist</p>
               <p>Oversees testing to ensure the application is bug-free and reliable.</p>
-          </div>
-          <div class="card">
+            </div>
+            <div class="card">
               <img src="img/Nico.jpg" alt="Mr.Kasakya Denis N">
-              <h2>Mr. Kisakya Denis N</h2>
+              <h2>Mr. Kasakya Denis N</h2>
               <p>Technical Writer</p>
               <p>Documents the development process and creates user guides.</p>
+            </div>
           </div>
-      </div>
-      
-      
-        </div>
-        </div>
-        <!--End Text around Image-->
-        <!-------------------------------------------------------------------------------------------->
-      </div>
-    
-          </div>
+
+
         </div>
       </div>
+      <!--End Text around Image-->
+      <!-------------------------------------------------------------------------------------------->
     </div>
-    <div class="content">
-      <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Videos-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="text-with-images-and-videos" class="no-top-margin">How to use our app</h2>
-            <hr>
-            <p class="text">
-              Follow the youtube videos below
-            </p>
-          </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="content">
+    <div class="content-table flex-column">
+      <!-------------------------------------------------------------------------------------------->
+      <!--Start Text with Images and Videos-->
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 id="text-with-images-and-videos" class="no-top-margin">How to use our app</h2>
+          <hr>
+          <p class="text">
+            Follow the youtube videos below
+          </p>
         </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image" src="img/dummay-img.png">
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
+      </div>
+      <div class="flex-row">
+        <div class="flex-items flex-item-stretch flex-column">
+          <img class="image" src="img/ui.jpg">
+        </div>
+          <div class="flex-items flex-items-stretch flex-column">
             <p class="text">
               How to use the app as a student
-              link......
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image" src="img/dummay-img.png">
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
             <p class="text">
-              How to use the admin panel
-              link.....
+               <a class="break-long-url" target="_blank"
+              href='https://youtu.be/MJbWPEXl6UA?si=Hls6aw0wZw8WWbQo'>https://youtu.be/MJbWPEXl6UA?si=Hls6aw0wZw8WWbQo
             </p>
-          </div>
         </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-                We aim at smoothening hall application process
-            </p>
-          </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-items flex-items-stretch flex-column">
+          <img class="image" src="img/admin.jpg">
         </div>
-        <!--End Text with Images and Videos-->
-        <!-------------------------------------------------------------------------------------------->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Gallery-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="gallery"> Available Halls</h2>
-            
-            <p class="text">
-        
-            </p>
-          </div>
+        <div class="flex-items flex-items-stretch flex-column">
+              <p class="text">
+                 How to use the admin panel
+             <p class="text">
+                 <a class="break-long-url" target="_blank"
+                   href='https://youtu.be/Cttd1OAMwNg?si=vWIlxEtz_M3XQXoF'>https://youtu.be/Cttd1OAMwNg?si=vWIlxEtz_M3XQXoF
+             </p>
+
         </div>
-       
-<div class="gallery">
-  <a href="javascript:void(0)" class="flex-column">
-    <img src="img/afric.jpg">
-    <div>Africa Hall</div>
-  </a>
-  <a href="javascript:void(0)" class="flex-column">
-    <img src="img/comp.jpg">
-    <div>Complex Hall</div>
-  </a>
-  <a href="javascript:void(0)" class="flex-column">
-    <img src="img/lumumb.jpg">
-    <div>Lumumba Hall</div>
-  </a>
-  <a href="javascript:void(0)" class="flex-column">
-    <img src="img/mitchel.jpg">
-    <div>Mitchell Hall</div>
-  </a>
-  <a href="javascript:void(0)" class="flex-column">
-    <img src="img/university.jpg">
-    <div>University Hall</div>
-  </a>
-  <a href="javascript:void(0)" class="flex-column">
-    <img src="img/livingston.jpg">
-    <div>Livingstone Hall</div>
-  </a>
-  <a href="javascript:void(0)" class="flex-column">
-    <img src="img/lumumb.jpg">
-    <div>Lumumba Hall</div>
-  </a>
-  <a href="javascript:void(0)" class="flex-column">
-    <img src="img/mary.jpg">
-    <div>Mary Stuart Hall</div>
-  </a>
-  <a href="javascript:void(0)" class="flex-column">
-    <img src="img/nkruma.jpeg">
-    <div>Nkrumah Hall</div>
-  </a>
-</div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <p class="text">
+            We aim at smoothening hall application process
+          </p>
+        </div>
+      </div>
+      <!--End Text with Images and Videos-->
+      <!-------------------------------------------------------------------------------------------->
+      <!-------------------------------------------------------------------------------------------->
+      <!--Start Gallery-->
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 id="gallery"> Available Halls</h2>
+
+        </div>
+      </div>
+
+      <div class="gallery">
+        <a href="javascript:void(0)" class="flex-column">
+          <img src="img/afric.jpg">
+          <div>Africa Hall</div>
+        </a>
+        <a href="javascript:void(0)" class="flex-column">
+          <img src="img/comp.jpg">
+          <div>Complex Hall</div>
+        </a>
+        <a href="javascript:void(0)" class="flex-column">
+          <img src="img/lumumb.jpg">
+          <div>Lumumba Hall</div>
+        </a>
+        <a href="javascript:void(0)" class="flex-column">
+          <img src="img/mitchel.jpg">
+          <div>Mitchell Hall</div>
+        </a>
+        <a href="javascript:void(0)" class="flex-column">
+          <img src="img/university.jpg">
+          <div>University Hall</div>
+        </a>
+        <a href="javascript:void(0)" class="flex-column">
+          <img src="img/livingston.jpg">
+          <div>Livingstone Hall</div>
+        </a>
+        <a href="javascript:void(0)" class="flex-column">
+          <img src="img/lumumb.jpg">
+          <div>Lumumba Hall</div>
+        </a>
+        <a href="javascript:void(0)" class="flex-column">
+          <img src="img/mary.jpg">
+          <div>Mary Stuart Hall</div>
+        </a>
+        <a href="javascript:void(0)" class="flex-column">
+          <img src="img/nkruma.jpeg">
+          <div>Nkrumah Hall</div>
+        </a>
+      </div>
 
     </div>
     <div class="footer-container"></div>
