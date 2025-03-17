@@ -176,7 +176,8 @@
       },
       cancel_callback: function () {
         console.log("cancel");
-      }
+      },
+      show_close_button: false
     });
     $("#dialog-btn-2").on("click", function () {
       $dialog_2.dialog("open");
